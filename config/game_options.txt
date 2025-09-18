@@ -55,6 +55,11 @@ HUMANS_NEED_SURNAMES
 ## If uncommented, this forces all players to use random names !and appearances!.
 #FORCE_RANDOM_NAMES
 
+## Amount of time after the round starts that the player disconnect report is issued, randomized by ROUNDSTART_LOGOUT_REPORT_TIME_VARIANCE as a lower and upper possible timer
+## Setting ROUNDSTART_LOGOUT_REPORT_TIME_VARIANCE to 0 will result in no variance, and only display the time in ROUNDSTART_LOGOUT_REPORT_TIME_AVERAGE
+ROUNDSTART_LOGOUT_REPORT_TIME_VARIANCE 1800
+ROUNDSTART_LOGOUT_REPORT_TIME_AVERAGE 6000
+
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
 #REOPEN_ROUNDSTART_SUICIDE_ROLES
 
@@ -80,6 +85,11 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 
 ## The total weight of station goals possible for a round (allows multiple goals)
 STATION_GOAL_BUDGET 1
+
+## If TRUE / 1, station is raised to blue alert at roundstart.
+## If FALSE / 0, station remains at green alert.
+## Roundstart command report and greendshift announcements are unaffected.
+ROUNDSTART_BLUE_ALERT 1
 
 ## GAME MODES ###
 
@@ -176,7 +186,7 @@ ALLOW_AI_MULTICAM
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt or away_missions/ at roundstart.
-#ROUNDSTART_AWAY
+ROUNDSTART_AWAY
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
@@ -243,7 +253,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 4 for "specified", silicons will start with an existing lawset. (If no specified lawset is identified, the AI will spawn with asimov.)
 
 
-DEFAULT_LAWS 0
+DEFAULT_LAWS 1
 
 ## SILICON ASIMOV SUPERIORITY OVERRIDE ###
 ## This makes "Asimov Superiority" show up as a perk for humans in the character creation menu even if asimov is not the default lawset, such as when used with asimov++
@@ -383,6 +393,7 @@ ROUNDSTART_RACES snail
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES pod
+#ROUNDSTART_RACES ghost
 
 ## Races that are radical departures to what a species is, so while they technically can be roundstart - it's probably not wise
 #ROUNDSTART_RACES android
@@ -404,6 +415,7 @@ ROUNDSTART_RACES synth
 ROUNDSTART_RACES vox
 ROUNDSTART_RACES aquatic
 ROUNDSTART_RACES insect
+ROUNDSTART_RACES insectoid
 ROUNDSTART_RACES ghoul
 ROUNDSTART_RACES teshari
 ROUNDSTART_RACES hemophage
@@ -530,7 +542,7 @@ MONKEYCAP 64
 RATCAP 64
 
 ## Maximum fine for a citation
-MAXFINE 2000
+MAXFINE 100000
 
 ## Which role is required of playtime to be eligible for Maintenance Drones
 ## See code/__DEFINES/preferences.dm for available options, use the string portion without quotes
