@@ -11,11 +11,11 @@
 /obj/machinery/door/airlock/external{
 	id_tag = "phoenix_tradership_exitbolts2"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/admin/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
 /turf/open/floor/noslip,
 /area/shuttle/phoenix/tradeship)
 "c" = (
@@ -29,7 +29,8 @@
 /area/shuttle/phoenix/tradeship)
 "d" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = null
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/tradeship)
@@ -58,7 +59,8 @@
 /area/shuttle/phoenix/tradeship)
 "n" = (
 /obj/machinery/computer/shuttle/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = null
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/tradeship)
@@ -119,7 +121,6 @@
 /obj/machinery/door/airlock/external{
 	id_tag = "phoenix_tradership_exitbolts2"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/admin/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/docking_port/mobile{
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
@@ -134,6 +135,7 @@
 	rechargeTime = 200
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
 /turf/open/floor/noslip,
 /area/shuttle/phoenix/tradeship)
 "H" = (
@@ -168,8 +170,12 @@
 "W" = (
 /turf/closed/wall/mineral/titanium/interior,
 /area/shuttle/phoenix/tradeship)
+"X" = (
+/turf/open/space/basic,
+/area/space)
 
 (1,1,1) = {"
+X
 K
 K
 I
@@ -182,11 +188,12 @@ H
 M
 "}
 (2,1,1) = {"
+X
 z
 w
-A
 p
 U
+h
 l
 l
 h
@@ -202,6 +209,7 @@ t
 t
 t
 t
+t
 d
 A
 "}
@@ -209,6 +217,7 @@ A
 G
 c
 b
+t
 t
 t
 t
@@ -226,15 +235,17 @@ t
 t
 t
 t
+t
 E
 A
 "}
 (6,1,1) = {"
+X
 J
 w
-A
 S
 e
+q
 q
 q
 a
@@ -242,6 +253,7 @@ W
 H
 "}
 (7,1,1) = {"
+X
 K
 K
 I

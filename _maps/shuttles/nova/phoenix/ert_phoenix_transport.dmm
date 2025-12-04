@@ -40,7 +40,10 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/phoenix/ert/armory)
 "do" = (
-/turf/template_noop,
+/obj/machinery/power/shuttle_engine/propulsion/left{
+	dir = 1
+	},
+/turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/right)
 "dr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -112,10 +115,10 @@
 	dir = 4
 	},
 /obj/machinery/light_switch/directional/north,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "fz" = (
-/obj/machinery/power/shuttle_engine/huge{
+/obj/machinery/power/shuttle_engine/propulsion/burst/right{
 	dir = 1
 	},
 /turf/open/floor/plating/reinforced/airless,
@@ -200,6 +203,14 @@
 /obj/structure/cable,
 /turf/open/floor/pod,
 /area/shuttle/phoenix/ert/bridge)
+"iN" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/left)
 "iP" = (
 /obj/structure/curtain,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -231,6 +242,9 @@
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "jF" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst/left{
+	dir = 1
+	},
 /turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/right)
 "jR" = (
@@ -281,7 +295,7 @@
 /obj/machinery/mech_bay_recharge_port{
 	dir = 2
 	},
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "mo" = (
 /obj/structure/flatpack_cart,
@@ -305,7 +319,7 @@
 	dir = 8
 	},
 /obj/machinery/light_switch/directional/south,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "mB" = (
 /obj/machinery/atmospherics/components/tank/air/layer4{
@@ -320,7 +334,7 @@
 /turf/template_noop,
 /area/shuttle/phoenix/ert/medbay)
 "nm" = (
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "nn" = (
 /obj/structure/table/reinforced,
@@ -412,7 +426,7 @@
 /area/shuttle/phoenix/ert/common)
 "ql" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "qn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -601,6 +615,9 @@
 /turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/engine/right)
 "wk" = (
+/obj/machinery/power/shuttle_engine/propulsion/right{
+	dir = 1
+	},
 /turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/left)
 "xl" = (
@@ -819,7 +836,12 @@
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "EU" = (
-/turf/template_noop,
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/left)
 "FD" = (
 /obj/structure/cable,
@@ -930,7 +952,7 @@
 	preferred_direction = 2;
 	ignitionTime = 120
 	},
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "Ja" = (
 /obj/structure/cable,
@@ -962,7 +984,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/admin/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/scanner_gate/preset_guns,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "KR" = (
 /obj/structure/closet/firecloset/wall{
@@ -1033,7 +1055,7 @@
 /area/shuttle/phoenix/ert/engine/right)
 "Ny" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "NH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1062,9 +1084,11 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/phoenix/ert/common)
 "OU" = (
-/obj/machinery/power/shuttle_engine/huge{
+/obj/machinery/power/shuttle_engine/heater{
 	dir = 1
 	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
 /turf/open/floor/plating/reinforced/airless,
 /area/shuttle/phoenix/ert/engine/right)
 "Pf" = (
@@ -1105,6 +1129,14 @@
 /obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/armory)
+"PV" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/ert/engine/right)
 "PY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/pod,
@@ -1155,7 +1187,6 @@
 "Tc" = (
 /obj/machinery/light_switch/directional/south,
 /obj/machinery/light/blacklight/directional/south,
-/obj/machinery/holopad/secure,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/phoenix/ert/common)
 "Tn" = (
@@ -1284,7 +1315,7 @@
 	dir = 1
 	},
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/plating/reinforced/airless,
+/turf/open/floor/plating/reinforced,
 /area/shuttle/phoenix/ert/common)
 "Za" = (
 /obj/machinery/door/airlock/multi_tile/metal{
@@ -1383,10 +1414,10 @@ NL
 FV
 "}
 (4,1,1) = {"
+FV
 do
-jF
-OU
 Tn
+ih
 ih
 PZ
 Nm
@@ -1408,10 +1439,10 @@ NL
 FV
 "}
 (5,1,1) = {"
+FV
 do
-jF
-jF
 Tn
+ih
 ih
 mo
 PL
@@ -1433,10 +1464,10 @@ mE
 FV
 "}
 (6,1,1) = {"
-do
+FV
+FV
 jF
-jF
-Tn
+PV
 ih
 eU
 qn
@@ -1458,10 +1489,10 @@ mE
 FV
 "}
 (7,1,1) = {"
-do
+FV
+FV
 jF
 OU
-Tn
 ih
 st
 Xr
@@ -1483,10 +1514,10 @@ gT
 FV
 "}
 (8,1,1) = {"
+FV
 do
-jF
-jF
 Tn
+ih
 ih
 ad
 wj
@@ -1508,10 +1539,10 @@ ph
 ns
 "}
 (9,1,1) = {"
+FV
 do
-jF
-jF
 Tn
+ih
 ih
 Pf
 mp
@@ -1590,11 +1621,11 @@ ql
 KB
 gb
 uN
-Aw
+pX
 pX
 gt
 iy
-OQ
+Aw
 iy
 lv
 Tc
@@ -1658,10 +1689,10 @@ Er
 MV
 "}
 (15,1,1) = {"
-EU
+FV
 wk
-fz
 KU
+Bu
 Bu
 pT
 Ty
@@ -1683,10 +1714,10 @@ ph
 ns
 "}
 (16,1,1) = {"
-EU
-wk
+FV
 wk
 KU
+Bu
 Bu
 lP
 rG
@@ -1708,10 +1739,10 @@ ph
 ns
 "}
 (17,1,1) = {"
-EU
-wk
-wk
-KU
+FV
+FV
+fz
+iN
 Bu
 ru
 lm
@@ -1733,10 +1764,10 @@ gT
 FV
 "}
 (18,1,1) = {"
-EU
-wk
+FV
+FV
 fz
-KU
+EU
 Bu
 cb
 dr
@@ -1758,10 +1789,10 @@ jU
 FV
 "}
 (19,1,1) = {"
-EU
-wk
+FV
 wk
 KU
+Bu
 Bu
 gk
 UO
@@ -1783,10 +1814,10 @@ jU
 FV
 "}
 (20,1,1) = {"
-EU
-wk
+FV
 wk
 KU
+Bu
 Bu
 rP
 mB

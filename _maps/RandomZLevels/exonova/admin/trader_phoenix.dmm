@@ -6,6 +6,13 @@
 /obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"as" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot4";
+	codes_txt = "patrol;next_patrol=ptrader_bot5"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
 "av" = (
 /obj/structure/table,
 /turf/open/floor/plastic,
@@ -35,15 +42,8 @@
 	target_pressure = 4500;
 	name = "Output Pump C"
 	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/engie
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"aF" = (
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "aJ" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -65,21 +65,31 @@
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
 "be" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "bj" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage/bio)
 "bu" = (
-/obj/machinery/door/airlock/service{
-	name = "Bathroom Stall"
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/abandoned,
-/turf/open/floor/plastic,
-/area/awaymission/phoenix/tradeship/crew/bath)
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/card/id/away{
+	icon_state = "eng_budget";
+	color = "#FF9900";
+	name = "Apprenticeship Freighter Engineering ID";
+	assignment = "Tradeship Engineer";
+	pixel_y = 4;
+	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's engineer.";
+	access = list("away_general","away_supply","away_maintenance","away_engineering")
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
 "bz" = (
 /turf/closed/wall/r_wall,
 /area/awaymission/phoenix/tradeship/storage/bio)
@@ -101,26 +111,11 @@
 "bP" = (
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
-"bQ" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/obj/item/card/id/away{
-	icon_state = "sec_budget";
-	color = "#FF9900";
-	name = "Apprenticeship Freighter Captain ID";
-	assignment = "Tradeship Captain";
-	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's captain.";
-	access = list("away_general","away_supply","away_maintenance","away_engineering","away_command")
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "cj" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
 "ck" = (
@@ -138,20 +133,6 @@
 "cu" = (
 /turf/closed/wall/mineral/titanium/spaceship/interior,
 /area/awaymission/phoenix/tradeship/hallway/command)
-"cB" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/item/storage/medkit/robotic_repair/preemo/stocked,
-/obj/item/cybernetic_repair_paste,
-/obj/item/stack/medical/synth_repair,
-/obj/structure/closet/crate/science/robo,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "cC" = (
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -160,7 +141,6 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/pod/dark{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -178,15 +158,6 @@
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
-"da" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plastic,
-/area/awaymission/phoenix/tradeship/crew/bath)
 "dc" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/crew/shower)
@@ -201,7 +172,7 @@
 	dir = 8;
 	id_tag = "ptsmix_out"
 	},
-/turf/open/floor/engine/tritium,
+/turf/open/floor/engine/vacuum,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "dr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -237,20 +208,9 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"dT" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
+"dU" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "dV" = (
 /turf/closed/wall/mineral/titanium/spaceship,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
@@ -260,6 +220,14 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"ec" = (
+/obj/structure/cable,
+/obj/machinery/navbeacon{
+	location = "ptrader_bot2";
+	codes_txt = "patrol;next_patrol=ptrader_bot3"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
 "ef" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
@@ -275,7 +243,6 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway/command)
 "et" = (
@@ -313,13 +280,15 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "fa" = (
 /obj/structure/fence,
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
+"fb" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "fd" = (
 /obj/structure/fluff/shower_drain,
 /obj/machinery/shower/directional/south,
@@ -327,20 +296,11 @@
 /obj/effect/turf_decal/trimline/dark_blue/end,
 /turf/open/indestructible/kitchen,
 /area/awaymission/phoenix/tradeship/crew/shower)
-"ff" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/dark,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "fr" = (
 /turf/closed/wall/r_wall/plastitanium/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage/ord)
 "fy" = (
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "fC" = (
@@ -349,18 +309,6 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
-"fD" = (
-/obj/machinery/status_display/shuttle/directional/east{
-	shuttle_id = "phoenix_tradership"
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "fH" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
@@ -373,7 +321,6 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/bath)
 "fQ" = (
@@ -411,15 +358,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
-"gv" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 4
-	},
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "gC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/plating,
@@ -434,50 +372,8 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
 	dir = 10
 	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"gI" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/structure/closet/crate/deforest,
-/obj/structure/closet/crate/deforest,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
-"gJ" = (
-/obj/structure/toilet{
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/cup/bottle/hnz/one,
-/obj/item/ammo_casing/c10mm{
-	pixel_y = -9;
-	pixel_x = 6
-	},
-/turf/open/floor/plastic,
-/area/awaymission/phoenix/tradeship/crew/bath)
 "gK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -485,7 +381,6 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
 "gM" = (
@@ -493,9 +388,7 @@
 /obj/effect/turf_decal/box/white{
 	color = "#00FFFF"
 	},
-/obj/machinery/portable_atmospherics/canister/tritium{
-	filled = 0
-	},
+/obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "gW" = (
@@ -511,12 +404,6 @@
 	},
 /turf/open/floor/bluespace,
 /area/awaymission/phoenix/tradeship/hallway)
-"hj" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron/dark,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "hp" = (
 /obj/machinery/wall_healer/free/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
@@ -524,6 +411,10 @@
 "ht" = (
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
+"hu" = (
+/obj/structure/flatpack_cart,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
 "hA" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
@@ -531,20 +422,13 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"hE" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway/command)
 "hF" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
 "hG" = (
-/obj/machinery/computer/crew{
+/obj/machinery/computer/apc_control/away{
 	dir = 8
 	},
 /turf/open/floor/oldshuttle,
@@ -561,9 +445,6 @@
 	},
 /obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
 	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
 	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -592,28 +473,12 @@
 /obj/machinery/light/cold/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway/command)
-"io" = (
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "iu" = (
 /obj/machinery/power/shuttle_engine/huge{
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
-"iw" = (
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "iG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/smooth_large,
@@ -622,31 +487,15 @@
 /turf/closed/wall/mineral/titanium/interior,
 /area/awaymission/phoenix/tradeship/bridge)
 "iX" = (
-/obj/machinery/power/emitter,
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
+/obj/structure/table,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/ansem{
+	pixel_y = 2
 	},
-/area/awaymission/phoenix/tradeship/storage/ord)
-"ja" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/ansem{
+	pixel_y = 7
 	},
 /turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"jd" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/machinery/atmospherics/components/binary/pump/off/yellow/visible/layer2{
-	name = "Port Extractor";
-	target_pressure = 4500;
-	dir = 1
-	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/security
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "je" = (
 /obj/effect/turf_decal/arrows{
 	dir = 1
@@ -666,20 +515,12 @@
 "jq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
-"jw" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 6
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
+"jx" = (
+/obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "jD" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
 /obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
@@ -721,7 +562,6 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/shower)
 "ka" = (
@@ -737,10 +577,6 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "km" = (
@@ -766,7 +602,7 @@
 /area/awaymission/phoenix/tradeship/storage/freight/two)
 "kA" = (
 /obj/effect/turf_decal/vg_decals/atmos/mix,
-/turf/open/floor/engine/tritium,
+/turf/open/floor/engine/vacuum,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "kF" = (
 /obj/machinery/light/blacklight/directional/east,
@@ -777,9 +613,6 @@
 	dir = 4
 	},
 /obj/structure/sign/warning/no_smoking/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "kL" = (
@@ -805,24 +638,11 @@
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
-"kZ" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "la" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/blacklight/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"ll" = (
-/obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/iron,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "lm" = (
 /obj/machinery/status_display/shuttle/directional/west{
 	shuttle_id = "phoenix_tradership"
@@ -837,35 +657,12 @@
 	cable_layer = 1
 	},
 /obj/structure/cable/layer1,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "lr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"ls" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/cargo/mining,
-/obj/item/stack/ore/silver{
-	amount = 5
-	},
-/obj/item/stack/ore/titanium{
-	amount = 10
-	},
-/obj/item/stack/ore/gold{
-	amount = 5
-	},
-/obj/item/stack/ore/iron{
-	amount = 50
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "lw" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -881,15 +678,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"ly" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "lA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -897,29 +685,10 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"lB" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "lI" = (
 /obj/structure/girder/reinforced,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"lN" = (
-/obj/structure/table/reinforced,
-/obj/item/emitter_disk/blast{
-	pixel_x = -7;
-	pixel_y = 5
-	},
-/obj/item/emitter_disk/blast{
-	pixel_x = 6
-	},
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
 "lS" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
 /obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
@@ -937,7 +706,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/obj/effect/spawner/random/trash/mess,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
 "mh" = (
@@ -974,13 +742,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/crew/dorms)
-"mA" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/security
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "mD" = (
 /obj/machinery/door/airlock/colony_prefab{
 	name = "Bridge"
@@ -991,7 +752,6 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/unres,
 /obj/effect/mapping_helpers/airlock/access/any/away/command,
-/obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/iron/white,
 /area/awaymission/phoenix/tradeship/hallway/command)
 "mE" = (
@@ -1013,17 +773,20 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"mR" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "mT" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"mU" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "mZ" = (
 /obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 8
@@ -1076,6 +839,12 @@
 /obj/structure/marker_beacon/burgundy,
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"nU" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "nV" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/white{
@@ -1093,6 +862,15 @@
 /obj/machinery/hydroponics/constructable/fullupgrade,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
+"or" = (
+/obj/structure/cable,
+/obj/machinery/navbeacon{
+	location = "ptrader_bot5";
+	codes_txt = "patrol;next_patrol=ptrader_bot6"
+	},
+/mob/living/basic/bot/cleanbot/autopatrol,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
 "ox" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 4
@@ -1120,33 +898,15 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "oR" = (
-/obj/effect/spawner/random/structure/shipping_container,
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage/freight/one)
-"pf" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
-	dir = 6
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"ph" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage/atmos)
-"pk" = (
-/obj/effect/turf_decal/siding/white{
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
 	dir = 8
 	},
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
+/obj/effect/spawner/random/structure/shipping_container/station_appropriate{
+	spawn_loot_chance = 85
 	},
 /turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "pl" = (
 /obj/machinery/door/airlock/external{
 	id_tag = "phoenix_tradership_exitbolts"
@@ -1160,9 +920,6 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "pm" = (
 /obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "pw" = (
@@ -1172,29 +929,10 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"py" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/security
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage/freight/one)
 "pz" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"pG" = (
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "pI" = (
 /obj/structure/fluff/shower_drain,
 /obj/structure/curtain/cloth,
@@ -1204,31 +942,17 @@
 /area/awaymission/phoenix/tradeship/crew/shower)
 "pK" = (
 /obj/structure/girder/reinforced,
-/obj/effect/spawner/random/structure/grille,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
-"pL" = (
-/obj/effect/turf_decal/siding/white/corner,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "pN" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"pR" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
 "pW" = (
-/obj/effect/spawner/random/trash/graffiti,
+/obj/machinery/smesbank/super,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "pY" = (
@@ -1262,9 +986,6 @@
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "qo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "qp" = (
@@ -1313,7 +1034,11 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "ra" = (
-/obj/effect/spawner/random/trash/moisture_trap,
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#00FFFF"
+	},
+/obj/machinery/portable_atmospherics/canister/nob,
 /turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "rb" = (
@@ -1332,44 +1057,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"rm" = (
-/obj/machinery/blackbox_recorder,
+"rh" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
 /turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
-"ro" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/cargo/mining,
-/obj/item/stack/ore/uranium{
-	amount = 10
-	},
-/obj/item/stack/ore/titanium{
-	amount = 15
-	},
-/obj/item/stack/ore/iron{
-	amount = 50
-	},
-/obj/item/stack/ore/gold{
-	amount = 20
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "ru" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 9
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/obj/item/card/id/away{
-	icon_state = "eng_budget";
-	color = "#FF9900";
-	name = "Apprenticeship Freighter Engineering ID";
-	assignment = "Tradeship Engineer";
-	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's engineer.";
-	access = list("away_general","away_supply","away_maintenance","away_engineering")
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -1381,24 +1078,15 @@
 /obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
 	dir = 8
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "rA" = (
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
 "rQ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/purple/visible{
 	dir = 6
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -1416,12 +1104,6 @@
 /obj/effect/mapping_helpers/airlock/access/any/away/engineering,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
-"se" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "sg" = (
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway/command)
@@ -1432,12 +1114,19 @@
 /obj/structure/cable,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"sE" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
+"sp" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/button/door/directional/south{
+	name = "Windows Blast Door Control";
+	id = "phoenix_tradership_windows"
 	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+/obj/item/gun/ballistic/shotgun/riot/sol/super/plus{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/advanced/s12gauge/buckshot,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
 "sK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1450,7 +1139,7 @@
 	dir = 8;
 	id_tag = "ptsmix_in"
 	},
-/turf/open/floor/engine/tritium,
+/turf/open/floor/engine/vacuum,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "sN" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
@@ -1458,26 +1147,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"sS" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/plastic,
-/area/awaymission/phoenix/tradeship/crew/bath)
-"sV" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "tc" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 8;
@@ -1495,14 +1164,11 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
-"tL" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
+"tA" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 1
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "tM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1510,13 +1176,6 @@
 /obj/structure/cable,
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/shower)
-"tQ" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "tR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/arrows{
@@ -1541,28 +1200,11 @@
 /obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"ub" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/item/storage/medkit/robotic_repair/preemo/stocked,
-/obj/item/cybernetic_repair_paste,
-/obj/item/stack/medical/synth_repair,
-/obj/structure/closet/crate/science/robo,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "ut" = (
 /obj/effect/turf_decal/bot_red,
-/obj/structure/tank_holder,
+/obj/structure/tank_holder/extinguisher/advanced,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"uu" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "uv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -1570,6 +1212,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"uw" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "uB" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
 	dir = 4
@@ -1579,9 +1228,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
 	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -1614,10 +1260,6 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/obj/effect/mapping_helpers/apc/no_charge,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "ve" = (
@@ -1634,9 +1276,6 @@
 /obj/machinery/button/door/directional/south{
 	name = "External Shutter Control";
 	id = "phoenix_tradership_fs1e"
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
@@ -1684,9 +1323,6 @@
 	dir = 4
 	},
 /obj/structure/sign/warning/chem_diamond/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "we" = (
@@ -1716,9 +1352,6 @@
 	name = "Exterior Bolt Control";
 	pixel_x = 5
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "wp" = (
@@ -1732,11 +1365,8 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "ww" = (
-/obj/structure/fence/door/opened{
+/obj/structure/fence/door{
 	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -1751,9 +1381,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
 	dir = 10
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
@@ -1770,9 +1397,6 @@
 	dir = 4
 	},
 /obj/structure/sign/warning/cold_temp/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "wL" = (
@@ -1782,6 +1406,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
+"wQ" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "wT" = (
 /obj/machinery/atmospherics/components/binary/pump/on/green/visible/layer4{
 	dir = 4;
@@ -1816,7 +1445,8 @@
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "xk" = (
 /obj/machinery/computer/shuttle/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = list("away_supply")
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
@@ -1829,17 +1459,8 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "xJ" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
-"xN" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "xR" = (
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
@@ -1849,37 +1470,12 @@
 /obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"yf" = (
-/obj/structure/frame/machine,
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
-"yi" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage/freight/two)
 "yj" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
 "yw" = (
 /turf/open/floor/iron/recharge_floor,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
-"yB" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "yC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 4
@@ -1921,17 +1517,11 @@
 "yR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
 "yU" = (
 /obj/machinery/status_display/shuttle/directional/south{
 	shuttle_id = "phoenix_tradership"
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/bath)
@@ -1941,45 +1531,18 @@
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "zc" = (
 /obj/effect/turf_decal/bot_red,
-/obj/structure/tank_holder,
+/obj/structure/tank_holder/extinguisher/advanced,
 /turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"zf" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "zk" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"zm" = (
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "zn" = (
 /obj/machinery/wall_healer/free/directional/south,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"zr" = (
-/obj/structure/table/reinforced,
-/obj/item/mod/module/rad_protection,
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
-"zu" = (
-/obj/machinery/power/emitter{
-	dir = 4
-	},
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
 "zv" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
 	dir = 10
@@ -1987,9 +1550,6 @@
 /obj/machinery/atmospherics/components/binary/pump/on{
 	name = "Recycle Pump";
 	target_pressure = 4500
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -1999,9 +1559,6 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
 	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
 	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -2017,14 +1574,8 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage)
-"zT" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "zV" = (
-/turf/open/floor/engine/tritium,
+/turf/open/floor/engine/vacuum,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "zW" = (
 /obj/structure/girder/tram,
@@ -2087,13 +1638,6 @@
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
-"AZ" = (
-/obj/effect/turf_decal/siding/white,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "Bc" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/shuttle/cargo,
@@ -2104,8 +1648,18 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "Bp" = (
 /obj/structure/girder/reinforced,
-/obj/effect/spawner/random/structure/grille,
+/obj/structure/grille,
 /turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"Bq" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot3";
+	codes_txt = "patrol;next_patrol=ptrader_bot4"
+	},
+/mob/living/basic/bot/firebot{
+	bot_mode_flags = 31
+	},
+/turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "BE" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -2126,27 +1680,12 @@
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"BN" = (
-/turf/open/space/basic,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "BX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
-"Ch" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/nakamura,
-/obj/item/mod/module/springlock/contractor,
-/obj/item/mod/module/springlock/contractor,
-/obj/item/mod/control/pre_equipped/empty,
-/obj/item/mod/control/pre_equipped/empty,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "Cm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/arrows{
@@ -2203,9 +1742,6 @@
 	},
 /obj/machinery/status_display/evac/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
 "Dh" = (
@@ -2218,15 +1754,6 @@
 /obj/structure/cable/layer1,
 /turf/open/floor/iron/dark,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
-"Dn" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 8
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "Dp" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/plating,
@@ -2253,6 +1780,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway/command)
+"DG" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot6";
+	codes_txt = "patrol;next_patrol=ptrader_bot1"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
 "DO" = (
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
@@ -2269,7 +1803,6 @@
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/away/maintenance,
-/obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "Eh" = (
@@ -2280,7 +1813,6 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
 "Eo" = (
@@ -2315,33 +1847,8 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
-"ED" = (
-/obj/structure/table/reinforced,
-/obj/item/raw_anomaly_core/pyro{
-	pixel_y = 10;
-	pixel_x = -7
-	},
-/obj/item/anomaly_releaser{
-	pixel_y = -3;
-	pixel_x = 4
-	},
-/obj/item/circuitboard/machine/anomaly_refinery{
-	pixel_y = 6;
-	pixel_x = 4
-	},
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
 "EE" = (
 /turf/closed/wall/mineral/titanium/spaceship/interior,
-/area/awaymission/phoenix/tradeship/hallway)
-"EG" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/medic
-	},
-/turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "EN" = (
 /obj/structure/table/reinforced,
@@ -2364,9 +1871,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "EW" = (
@@ -2379,9 +1883,6 @@
 	},
 /obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
 	dir = 8
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
 	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -2447,9 +1948,6 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
 	dir = 4
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "Gd" = (
@@ -2463,12 +1961,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
-"GL" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage/freight/one)
 "GN" = (
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 1
@@ -2484,6 +1976,7 @@
 /area/awaymission/phoenix/tradeship/bridge)
 "GV" = (
 /obj/machinery/light/cold/directional/south,
+/obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "GW" = (
@@ -2502,27 +1995,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "Hg" = (
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 60
-	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
 "Hi" = (
-/obj/effect/turf_decal/siding/white/corner{
-	dir = 1
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
+/obj/structure/table/reinforced,
+/obj/item/language_manual/tradecreole,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
 "Hn" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -2555,13 +2038,6 @@
 "HI" = (
 /turf/closed/wall/mineral/titanium/spaceship,
 /area/awaymission/phoenix/tradeship/bridge)
-"HK" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "Ic" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/structure/cable,
@@ -2571,13 +2047,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
-"Ii" = (
-/obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/pod/light,
-/area/awaymission/phoenix/tradeship/storage/atmos)
 "Ik" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
 	dir = 4
@@ -2616,18 +2085,12 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
 	dir = 6
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "II" = (
 /obj/machinery/atmospherics/components/trinary/filter/flipped{
 	dir = 4;
 	name = "Output Filter B"
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -2660,9 +2123,6 @@
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "Jf" = (
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "Jm" = (
@@ -2708,13 +2168,6 @@
 /obj/structure/fence,
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"JC" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
-/turf/open/floor/iron/dark,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "JG" = (
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 4;
@@ -2725,10 +2178,6 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
-"JK" = (
-/obj/structure/table/reinforced,
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
 "JW" = (
 /obj/machinery/cryo_cell,
 /turf/open/floor/iron/smooth_large,
@@ -2738,10 +2187,6 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/obj/effect/mapping_helpers/apc/no_charge,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "Kd" = (
@@ -2760,16 +2205,15 @@
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
 "Km" = (
-/obj/effect/spawner/random/structure/shipping_container,
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/effect/spawner/random/structure/shipping_container/station_appropriate{
+	spawn_loot_chance = 85
+	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
-"Kt" = (
-/obj/machinery/light/floor,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "KG" = (
 /obj/machinery/vending/clothing{
 	all_products_free = 1;
@@ -2783,16 +2227,28 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage)
-"KP" = (
-/obj/machinery/light/blacklight/directional/west,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
+"KO" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
 	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/card/id/away{
+	icon_state = "sec_budget";
+	color = "#FF9900";
+	name = "Apprenticeship Freighter Captain ID";
+	assignment = "Tradeship Captain";
+	pixel_y = 4;
+	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's captain.";
+	access = list("away_general","away_supply","away_maintenance","away_engineering","away_command")
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
 "KQ" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
@@ -2819,24 +2275,16 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Lj" = (
-/obj/machinery/computer/monitor{
-	name = "Bridge Power Monitoring Console";
-	dir = 8
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "Ls" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
 	dir = 4
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"Lw" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 60
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
 "LB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/arrows,
@@ -2852,18 +2300,8 @@
 "LH" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"LO" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/command
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "LP" = (
 /obj/machinery/computer/mech_bay_power_console,
 /turf/open/floor/iron,
@@ -2896,32 +2334,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/bluespace,
 /area/awaymission/phoenix/tradeship/hallway)
-"Mf" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
-	pixel_y = 3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
-	pixel_y = -3
-	},
-/obj/structure/closet/crate/deforest,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "Mg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2933,35 +2345,32 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "Mt" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
+/obj/structure/table,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -6;
+	pixel_y = 8
 	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_y = 2
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "Mv" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/green/visible,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"My" = (
-/obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "MA" = (
-/obj/effect/spawner/random/structure/grille,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "MD" = (
-/obj/machinery/computer/atmos_control{
-	dir = 4;
-	atmos_chambers = list("ptsmix" = "Atmos Shipping Storage");
-	name = "Freighter Atmos Storage Monitoring Console";
-	control = 0
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "MH" = (
 /obj/machinery/light/blacklight/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
@@ -2978,10 +2387,7 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "MO" = (
-/obj/structure/tank_dispenser{
-	plasmatanks = 0;
-	oxygentanks = 0
-	},
+/obj/structure/tank_dispenser,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -3026,7 +2432,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/general/visible{
 	dir = 4
 	},
-/turf/open/indestructible/plating,
+/turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Nq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3042,22 +2448,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage)
-"NN" = (
-/obj/effect/spawner/random/trash/botanical_waste{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/iron/smooth_large,
-/area/awaymission/phoenix/tradeship/storage/bio)
-"NO" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
+"NS" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
 "NU" = (
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 8
@@ -3065,6 +2459,16 @@
 /obj/structure/window/reinforced/plasma/spawner/directional/east,
 /turf/open/floor/plating/airless,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"NZ" = (
+/mob/living/basic/bot/hygienebot{
+	bot_mode_flags = 31
+	},
+/obj/machinery/navbeacon{
+	location = "ptrader_bot1";
+	codes_txt = "patrol;next_patrol=ptrader_bot2"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
 "Og" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
@@ -3115,7 +2519,7 @@
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "ON" = (
 /obj/structure/cable,
-/obj/machinery/power/smes,
+/obj/machinery/power/smes/engineering,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "OQ" = (
@@ -3151,7 +2555,6 @@
 	},
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "Pq" = (
@@ -3159,11 +2562,9 @@
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
 "Ps" = (
-/obj/machinery/power/shuttle_engine/large{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "Pv" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -3178,7 +2579,6 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
 "PU" = (
@@ -3187,24 +2587,6 @@
 	},
 /turf/open/floor/engine/air,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"PX" = (
-/obj/structure/table/reinforced,
-/obj/item/raw_anomaly_core/pyro{
-	pixel_y = 12;
-	pixel_x = -6
-	},
-/obj/item/raw_anomaly_core/pyro{
-	pixel_x = 6;
-	pixel_y = 8
-	},
-/obj/item/assembly/signaler/anomaly/pyro{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/turf/open/floor/pod/dark{
-	initial_gas_mix = "TEMP=2.7"
-	},
-/area/awaymission/phoenix/tradeship/storage/ord)
 "PZ" = (
 /turf/closed/wall/mineral/titanium/spaceship/interior,
 /area/awaymission/phoenix/tradeship/storage)
@@ -3253,9 +2635,6 @@
 	dir = 4
 	},
 /obj/structure/sign/warning/vacuum/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "QI" = (
@@ -3268,7 +2647,7 @@
 	inlet_id = "ptsmix_in";
 	outlet_id = "ptsmix_out"
 	},
-/turf/open/floor/engine/tritium,
+/turf/open/floor/engine/vacuum,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "QQ" = (
 /obj/effect/turf_decal/siding/wood,
@@ -3290,34 +2669,9 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Rf" = (
-/obj/structure/table/wood,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/obj/item/flashlight/lamp/green{
-	pixel_x = 5;
-	pixel_y = 3
-	},
-/turf/open/floor/wood/tile,
-/area/awaymission/phoenix/tradeship/crew/dorms)
-"Rk" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/cargo/mining,
-/obj/item/stack/ore/iron{
-	amount = 50
-	},
-/obj/item/stack/ore/titanium{
-	amount = 10
-	},
-/obj/item/stack/ore/plasma{
-	amount = 15
-	},
-/obj/item/stack/ore/bluespace_crystal,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
 "RF" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 6
@@ -3351,7 +2705,6 @@
 	},
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
 "RN" = (
@@ -3369,9 +2722,6 @@
 	dir = 4
 	},
 /obj/structure/sign/departments/botany/alt1/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "RV" = (
@@ -3382,17 +2732,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
-"RZ" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/mod,
-/obj/item/mod/core/standard,
-/obj/item/mod/core/standard,
-/obj/item/mod/core/standard,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "Sg" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
 	dir = 5
@@ -3401,9 +2740,6 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold/green/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "Sh" = (
@@ -3411,9 +2747,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/bridge_pipe/purple/visible,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "Sj" = (
@@ -3441,15 +2774,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"St" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 1
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "SC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3457,30 +2781,9 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
 /area/awaymission/phoenix/tradeship/hallway)
-"SF" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/freezer{
-	name = "blood freezer";
-	desc = "A freezer containing packs of blood."
-	},
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "SK" = (
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/shower)
-"SL" = (
-/obj/structure/cable,
-/obj/machinery/smesbank/super,
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "SO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3495,30 +2798,12 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"SZ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/machinery/light/cold/directional/north,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plastic,
-/area/awaymission/phoenix/tradeship/crew/bath)
-"Tc" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage/freight/two)
 "Tg" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
-/turf/open/indestructible/plating,
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "Tr" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -3527,15 +2812,6 @@
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
-"TE" = (
-/obj/effect/turf_decal/siding/white{
-	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/storage)
 "TF" = (
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
@@ -3547,9 +2823,6 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "TJ" = (
 /obj/structure/cable/layer1,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/dark,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "TM" = (
@@ -3585,17 +2858,21 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "Uc" = (
 /obj/structure/girder/reinforced,
-/obj/effect/spawner/random/structure/grille,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Ue" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "Uh" = (
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "Ul" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
 "Uo" = (
@@ -3628,43 +2905,13 @@
 /turf/open/floor/bluespace,
 /area/awaymission/phoenix/tradeship/hallway)
 "UH" = (
-/obj/structure/table,
+/obj/machinery/blackbox_recorder,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "UJ" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
-"UQ" = (
-/obj/structure/fluff/shower_drain,
-/obj/machinery/shower/directional/south,
-/obj/structure/curtain/cloth,
-/obj/effect/turf_decal/trimline/dark_blue/end,
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit
-	},
-/turf/open/indestructible/kitchen,
-/area/awaymission/phoenix/tradeship/crew/shower)
-"UW" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/turf_decal/box/white{
-	color = "#CC9F00"
-	},
-/obj/structure/closet/crate/freezer{
-	name = "blood freezer";
-	desc = "A freezer containing packs of blood."
-	},
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/item/reagent_containers/blood/haemocyanin,
-/obj/effect/spawner/random/trash/graffiti{
-	spawn_loot_chance = 75
-	},
-/turf/open/floor/iron/shuttle/exploration,
-/area/awaymission/phoenix/tradeship/storage)
 "UY" = (
 /obj/structure/cable,
 /turf/open/floor/iron/shuttle/cargo,
@@ -3680,9 +2927,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
 	dir = 9
 	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "Vg" = (
@@ -3690,22 +2934,6 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
-"Vj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/obj/item/weldingtool/experimental{
-	pixel_y = -10;
-	pixel_x = 4
-	},
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix/ert/engie
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "Vk" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
 	dir = 10
@@ -3714,10 +2942,6 @@
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "Vo" = (
-/mob/living/basic/zombie{
-	infection_chance = 10;
-	outfit = /datum/outfit/phoenix
-	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
 "Vv" = (
@@ -3752,36 +2976,19 @@
 /turf/open/floor/engine/air,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "VW" = (
-/obj/machinery/power/shuttle_engine/huge{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"VX" = (
-/obj/machinery/power/terminal{
-	cable_layer = 1
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+/obj/structure/fireaxecabinet/jawsofrecovery/directional/east,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
 "VY" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/mapping_helpers/apc/no_charge,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "VZ" = (
 /turf/closed/wall/r_wall/plastitanium,
 /area/awaymission/phoenix/tradeship/storage/ord)
-"Wd" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/effect/spawner/random/trash/grime,
-/turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Wg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3796,9 +3003,6 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "Wi" = (
@@ -3878,13 +3082,6 @@
 /obj/structure/window/reinforced/plasma/spawner/directional/south,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"Ye" = (
-/obj/machinery/light/blacklight/directional/east,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/cargo,
-/area/awaymission/phoenix/tradeship/hallway)
 "Ym" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3893,23 +3090,15 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "YB" = (
 /obj/machinery/firealarm/directional/north,
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "YC" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = list("away_supply")
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
-"YE" = (
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 80
-	},
-/turf/open/floor/pod/light,
-/area/awaymission/phoenix/tradeship/storage/atmos)
 "YG" = (
 /obj/machinery/atmospherics/components/binary/valve/on{
 	dir = 4;
@@ -3957,7 +3146,7 @@
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
 "Zw" = (
-/obj/effect/spawner/random/structure/grille,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
 "Zy" = (
@@ -3982,20 +3171,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "phoenix_tradeship_cycle_dock"
 	},
-/obj/effect/mapping_helpers/airlock/welded,
 /turf/open/floor/plating,
-/area/awaymission/phoenix/tradeship/hallway)
-"ZK" = (
-/obj/machinery/status_display/shuttle/directional/west{
-	shuttle_id = "phoenix_tradership"
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/effect/spawner/random/trash/grime{
-	spawn_loot_chance = 10
-	},
-/turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "ZM" = (
 /obj/machinery/light/blacklight/directional/east,
@@ -4005,9 +3181,11 @@
 /obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
 	dir = 4
 	},
-/obj/structure/sign/warning/gas_mask/directional/east,
 /obj/effect/turf_decal/bot_blue,
-/obj/machinery/suit_storage_unit/open,
+/obj/machinery/suit_storage_unit/standard_unit{
+	storage_type = /obj/item/tank/internals/oxygen/yellow
+	},
+/obj/structure/sign/warning/explosives/alt/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "ZO" = (
@@ -4151,29 +3329,29 @@ nt
 (2,1,1) = {"
 nt
 nt
+nt
 DO
-DO
-WZ
+dt
 GN
 Mc
 hA
-Tg
+Ps
 hA
 Mc
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
 hA
 Uu
 nt
@@ -4267,30 +3445,30 @@ nt
 (3,1,1) = {"
 nt
 nt
-DO
+nt
 DO
 Sl
 GN
 FH
 FH
-xN
-xN
-xN
-xN
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-lB
-bQ
-lB
-lB
-lB
-lB
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
 hA
 hA
 hA
@@ -4385,32 +3563,32 @@ nt
 nt
 DO
 DO
-Sl
+WZ
 GN
 FH
 FH
 FH
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-ff
-ff
-hj
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Us
+Us
 hA
 nt
 nt
@@ -4439,17 +3617,17 @@ qM
 qM
 qM
 qM
-zT
-zm
-zm
-zT
-zT
 qM
 qM
 qM
 qM
-zT
-zT
+qM
+qM
+qM
+qM
+qM
+qM
+qM
 PZ
 Qc
 Ne
@@ -4499,34 +3677,34 @@ nt
 (5,1,1) = {"
 nt
 nt
-nt
 DO
-dt
+DO
+Sl
 GN
 FH
 FH
 FH
 FH
 FH
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-ff
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
 Dj
-hj
+Us
 hA
 nt
 nt
@@ -4549,11 +3727,11 @@ Qc
 Qc
 Qc
 Qc
-zT
 qM
 qM
-zT
-zT
+qM
+qM
+qM
 ko
 aB
 aB
@@ -4561,7 +3739,7 @@ aB
 aB
 aB
 aB
-iw
+vT
 qM
 ko
 aB
@@ -4615,7 +3793,7 @@ nt
 (6,1,1) = {"
 nt
 nt
-nt
+DO
 DO
 Sl
 GN
@@ -4627,22 +3805,22 @@ FH
 FH
 FH
 FH
-xN
-xN
-xN
-xN
 FH
 FH
-xN
-xN
-xN
-xN
-xN
-xN
-xN
-ff
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
 TJ
-hj
+Us
 hA
 nt
 nt
@@ -4659,33 +3837,33 @@ Qc
 Qc
 PZ
 qM
-zT
+qM
 ko
-TE
+aB
 aB
 aB
 aB
 aB
 aB
 vT
-zT
+qM
 qM
 rZ
-RZ
+DP
 hY
-NO
-ro
+DP
+DP
 hY
-NO
+DP
 zL
-zT
+qM
 rZ
-sV
+DP
 hY
-NO
-kZ
+DP
+zL
 Cx
-py
+eI
 eI
 eI
 eI
@@ -4731,9 +3909,9 @@ nt
 (7,1,1) = {"
 nt
 nt
+nt
 DO
-DO
-WZ
+dt
 GN
 FH
 FH
@@ -4743,7 +3921,7 @@ FH
 FH
 Us
 Us
-JC
+Us
 Us
 FH
 FH
@@ -4755,9 +3933,9 @@ FH
 FH
 FH
 FH
-xN
-xN
-VX
+FH
+FH
+lq
 ON
 hA
 Wu
@@ -4770,51 +3948,51 @@ nt
 nt
 Wu
 Qc
-pL
-gv
+ko
 aB
-iw
+aB
+vT
 qM
 qM
 rZ
-NO
-se
-sV
-NO
+DP
 hY
-sV
-zL
-zT
-qM
-rZ
-NO
-km
-NO
-sV
-km
-dT
+DP
+DP
+hY
+DP
 zL
 qM
+qM
 rZ
-NO
+DP
 km
-NO
+DP
+DP
+km
+DP
+zL
+qM
+rZ
+DP
+km
+DP
 zL
 Cx
 wL
-XL
-GL
-XL
-XL
-oR
-GL
-XL
+uw
 oR
 XL
-GL
+uw
+oR
 XL
+uw
+oR
 XL
-GL
+uw
+oR
+XL
+uw
 oR
 vo
 uR
@@ -4847,7 +4025,7 @@ nt
 (8,1,1) = {"
 nt
 nt
-DO
+nt
 DO
 Sl
 GN
@@ -4858,8 +4036,8 @@ FH
 FH
 FH
 Us
-ll
-LP
+yw
+Qq
 Us
 FH
 FH
@@ -4871,8 +4049,8 @@ FH
 FH
 FH
 FH
-xN
-xN
+FH
+FH
 lq
 ON
 hA
@@ -4886,52 +4064,52 @@ nt
 HC
 MU
 Qc
-AZ
-SF
-km
-St
-qM
-zm
 rZ
-NO
-km
-Mf
 DP
 km
-NO
 zL
 qM
 qM
 rZ
 DP
-se
-RZ
-NO
+km
+DP
+DP
+km
+DP
+zL
+qM
+qM
+rZ
+DP
 hY
-NO
+DP
+DP
+hY
+DP
 zL
 qM
 rZ
-Ch
-HK
-NO
+DP
+hY
+DP
 zL
 Cx
 WI
-GL
-GL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-GL
-GL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
 uR
 Jr
@@ -4965,7 +4143,7 @@ nt
 nt
 DO
 DO
-Sl
+WZ
 GN
 FH
 FH
@@ -4974,8 +4152,8 @@ FH
 FH
 FH
 Us
-yw
-mR
+jE
+LP
 Us
 FH
 FH
@@ -4986,9 +4164,9 @@ FH
 FH
 FH
 FH
-LO
 FH
-xN
+FH
+FH
 lq
 ON
 hA
@@ -5002,52 +4180,52 @@ HC
 NU
 MU
 Qc
-AZ
-SF
-HK
-zL
-zT
-qM
 rZ
-Mf
-hY
-Mf
-ub
-hY
-NO
-zL
-qM
-qM
-rZ
-RZ
-hY
-RZ
 DP
 hY
-ls
+zL
+qM
+qM
+rZ
+DP
+hY
+DP
+DP
+hY
+DP
+zL
+qM
+qM
+rZ
+DP
+hY
+DP
+DP
+hY
+DP
 zL
 qM
 rZ
-Ch
-se
-NO
+DP
+hY
+DP
 zL
 Cx
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
-GL
+mU
+Lj
 XL
+mU
+Lj
 XL
-XL
-GL
-XL
-GL
-XL
-GL
-XL
-XL
-XL
+mU
+Lj
 XL
 uR
 uR
@@ -5079,9 +4257,9 @@ nt
 (10,1,1) = {"
 nt
 nt
-nt
 DO
-dt
+DO
+Sl
 GN
 FH
 FH
@@ -5104,9 +4282,9 @@ FH
 FH
 FH
 FH
-xN
-lB
-SL
+FH
+FH
+MN
 hA
 MU
 MA
@@ -5119,52 +4297,52 @@ MA
 MU
 Qc
 rZ
-SF
-se
+DP
+hY
 zL
 qM
 qM
 rZ
 DP
 hY
-Mf
+DP
 DP
 hY
-sV
-zL
-qM
-zT
-rZ
-DP
-km
-sV
-NO
-km
 DP
 zL
 qM
+qM
 rZ
-Ch
+DP
 km
-NO
+DP
+DP
+km
+DP
+zL
+qM
+rZ
+DP
+km
+DP
 zL
 Cx
 XL
-XL
+uw
 oR
 XL
-XL
-GL
-XL
-GL
+uw
 oR
 XL
-XL
-XL
-XL
-XL
+uw
 oR
-GL
+XL
+uw
+oR
+XL
+uw
+oR
+XL
 uR
 eQ
 qp
@@ -5195,7 +4373,7 @@ nt
 (11,1,1) = {"
 nt
 nt
-nt
+DO
 DO
 Sl
 GN
@@ -5207,7 +4385,7 @@ FH
 FH
 Us
 yw
-mR
+Qq
 fS
 MN
 MN
@@ -5221,7 +4399,7 @@ MN
 MN
 MN
 MN
-io
+MN
 kj
 hA
 MU
@@ -5235,51 +4413,51 @@ MA
 MU
 Qc
 rZ
-UW
-Kt
-zL
-qM
-qM
-AZ
 DP
 km
-NO
-cB
-km
-NO
 zL
-zT
+qM
 qM
 rZ
-NO
-hY
-NO
-NO
-hY
-Rk
+DP
+km
+DP
+DP
+km
+DP
 zL
-zT
+qM
+qM
 rZ
 DP
 hY
-sV
+DP
+DP
+hY
+DP
+zL
+qM
+rZ
+DP
+hY
+DP
 zL
 Cx
 WI
-XL
-XL
+MD
+MD
 WI
-GL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-GL
-XL
+MD
+MD
 WI
-GL
-XL
+MD
+MD
 WI
 uR
 Jr
@@ -5336,9 +4514,9 @@ FH
 FH
 FH
 FH
-lB
-lB
-lB
+FH
+FH
+FH
 hA
 MU
 MU
@@ -5350,19 +4528,19 @@ MA
 MU
 MU
 Qc
-pG
-pk
+mq
+CZ
 CZ
 cl
-zT
-zT
+qM
+qM
 rZ
-gI
+DP
 hY
 DP
 DP
 hY
-ub
+DP
 zL
 qM
 qM
@@ -5373,29 +4551,29 @@ CZ
 CZ
 CZ
 CZ
-Hi
+cl
 qM
 mq
 CZ
 CZ
 CZ
-Hi
+cl
 Cx
 XL
-GL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
-XL
-XL
-XL
-XL
-XL
-GL
-XL
-XL
-XL
+mU
+Lj
 XL
 uR
 uR
@@ -5467,35 +4645,35 @@ MU
 pK
 Qc
 PZ
-zT
 qM
 qM
 qM
-zT
+qM
+qM
 mq
 CZ
 CZ
 CZ
 CZ
 CZ
-Dn
+CZ
 cl
 qM
-zT
-zT
 qM
-zT
+qM
+qM
+qM
 qM
 qM
 qM
 qM
 Nt
-zT
+qM
 Ny
 KL
-zT
-zT
-zm
+hu
+hu
+hu
 Cx
 XL
 XL
@@ -5510,8 +4688,8 @@ Ej
 XL
 XL
 XL
-GL
-GL
+XL
+XL
 XL
 uR
 eQ
@@ -5630,14 +4808,14 @@ Eu
 Eu
 Eu
 uR
-Rf
+bu
 ol
 uR
 tq
 Zt
 uR
 ol
-Rf
+KO
 uR
 uR
 uR
@@ -5670,10 +4848,10 @@ LH
 hp
 TF
 Fm
-KP
-Mt
-My
-KP
+ua
+TF
+UY
+ua
 Fm
 ua
 eZ
@@ -5690,11 +4868,11 @@ EO
 TF
 TF
 lI
-Mt
-Mt
-My
-Mt
-Mt
+TF
+TF
+UY
+TF
+TF
 lI
 TF
 hp
@@ -5739,10 +4917,10 @@ TF
 TF
 ah
 Fm
-KP
-Mt
-Mt
-ZK
+ua
+TF
+TF
+lm
 lI
 Za
 uR
@@ -5762,12 +4940,12 @@ uR
 uR
 Tr
 zW
-JK
-Lw
+Hi
+AG
+AG
 AG
 GQ
 RN
-MD
 nP
 Tr
 FW
@@ -5783,13 +4961,13 @@ Eu
 Eu
 EE
 MO
-TF
+Bq
 TF
 lA
-Mt
-Mt
-My
-Mt
+TF
+TF
+UY
+TF
 Wo
 TF
 UY
@@ -5806,41 +4984,41 @@ TF
 TF
 TF
 lw
-Mt
-Mt
-My
-Mt
-Mt
+TF
+TF
+ec
+TF
+TF
 Hn
 TF
 TF
 TF
 TF
 lA
-Mt
-Mt
-Mt
-Mt
+TF
+TF
+TF
+TF
+zY
+TF
+TF
+TF
+TF
 zY
 TF
 TF
 TF
 TF
 zY
-Mt
-Mt
-Mt
-Mt
-zY
 TF
 TF
 TF
 TF
 zY
-Mt
-Mt
-My
-Mt
+TF
+TF
+UY
+TF
 zY
 TF
 TF
@@ -5855,10 +5033,10 @@ TF
 TF
 Mg
 zY
-Mt
-Mt
-Mt
-Mt
+TF
+TF
+NZ
+TF
 TF
 TF
 TO
@@ -5878,13 +5056,13 @@ pY
 pY
 Tr
 RK
-JK
-Lw
+NS
 AG
-pR
+AG
+AG
+AG
 AS
-Lw
-Lw
+AG
 bB
 ka
 "}
@@ -5898,7 +5076,7 @@ Eu
 Eu
 Eu
 wn
-Mt
+TF
 TF
 TF
 Ag
@@ -6013,7 +5191,7 @@ Dg
 jq
 yR
 ZI
-Vj
+Ft
 Ft
 Ft
 Ft
@@ -6130,7 +5308,7 @@ Eu
 Eu
 Eu
 EW
-mA
+TF
 TF
 TF
 IL
@@ -6210,7 +5388,7 @@ TF
 Oh
 TF
 TO
-hE
+sg
 sg
 sg
 tT
@@ -6247,13 +5425,13 @@ Eu
 Eu
 EE
 ut
-TF
+as
 TF
 uv
-Mt
-Mt
-ly
-Mt
+TF
+TF
+Wg
+TF
 Ex
 TF
 TF
@@ -6270,41 +5448,41 @@ TF
 TF
 TF
 Oh
-Mt
-Mt
-My
-Mt
-Mt
+TF
+TF
+or
+TF
+TF
 we
 TF
 TF
 TF
 TF
 uv
-Mt
-Mt
-My
-Mt
-zY
-EG
 TF
 TF
+UY
 TF
-zY
-Mt
-ly
-Mt
-Mt
 zY
 TF
 TF
 TF
 TF
 zY
-Mt
-ly
-Mt
-Mt
+TF
+Wg
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+Wg
+TF
+TF
 zY
 TF
 TF
@@ -6319,10 +5497,10 @@ TF
 TF
 Mg
 zY
-Mt
-Mt
-Mt
-Mt
+TF
+TF
+DG
+TF
 TF
 TF
 TO
@@ -6342,12 +5520,12 @@ pY
 pY
 Tr
 EN
-JK
+NS
+AG
 AG
 AG
 AG
 Pv
-AG
 AG
 qd
 ka
@@ -6366,10 +5544,10 @@ YB
 Xi
 TF
 Fm
-Ye
-Mt
-ly
-Ye
+MH
+TF
+Wg
+MH
 Fm
 MH
 TF
@@ -6386,11 +5564,11 @@ zk
 TF
 TF
 lI
-Mt
-Mt
-My
-Mt
-Mt
+TF
+TF
+UY
+TF
+TF
 lI
 TF
 Xi
@@ -6435,10 +5613,10 @@ TF
 TF
 TS
 Fm
-Ye
-Mt
-Mt
-fD
+MH
+TF
+TF
+ZD
 lI
 zn
 QT
@@ -6458,13 +5636,13 @@ eH
 eH
 Tr
 zW
-JK
+NS
 AG
 AG
-Lj
+AG
 kX
 hG
-nP
+sp
 Tr
 FW
 "}
@@ -6588,16 +5766,16 @@ nt
 nt
 nt
 nt
-BN
-Ps
+dU
+nU
 XS
-zf
-zf
-zf
-zf
-uu
-uu
-uu
+vk
+vk
+vk
+vk
+vk
+vk
+vk
 vk
 vk
 dM
@@ -6611,7 +5789,7 @@ VY
 RF
 gC
 gC
-tQ
+gC
 Ra
 zI
 mF
@@ -6647,7 +5825,7 @@ cj
 on
 aJ
 gM
-ph
+ra
 AH
 Fc
 Nq
@@ -6657,7 +5835,7 @@ zc
 zc
 zc
 qt
-Tc
+nF
 nF
 nF
 nF
@@ -6676,7 +5854,7 @@ nF
 QT
 QT
 QT
-SZ
+Lc
 Zy
 fQ
 QT
@@ -6704,20 +5882,20 @@ nt
 nt
 nt
 nt
-BN
-aF
+dU
+fb
 XS
-zf
-zf
-zf
-zf
-uu
-uu
-uu
+vk
+vk
+vk
+vk
+vk
+vk
+vk
 vk
 vk
 jT
-zf
+vk
 vk
 vk
 ox
@@ -6757,13 +5935,13 @@ CM
 JW
 cK
 SO
-NN
+Js
 on
-NN
+Js
 Vg
 aJ
 gM
-ph
+gM
 lU
 eE
 jh
@@ -6774,25 +5952,25 @@ nV
 Pj
 qt
 nF
-nF
+rh
 Km
 nF
-Tc
-Tc
-nF
-nF
+rh
 Km
 nF
+rh
+Km
 nF
-Tc
+rh
+Km
 nF
-nF
-Tc
+rh
+Km
 nF
 QT
-gJ
-bu
-da
+jO
+TR
+Fw
 Vw
 fQ
 QT
@@ -6819,17 +5997,17 @@ nt
 (25,1,1) = {"
 nt
 nt
-BN
-BN
-VW
+dU
+dU
+tA
 XS
-zf
-zf
-zf
-uu
-uu
-uu
-uu
+vk
+vk
+vk
+vk
+vk
+vk
+vk
 vk
 vk
 jT
@@ -6860,10 +6038,10 @@ Dh
 Wp
 fr
 IO
-zu
-lN
 FU
-iX
+IO
+FU
+FU
 IO
 FU
 IO
@@ -6873,13 +6051,13 @@ qc
 xc
 YM
 SO
-NN
+Js
 on
-NN
+Js
 on
 aJ
 gM
-ra
+gM
 lU
 pN
 jk
@@ -6887,23 +6065,23 @@ Kd
 pN
 jk
 Kd
-eE
+Rf
 qt
 UJ
-Tc
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-Tc
-Tc
+jx
+jx
 UJ
-Tc
-nF
+jx
+jx
 UJ
 QT
 QT
@@ -6935,16 +6113,16 @@ nt
 (26,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+dU
+dU
+fb
 XS
-zf
-zf
-zf
-uu
-uu
-uu
+vk
+vk
+vk
+vk
+vk
+vk
 vk
 vk
 vk
@@ -6959,7 +6137,7 @@ uS
 uS
 lS
 uS
-ja
+uS
 Ra
 VJ
 cN
@@ -6977,10 +6155,10 @@ Wp
 fr
 IO
 FU
-PX
+IO
 FU
 FU
-zr
+IO
 FU
 IO
 fr
@@ -7006,20 +6184,20 @@ wT
 GV
 qt
 nF
-Tc
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
-Tc
+Ue
+wQ
 nF
-Tc
-nF
-nF
-nF
-nF
-Tc
-nF
-Tc
+Ue
+wQ
 nF
 QT
 jO
@@ -7028,7 +6206,7 @@ Fw
 Ws
 fQ
 QT
-UH
+Mt
 Vo
 eH
 eH
@@ -7051,15 +6229,15 @@ nt
 (27,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+dU
+dU
+fb
 XS
-zf
-zf
-zf
-uu
-uu
+vk
+vk
+vk
+vk
+vk
 vk
 vk
 vk
@@ -7074,8 +6252,8 @@ ox
 vk
 vk
 wp
-zf
-zf
+vk
+vk
 Wi
 et
 cN
@@ -7093,10 +6271,10 @@ Wp
 fr
 IO
 FU
-ED
+IO
 FU
 FU
-zr
+IO
 FU
 IO
 fr
@@ -7107,7 +6285,7 @@ WK
 XK
 Js
 on
-NN
+Js
 on
 aJ
 fa
@@ -7122,19 +6300,19 @@ Ik
 fa
 qt
 nF
-nF
-Km
-Tc
-nF
+rh
 Km
 nF
-nF
+rh
 Km
 nF
-Tc
+rh
 Km
 nF
+rh
+Km
 nF
+rh
 Km
 nF
 QT
@@ -7144,8 +6322,8 @@ Lc
 Zy
 fQ
 QT
-UH
-sE
+iX
+Vo
 eH
 eH
 nt
@@ -7168,14 +6346,14 @@ nt
 nt
 nt
 nt
-BN
-Ps
+dU
+nU
 XS
-zf
-zf
-jw
-yB
-yB
+vk
+vk
+RF
+gC
+gC
 gC
 gC
 gC
@@ -7190,8 +6368,8 @@ ox
 OA
 uS
 mM
-zf
-zf
+vk
+vk
 Wi
 cN
 cN
@@ -7209,7 +6387,7 @@ Wp
 fr
 FU
 FU
-yf
+FU
 FU
 FU
 FU
@@ -7226,10 +6404,10 @@ hO
 Js
 on
 aJ
-YE
-YE
+eE
+eE
 rQ
-Ii
+pm
 Sh
 pm
 zv
@@ -7238,30 +6416,30 @@ Ve
 eE
 qt
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
 QT
 vD
 YW
 Fw
-sS
+Fw
 yU
 QT
-rm
-sE
+UH
+Vo
 eH
 eH
 nt
@@ -7284,14 +6462,14 @@ nt
 nt
 nt
 nt
-BN
-aF
+dU
+fb
 XS
-zf
-uu
-tL
-uu
-uu
+vk
+vk
+ox
+vk
+vk
 vk
 vk
 vk
@@ -7306,8 +6484,8 @@ ox
 wp
 vk
 sN
-Wd
-ja
+uS
+uS
 KQ
 PU
 cN
@@ -7337,37 +6515,37 @@ qc
 xc
 YM
 cK
-NN
+Js
 on
-NN
+Js
 on
 aJ
-YE
-YE
+eE
+eE
 II
 qo
 ru
 Ai
-YE
+eE
 uB
-YE
-YE
+eE
+eE
 qt
 yN
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
-nF
-nF
-nF
-nF
-Tc
-nF
-nF
-Tc
-nF
-nF
+Ue
+wQ
 jI
 dc
 dc
@@ -7399,14 +6577,14 @@ nt
 (30,1,1) = {"
 nt
 nt
-nt
-BN
-Ps
+dU
+dU
+tA
 XS
-zf
-uu
-tL
-uu
+vk
+vk
+ox
+vk
 vk
 vk
 vk
@@ -7422,7 +6600,7 @@ ox
 wp
 vk
 vk
-pf
+Zs
 Sq
 xR
 Wi
@@ -7453,9 +6631,9 @@ bj
 JW
 cK
 cK
-NN
+Js
 on
-NN
+Js
 Vg
 aJ
 Dp
@@ -7475,7 +6653,6 @@ CS
 CS
 CS
 CS
-yi
 CS
 CS
 CS
@@ -7484,7 +6661,8 @@ CS
 CS
 CS
 CS
-yi
+CS
+CS
 dc
 fd
 SK
@@ -7515,14 +6693,14 @@ nt
 (31,1,1) = {"
 nt
 nt
-nt
-BN
-aF
+dU
+dU
+fb
 XS
-zf
-uu
-tL
-uu
+vk
+vk
+ox
+vk
 vk
 vk
 vk
@@ -7539,7 +6717,7 @@ sN
 uS
 uS
 wG
-jd
+Eo
 Ra
 wk
 qh
@@ -7568,7 +6746,7 @@ Wp
 bj
 bd
 cK
-Js
+VW
 Js
 on
 Js
@@ -7602,7 +6780,7 @@ Cz
 Cz
 Cz
 dc
-UQ
+fd
 SK
 SK
 Zm
@@ -7631,13 +6809,13 @@ nt
 (32,1,1) = {"
 nt
 nt
-BN
-BN
-VW
+dU
+dU
+fb
 XS
-zf
-uu
-tL
+vk
+vk
+ox
 vk
 vk
 vk
@@ -7655,7 +6833,7 @@ gC
 gC
 gC
 gC
-tQ
+gC
 Ra
 nl
 za
@@ -7747,12 +6925,12 @@ nt
 (33,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+nt
+dU
+nU
 XS
-zf
-uu
+vk
+vk
 YG
 vk
 vk
@@ -7863,9 +7041,9 @@ nt
 (34,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+nt
+dU
+fb
 XS
 IN
 Zb

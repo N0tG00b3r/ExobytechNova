@@ -44,9 +44,6 @@
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"aF" = (
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "aJ" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage/atmos)
@@ -105,6 +102,20 @@
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
+"bH" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/gun/ballistic/revolver/c38/super/empty,
+/obj/item/gun/ballistic/revolver/c38/super/empty,
+/obj/item/gun/ballistic/revolver/c38/super/empty,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "bK" = (
 /obj/machinery/atmospherics/components/trinary/mixer/on{
 	dir = 1
@@ -164,6 +175,20 @@
 "dc" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/crew/shower)
+"de" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/gun/ballistic/shotgun/riot/sol/super/empty,
+/obj/item/gun/ballistic/shotgun/riot/sol/super/empty,
+/obj/item/gun/ballistic/shotgun/riot/sol/super/empty,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "df" = (
 /turf/open/floor/plating/airless,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
@@ -267,6 +292,20 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
+"eK" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/ammo_box/advanced/s12gauge/express,
+/obj/item/ammo_box/advanced/s12gauge/express,
+/obj/item/ammo_box/advanced/s12gauge/express,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "eQ" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -421,7 +460,7 @@
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
 "hG" = (
-/obj/machinery/computer/crew{
+/obj/machinery/computer/apc_control/away{
 	dir = 8
 	},
 /turf/open/floor/oldshuttle,
@@ -510,6 +549,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/hallway)
+"jx" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "jD" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
 /obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
@@ -632,10 +675,9 @@
 /obj/machinery/light/blacklight/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
-"ll" = (
-/obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/iron,
-/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"lh" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "lm" = (
 /obj/machinery/status_display/shuttle/directional/west{
 	shuttle_id = "phoenix_tradership"
@@ -695,6 +737,20 @@
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
+"mb" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/gun/ballistic/automatic/pistol/no_mag,
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/gun/ballistic/automatic/pistol/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/no_mag,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "mf" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -769,8 +825,17 @@
 "mT" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"mU" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "mZ" = (
 /obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 8
@@ -840,6 +905,19 @@
 /obj/machinery/hydroponics/constructable/fullupgrade,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
+"op" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/button/door/directional/south{
+	name = "Windows Blast Door Control";
+	id = "phoenix_tradership_windows"
+	},
+/obj/item/gun/ballistic/shotgun/riot/sol/super/plus{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/advanced/s12gauge/buckshot,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
 "or" = (
 /obj/structure/cable,
 /obj/machinery/navbeacon{
@@ -876,7 +954,11 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "oR" = (
-/obj/effect/spawner/random/structure/shipping_container,
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/nanotrasen,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
 "pl" = (
@@ -972,6 +1054,20 @@
 "qt" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
+"qu" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/gun/ballistic/automatic/nt20/empty,
+/obj/item/gun/ballistic/automatic/nt20/empty,
+/obj/item/gun/ballistic/automatic/nt20/empty,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "qv" = (
 /obj/structure/table,
 /obj/machinery/status_display/shuttle/directional/east{
@@ -1006,6 +1102,11 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "ra" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#00FFFF"
+	},
+/obj/machinery/portable_atmospherics/canister/nob,
 /turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "rb" = (
@@ -1024,6 +1125,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"rh" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "ru" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 9
@@ -1153,6 +1261,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"uw" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "uB" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
 	dir = 4
@@ -1340,6 +1455,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/one)
+"wQ" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "wT" = (
 /obj/machinery/atmospherics/components/binary/pump/on/green/visible/layer4{
 	dir = 4;
@@ -1374,7 +1494,8 @@
 /area/awaymission/phoenix/tradeship/storage/atmos)
 "xk" = (
 /obj/machinery/computer/shuttle/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = list("away_supply")
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
@@ -1386,9 +1507,40 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"xu" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/gear{
+	name = "secure ordnance crate";
+	desc = "A secure gear crate. A warning label claims the contents contain 'military ordnances', whatever that means."
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_x = -6
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_x = 5
+	},
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "xJ" = (
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"xL" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c9mm,
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "xR" = (
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
@@ -1608,15 +1760,26 @@
 	},
 /turf/open/floor/pod/light,
 /area/awaymission/phoenix/tradeship/storage/atmos)
-"BN" = (
-/turf/open/space/basic,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "BX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
+"Cd" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/ammo_box/c45/large,
+/obj/item/ammo_box/c45/large,
+/obj/item/ammo_box/c45/large,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "Cm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/arrows{
@@ -1656,6 +1819,14 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"CX" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/nthi,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
 "CZ" = (
@@ -1792,6 +1963,20 @@
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"ER" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/gun/ballistic/automatic/ar,
+/obj/item/gun/ballistic/automatic/ar,
+/obj/item/gun/ballistic/automatic/ar,
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "ET" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
@@ -1885,6 +2070,23 @@
 /obj/machinery/atmospherics/miner/nitrogen,
 /turf/open/floor/engine/n2,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Gw" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/ammo_box/magazine/m223,
+/obj/item/ammo_box/magazine/m223,
+/obj/item/ammo_box/magazine/m223,
+/obj/item/ammo_box/magazine/m223,
+/obj/item/ammo_box/magazine/m223,
+/obj/item/ammo_box/magazine/m223,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "GG" = (
 /obj/machinery/button/door/directional/west{
 	name = "Shutter Control";
@@ -2113,6 +2315,23 @@
 /obj/machinery/cryo_cell,
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/phoenix/tradeship/storage/bio)
+"JZ" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/ammo_box/speedloader/c38/dumdum,
+/obj/item/ammo_box/speedloader/c38/dumdum,
+/obj/item/ammo_box/speedloader/c38/dumdum,
+/obj/item/ammo_box/speedloader/c38/true,
+/obj/item/ammo_box/speedloader/c38/true,
+/obj/item/ammo_box/speedloader/c38/true,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "Kb" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -2136,7 +2355,11 @@
 /turf/open/floor/iron,
 /area/awaymission/phoenix/tradeship/crew/dorms)
 "Km" = (
-/obj/effect/spawner/random/structure/shipping_container,
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/nthi/precious,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/storage/freight/two)
 "KG" = (
@@ -2200,12 +2423,10 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Lj" = (
-/obj/machinery/computer/monitor{
-	name = "Bridge Power Monitoring Console";
-	dir = 8
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "Ls" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
 	dir = 4
@@ -2295,14 +2516,9 @@
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
 "MD" = (
-/obj/machinery/computer/atmos_control{
-	dir = 4;
-	atmos_chambers = list("ptsmix" = "Atmos Shipping Storage");
-	name = "Freighter Atmos Storage Monitoring Console";
-	control = 0
-	},
-/turf/open/floor/oldshuttle,
-/area/awaymission/phoenix/tradeship/bridge)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "MH" = (
 /obj/machinery/light/blacklight/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
@@ -2364,7 +2580,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/general/visible{
 	dir = 4
 	},
-/turf/open/indestructible/plating,
+/turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Nq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2379,6 +2595,23 @@
 "Ny" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"NM" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/gear{
+	name = "secure ordnance crate";
+	desc = "A secure gear crate. A warning label claims the contents contain 'military ordnances', whatever that means."
+	},
+/obj/item/storage/box/fragnades{
+	pixel_x = -6
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_x = 5
+	},
+/turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage)
 "NS" = (
 /obj/structure/table/reinforced,
@@ -2494,17 +2727,18 @@
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
 "Ps" = (
-/obj/machinery/power/shuttle_engine/large{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "Pv" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
+"PA" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "PC" = (
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/shuttle/cargo,
@@ -2527,6 +2761,12 @@
 "Qc" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
 /area/awaymission/phoenix/tradeship/storage)
+"Qi" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "Qj" = (
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 8
@@ -2735,8 +2975,9 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "Tg" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
-/turf/open/indestructible/plating,
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/engine/right)
 "Tr" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -2794,6 +3035,13 @@
 /obj/structure/grille,
 /turf/open/floor/plating,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Ue" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
 "Uh" = (
 /turf/open/space/basic,
 /area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
@@ -2895,18 +3143,33 @@
 	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway/command)
+"VI" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
 "VJ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 1
 	},
 /turf/open/floor/engine/air,
 /area/awaymission/phoenix/tradeship/maintenance/engine/left)
-"VW" = (
-/obj/machinery/power/shuttle_engine/huge{
-	dir = 1
+"VS" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
 	},
-/turf/open/floor/plating/airless,
-/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/recharger,
+/obj/structure/closet/crate/engineering/electrical,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"VW" = (
+/obj/structure/fireaxecabinet/jawsofrecovery/directional/east,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
 "VY" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -2987,6 +3250,14 @@
 /obj/machinery/wall_healer/free/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
+"XG" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/ntfid,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
 "XK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -3022,7 +3293,8 @@
 /area/awaymission/phoenix/tradeship/hallway)
 "YC" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/trader{
-	dir = 1
+	dir = 1;
+	req_access = list("away_supply")
 	},
 /turf/open/floor/oldshuttle,
 /area/awaymission/phoenix/tradeship/bridge)
@@ -3079,6 +3351,20 @@
 "Zy" = (
 /turf/open/floor/plastic,
 /area/awaymission/phoenix/tradeship/crew/bath)
+"ZA" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/secure/centcom{
+	name = "Nanotrasen Armories crate";
+	desc = "A secure crate containing goods and supplies manufactured and/or provided by Nanotrasen Armories."
+	},
+/obj/item/gun/energy/pulse,
+/obj/item/gun/energy/pulse,
+/obj/item/gun/energy/pulse,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
 "ZD" = (
 /obj/machinery/status_display/shuttle/directional/east{
 	shuttle_id = "phoenix_tradership"
@@ -3108,11 +3394,11 @@
 /obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
 	dir = 4
 	},
-/obj/structure/sign/warning/gas_mask/directional/east,
 /obj/effect/turf_decal/bot_blue,
 /obj/machinery/suit_storage_unit/standard_unit{
 	storage_type = /obj/item/tank/internals/oxygen/yellow
 	},
+/obj/structure/sign/warning/explosives/alt/directional/east,
 /turf/open/floor/iron/shuttle/cargo,
 /area/awaymission/phoenix/tradeship/hallway)
 "ZO" = (
@@ -3256,13 +3542,13 @@ nt
 (2,1,1) = {"
 nt
 nt
+nt
 DO
-DO
-WZ
+dt
 GN
 Mc
 hA
-Tg
+Ps
 hA
 Mc
 FH
@@ -3372,7 +3658,7 @@ nt
 (3,1,1) = {"
 nt
 nt
-DO
+nt
 DO
 Sl
 GN
@@ -3490,7 +3776,7 @@ nt
 nt
 DO
 DO
-Sl
+WZ
 GN
 FH
 FH
@@ -3604,9 +3890,9 @@ nt
 (5,1,1) = {"
 nt
 nt
-nt
 DO
-dt
+DO
+Sl
 GN
 FH
 FH
@@ -3720,7 +4006,7 @@ nt
 (6,1,1) = {"
 nt
 nt
-nt
+DO
 DO
 Sl
 GN
@@ -3776,18 +4062,18 @@ vT
 qM
 qM
 rZ
-DP
+ZA
 hY
-DP
-DP
+bH
+mb
 hY
-DP
+de
 zL
 qM
 rZ
-DP
+ER
 hY
-DP
+qu
 zL
 Cx
 eI
@@ -3836,9 +4122,9 @@ nt
 (7,1,1) = {"
 nt
 nt
+nt
 DO
-DO
-WZ
+dt
 GN
 FH
 FH
@@ -3892,34 +4178,34 @@ zL
 qM
 qM
 rZ
-DP
+ZA
 km
-DP
-DP
+bH
+mb
 km
-DP
+de
 zL
 qM
 rZ
-DP
+ER
 km
-DP
+qu
 zL
 Cx
 wL
-XL
+uw
 oR
 XL
+uw
+XG
 XL
+uw
 oR
 XL
+uw
+XG
 XL
-oR
-XL
-XL
-oR
-XL
-XL
+uw
 oR
 vo
 uR
@@ -3952,7 +4238,7 @@ nt
 (8,1,1) = {"
 nt
 nt
-DO
+nt
 DO
 Sl
 GN
@@ -3963,8 +4249,8 @@ FH
 FH
 FH
 Us
-ll
-LP
+yw
+Qq
 Us
 FH
 FH
@@ -4008,35 +4294,35 @@ zL
 qM
 qM
 rZ
-DP
+ZA
 hY
-DP
-DP
+bH
+mb
 hY
-DP
+de
 zL
 qM
 rZ
-DP
+ER
 hY
-DP
+qu
 zL
 Cx
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
 uR
 Jr
@@ -4070,7 +4356,7 @@ nt
 nt
 DO
 DO
-Sl
+WZ
 GN
 FH
 FH
@@ -4079,8 +4365,8 @@ FH
 FH
 FH
 Us
-yw
-Qq
+jE
+LP
 Us
 FH
 FH
@@ -4119,40 +4405,40 @@ hY
 DP
 DP
 hY
-DP
+xu
 zL
 qM
 qM
 rZ
-DP
+VS
 hY
-DP
-DP
+JZ
+xL
 hY
-DP
+eK
 zL
 qM
 rZ
-DP
+Gw
 hY
-DP
+Cd
 zL
 Cx
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
+mU
+Lj
 XL
 uR
 uR
@@ -4184,9 +4470,9 @@ nt
 (10,1,1) = {"
 nt
 nt
-nt
 DO
-dt
+DO
+Sl
 GN
 FH
 FH
@@ -4235,39 +4521,39 @@ hY
 DP
 DP
 hY
-DP
+xu
 zL
 qM
 qM
 rZ
-DP
+VS
 km
-DP
-DP
+JZ
+xL
 km
-DP
+eK
 zL
 qM
 rZ
-DP
+Gw
 km
-DP
+Cd
 zL
 Cx
 XL
-XL
+uw
 oR
 XL
+uw
+XG
 XL
+uw
 oR
 XL
+uw
+XG
 XL
-oR
-XL
-XL
-oR
-XL
-XL
+uw
 oR
 XL
 uR
@@ -4300,7 +4586,7 @@ nt
 (11,1,1) = {"
 nt
 nt
-nt
+DO
 DO
 Sl
 GN
@@ -4351,40 +4637,40 @@ km
 DP
 DP
 km
-DP
+NM
 zL
 qM
 qM
 rZ
-DP
+VS
 hY
-DP
-DP
+JZ
+xL
 hY
-DP
+eK
 zL
 qM
 rZ
-DP
+Gw
 hY
-DP
+Cd
 zL
 Cx
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
-XL
-XL
+MD
+MD
 WI
 uR
 Jr
@@ -4467,7 +4753,7 @@ hY
 DP
 DP
 hY
-DP
+NM
 zL
 qM
 qM
@@ -4487,20 +4773,20 @@ CZ
 cl
 Cx
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
+mU
+Lj
 XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
-XL
+mU
+Lj
 XL
 uR
 uR
@@ -4870,9 +5156,9 @@ zW
 Hi
 AG
 AG
+AG
 GQ
 RN
-MD
 nP
 Tr
 FW
@@ -4987,8 +5273,8 @@ NS
 AG
 AG
 AG
-AS
 AG
+AS
 AG
 bB
 ka
@@ -5451,8 +5737,8 @@ NS
 AG
 AG
 AG
-Pv
 AG
+Pv
 AG
 qd
 ka
@@ -5566,10 +5852,10 @@ zW
 NS
 AG
 AG
-Lj
+AG
 kX
 hG
-nP
+op
 Tr
 FW
 "}
@@ -5693,8 +5979,8 @@ nt
 nt
 nt
 nt
-BN
-Ps
+lh
+Qi
 XS
 vk
 vk
@@ -5809,8 +6095,8 @@ nt
 nt
 nt
 nt
-BN
-aF
+lh
+PA
 XS
 vk
 vk
@@ -5868,7 +6154,7 @@ Js
 Vg
 aJ
 gM
-ra
+gM
 lU
 eE
 jh
@@ -5879,19 +6165,19 @@ nV
 Pj
 qt
 nF
+rh
+CX
 nF
+rh
+CX
+nF
+rh
+CX
+nF
+rh
 Km
 nF
-nF
-Km
-nF
-nF
-Km
-nF
-nF
-Km
-nF
-nF
+rh
 Km
 nF
 QT
@@ -5924,9 +6210,9 @@ nt
 (25,1,1) = {"
 nt
 nt
-BN
-BN
-VW
+lh
+lh
+VI
 XS
 vk
 vk
@@ -5984,7 +6270,7 @@ Js
 on
 aJ
 gM
-ra
+gM
 lU
 pN
 jk
@@ -5995,20 +6281,20 @@ Kd
 Rf
 qt
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
 QT
 QT
@@ -6040,9 +6326,9 @@ nt
 (26,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+lh
+lh
+PA
 XS
 vk
 vk
@@ -6111,20 +6397,20 @@ wT
 GV
 qt
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
+Ue
+wQ
 nF
 QT
 jO
@@ -6156,9 +6442,9 @@ nt
 (27,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+lh
+lh
+PA
 XS
 vk
 vk
@@ -6227,19 +6513,19 @@ Ik
 fa
 qt
 nF
+rh
+CX
 nF
+rh
+CX
+nF
+rh
+CX
+nF
+rh
 Km
 nF
-nF
-Km
-nF
-nF
-Km
-nF
-nF
-Km
-nF
-nF
+rh
 Km
 nF
 QT
@@ -6273,8 +6559,8 @@ nt
 nt
 nt
 nt
-BN
-Ps
+lh
+Qi
 XS
 vk
 vk
@@ -6343,20 +6629,20 @@ Ve
 eE
 qt
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
-nF
-nF
+jx
+jx
 UJ
 QT
 vD
@@ -6389,8 +6675,8 @@ nt
 nt
 nt
 nt
-BN
-aF
+lh
+PA
 XS
 vk
 vk
@@ -6459,20 +6745,20 @@ eE
 eE
 qt
 yN
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
+Ue
+wQ
 nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
-nF
+Ue
+wQ
 jI
 dc
 dc
@@ -6504,9 +6790,9 @@ nt
 (30,1,1) = {"
 nt
 nt
-nt
-BN
-Ps
+lh
+lh
+VI
 XS
 vk
 vk
@@ -6620,9 +6906,9 @@ nt
 (31,1,1) = {"
 nt
 nt
-nt
-BN
-aF
+lh
+lh
+PA
 XS
 vk
 vk
@@ -6673,7 +6959,7 @@ Wp
 bj
 bd
 cK
-Js
+VW
 Js
 on
 Js
@@ -6736,9 +7022,9 @@ nt
 (32,1,1) = {"
 nt
 nt
-BN
-BN
-VW
+lh
+lh
+PA
 XS
 vk
 vk
@@ -6852,9 +7138,9 @@ nt
 (33,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+nt
+lh
+Qi
 XS
 vk
 vk
@@ -6968,9 +7254,9 @@ nt
 (34,1,1) = {"
 nt
 nt
-BN
-BN
-aF
+nt
+lh
+PA
 XS
 IN
 Zb

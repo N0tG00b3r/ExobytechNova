@@ -11,6 +11,8 @@
 	layer = ABOVE_ALL_MOB_LAYER
 	plane = ABOVE_GAME_PLANE
 
+	resistance_flags = FIRE_PROOF /// EXONOVA EDIT ADDITION
+
 /obj/structure/shipping_container/Initialize(mapload)
 	. = ..()
 
