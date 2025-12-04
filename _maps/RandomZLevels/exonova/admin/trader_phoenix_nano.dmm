@@ -3164,6 +3164,9 @@
 /obj/item/circuitboard/machine/recharger,
 /obj/item/circuitboard/machine/recharger,
 /obj/structure/closet/crate/engineering/electrical,
+/obj/item/circuitboard/machine/cell_charger,
+/obj/item/circuitboard/machine/cell_charger,
+/obj/item/circuitboard/machine/cell_charger,
 /turf/open/floor/iron/shuttle/exploration,
 /area/awaymission/phoenix/tradeship/storage)
 "VW" = (
