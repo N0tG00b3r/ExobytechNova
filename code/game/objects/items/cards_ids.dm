@@ -1467,55 +1467,7 @@
 	return ..()
 
 /// EXOBYTECHNOVA UPD: PHOENIX COLLECTIVE ID CARD OBJECTS
-/obj/item/card/id/advanced/black/phoenix
-	name = "phoenix collective ID card"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
-	trim = /datum/id_trim/phoenixcollective
-	wildcard_slots = WILDCARD_LIMIT_GREY
-
-/obj/item/card/id/advanced/black/phoenix/ert
-	name = "phoenix collective responder ID"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for use by Emergency Response Teams."
-	trim = /datum/id_trim/phoenixcollective/ert
-	wildcard_slots = WILDCARD_LIMIT_CENTCOM
-
-/obj/item/card/id/advanced/black/phoenix/ert/cmdr
-	name = "phoenix collective ERT-CMDR ID"
-	trim = /datum/id_trim/phoenixcollective/ert/cmdr
-
-/obj/item/card/id/advanced/black/phoenix/ert/cmdr/elite
-	name = "phoenix collective elite ERT-CMDR ID"
-	trim = /datum/id_trim/phoenixcollective/ert/cmdr/hvy
-
-/obj/item/card/id/advanced/black/phoenix/ert/sec
-	name = "phoenix collective ERT-SEC ID"
-	trim = /datum/id_trim/phoenixcollective/ert/sec
-
-/obj/item/card/id/advanced/black/phoenix/ert/sec/elite
-	name = "phoenix collective elite ERT-SEC ID"
-	trim = /datum/id_trim/phoenixcollective/ert/sec/hvy
-
-/obj/item/card/id/advanced/black/phoenix/ert/med
-	name = "phoenix collective ERT-MED ID"
-	trim = /datum/id_trim/phoenixcollective/ert/med
-
-/obj/item/card/id/advanced/black/phoenix/ert/eng
-	name = "phoenix collective ERT-ENG ID"
-	trim = /datum/id_trim/phoenixcollective/ert/eng
-
-/obj/item/card/id/advanced/black/phoenix/centcom
-	name = "phoenix collective centcom ID"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Central Command officials and representatives."
-	trim = /datum/id_trim/phoenixcollective/official
-	wildcard_slots = WILDCARD_LIMIT_CENTCOM
-
-/obj/item/card/id/advanced/black/phoenix/centcom/secops
-	name = "phoenix collective secops ID"
-	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Sector Operations officials and representatives."
-	trim = /datum/id_trim/phoenixcollective/official/secops
-	wildcard_slots = WILDCARD_LIMIT_CENTCOM
-
-/// EXOBYTECHNOVA UPD END
+/// (MOVED TO THE PHOENIX COLLECTIVE OUTFITS DM FILE)
 
 /obj/item/card/id/advanced/debug
 	name = "\improper Debug ID"

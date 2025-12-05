@@ -1,4 +1,59 @@
 /// ------------------------------------------------------------------------------------------ ///
+/// PHOENIX COLLECTIVE IDENTIFICATON CARDS
+/// ------------------------------------------------------------------------------------------ ///
+
+/obj/item/card/id/advanced/black/phoenix
+	name = "phoenix collective ID card"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	trim = /datum/id_trim/phoenixcollective
+	wildcard_slots = WILDCARD_LIMIT_GREY
+
+/obj/item/card/id/advanced/black/phoenix/engie
+	trim = /datum/id_trim/phoenixcollective/engie
+
+/obj/item/card/id/advanced/black/phoenix/ert
+	name = "phoenix collective responder ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for use by Emergency Response Teams."
+	trim = /datum/id_trim/phoenixcollective/ert
+	wildcard_slots = WILDCARD_LIMIT_CENTCOM
+
+/obj/item/card/id/advanced/black/phoenix/ert/cmdr
+	name = "phoenix collective ERT-CMDR ID"
+	trim = /datum/id_trim/phoenixcollective/ert/cmdr
+
+/obj/item/card/id/advanced/black/phoenix/ert/cmdr/elite
+	name = "phoenix collective elite ERT-CMDR ID"
+	trim = /datum/id_trim/phoenixcollective/ert/cmdr/hvy
+
+/obj/item/card/id/advanced/black/phoenix/ert/sec
+	name = "phoenix collective ERT-SEC ID"
+	trim = /datum/id_trim/phoenixcollective/ert/sec
+
+/obj/item/card/id/advanced/black/phoenix/ert/sec/elite
+	name = "phoenix collective elite ERT-SEC ID"
+	trim = /datum/id_trim/phoenixcollective/ert/sec/hvy
+
+/obj/item/card/id/advanced/black/phoenix/ert/med
+	name = "phoenix collective ERT-MED ID"
+	trim = /datum/id_trim/phoenixcollective/ert/med
+
+/obj/item/card/id/advanced/black/phoenix/ert/eng
+	name = "phoenix collective ERT-ENG ID"
+	trim = /datum/id_trim/phoenixcollective/ert/eng
+
+/obj/item/card/id/advanced/black/phoenix/centcom
+	name = "phoenix collective centcom ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Central Command officials and representatives."
+	trim = /datum/id_trim/phoenixcollective/official
+	wildcard_slots = WILDCARD_LIMIT_CENTCOM
+
+/obj/item/card/id/advanced/black/phoenix/centcom/secops
+	name = "phoenix collective secops ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors. This one is for Sector Operations officials and representatives."
+	trim = /datum/id_trim/phoenixcollective/official/secops
+	wildcard_slots = WILDCARD_LIMIT_CENTCOM
+
+/// ------------------------------------------------------------------------------------------ ///
 /// PHOENIX IMPERIAL PERSONNEL OUTFITS
 /// ------------------------------------------------------------------------------------------ ///
 
@@ -12,15 +67,21 @@
 	shoes = /obj/item/clothing/shoes/jackboots/peacekeeper
 	gloves = /obj/item/clothing/gloves/color/black
 	back = /obj/item/storage/backpack/industrial/frontier_colonist
+	box = /obj/item/storage/box/survival
+	ears = /obj/item/radio/headset/phoenix
+	l_pocket = /obj/item/gun/energy/disabler
+
+	/// Additional radio encryption key, defaults to null
+	var/additional_radio
 
 /// ASSISTANT PLASMAMAN OUTFIT
 /datum/outfit/phoenix/pm
 	name = "Phoenix Collective Imperial (Plasmaman)"
 
-	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security/nova
 	uniform = /obj/item/clothing/under/plasmaman/black
 	gloves = /obj/item/clothing/gloves/color/plasmaman/black
-	mask = /obj/item/clothing/mask/gas/sechailer/plasmaman
+	mask = /obj/item/clothing/mask/gas/explorer/plasmaman
 	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
 
 /// AUTOMATIC MINDSHIELD IMPLANTING
@@ -34,9 +95,66 @@
 	ID.registered_name = phoenixguy.real_name
 	ID.update_label()
 
+	var/obj/item/radio/headset/R = H.ears
+	if(R && additional_radio) // null check
+		R.keyslot2 = new additional_radio()
+		R.recalculateChannels()
+
+/// ENGINEERING OUTFIT
+/datum/outfit/phoenix/engineer
+	name = "Phoenix Collective Engineer"
+
+	id = /obj/item/card/id/advanced/black/phoenix/engie
+	belt = /obj/item/storage/belt/utility/full/powertools
+	suit = /obj/item/clothing/suit/armor/vest/marine/engineer
+	head = /obj/item/clothing/head/utility/hardhat/weldhat
+	uniform = /obj/item/clothing/under/rank/engineering/engineer/nova/utility
+	shoes = /obj/item/clothing/shoes/jackboots/peacekeeper
+	gloves = /obj/item/clothing/gloves/chief_engineer/expeditionary_corps
+	back = /obj/item/storage/backpack/industrial/frontier_colonist
+	box = /obj/item/storage/box/survival/engineer
+	backpack_contents = list(
+		/obj/item/modular_computer/pda/engineering = 1,
+		/obj/item/multitool = 1,
+		/obj/item/advanced_choice_beacon/nri/engineer = 1,
+	)
+
+	skillchips = list(/obj/item/skillchip/job/engineer)
+	additional_radio = /obj/item/encryptionkey/headset_eng
+
+/// ENGINEERING PLASMAMAN OUTFIT
+/datum/outfit/phoenix/engineer/pm
+	name = "Phoenix Collective Engineer (Plasmaman)"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security/nova
+	uniform = /obj/item/clothing/under/plasmaman/black
+	gloves = /obj/item/clothing/gloves/color/plasmaman/engineer
+	mask = /obj/item/clothing/mask/gas/atmos/plasmaman
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
+
 /// ------------------------------------------------------------------------------------------ ///
 /// EMERGENCY RESPONSE TEAMS
 /// ------------------------------------------------------------------------------------------ ///
+
+/datum/outfit/phoenix/ert
+	/// Whether or not this outfit should give x-ray eyes, defaults to false
+	var/pcert_give_xray = FALSE
+	/// What HUD implant this outfit should give, defaults to none
+	/// 0 = do not use, 1 = medical, 2 = security, 3 = diagnostic
+	/// DOES NOTHING (NOT YET IMPLEMENTED)
+	var/pcert_cyber_hud = 0
+
+/datum/outfit/phoenix/ert/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
+	if(visuals_only)
+		return
+	. = ..()
+
+	var/obj/item/organ/cyberimp/chest/nutriment/plus/nutri = new /obj/item/organ/cyberimp/chest/nutriment/plus()
+	nutri.Insert(phoenixguy)
+
+	if (pcert_give_xray)
+		var/obj/item/organ/eyes/robotic/xray/xreyes = new /obj/item/organ/eyes/robotic/xray()
+		xreyes.Insert(phoenixguy)
 
 /datum/outfit/phoenix/ert/command
 	name = "Phoenix Collective ERT - Commander"
@@ -84,6 +202,8 @@
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
+
+	pcert_give_xray = TRUE;
 
 /datum/outfit/phoenix/ert/command/pm
 	name = "Phoenix Collective ERT - Commander (Plasmaman)"
@@ -146,6 +266,8 @@
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
+
+	pcert_give_xray = TRUE;
 
 /datum/outfit/phoenix/ert/security/pm
 	name = "Phoenix Collective ERT - Security (Plasmaman)"
@@ -210,9 +332,9 @@
 	name = "Phoenix Collective ERT - Engineering"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert/eng
-	belt = /obj/item/storage/belt/utility/chief/full
+	belt = /obj/item/storage/belt/utility/full/powertools/ircd
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
-	suit_store = /obj/item/gun/ballistic/automatic/napad
+	suit_store = /obj/item/gun/ballistic/automatic/napad/rapidfire
 	head = /obj/item/clothing/head/helmet/solfed/mk2
 	uniform = /obj/item/clothing/under/rank/security/nova/utility
 	shoes = /obj/item/clothing/shoes/winterboots/ice_boots/eva
@@ -227,12 +349,15 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/napad = 6,
 		/obj/item/lightreplacer/blue = 1,
+		/obj/item/multitool = 1,
 		/obj/item/storage/box/nri_flares = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
 	)
 	l_hand = null
 	r_hand = null
+
+	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/phoenix/ert/engie/pm
 	name = "Phoenix Collective ERT - Engineering (Plasmaman)"
@@ -310,6 +435,8 @@
 	)
 	l_hand = null
 	r_hand = null
+
+	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/phoenix/centcom/cutefrisk/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
 	if(visuals_only)
