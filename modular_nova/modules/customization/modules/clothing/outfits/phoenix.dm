@@ -116,7 +116,6 @@
 	backpack_contents = list(
 		/obj/item/modular_computer/pda/engineering = 1,
 		/obj/item/multitool = 1,
-		/obj/item/advanced_choice_beacon/nri/engineer = 1,
 	)
 
 	skillchips = list(/obj/item/skillchip/job/engineer)
