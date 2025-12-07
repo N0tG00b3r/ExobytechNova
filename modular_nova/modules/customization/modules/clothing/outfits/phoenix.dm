@@ -95,7 +95,7 @@
 	ID.registered_name = phoenixguy.real_name
 	ID.update_label()
 
-	var/obj/item/radio/headset/R = H.ears
+	var/obj/item/radio/headset/R = phoenixguy.ears
 	if(R && additional_radio) // null check
 		R.keyslot2 = new additional_radio()
 		R.recalculateChannels()
