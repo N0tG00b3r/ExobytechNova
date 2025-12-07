@@ -107,7 +107,7 @@
 	id = /obj/item/card/id/advanced/black/phoenix/engie
 	belt = /obj/item/storage/belt/utility/full/powertools
 	suit = /obj/item/clothing/suit/armor/vest/marine/engineer
-	head = /obj/item/clothing/head/utility/hardhat/weldhat
+	head = /obj/item/clothing/head/utility/hardhat/welding
 	uniform = /obj/item/clothing/under/rank/engineering/engineer/nova/utility
 	shoes = /obj/item/clothing/shoes/jackboots/peacekeeper
 	gloves = /obj/item/clothing/gloves/chief_engineer/expeditionary_corps
