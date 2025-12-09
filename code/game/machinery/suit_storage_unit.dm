@@ -183,10 +183,6 @@
 	storage_type = /obj/item/tank/internals/oxygen
 	mod_type = /obj/item/mod/control/pre_equipped/phoenix
 
-/obj/machinery/suit_storage_unit/phoenix
-	storage_type = /obj/item/tank/internals/oxygen
-	mod_type = /obj/item/mod/control/pre_equipped/phoenix
-
 /obj/machinery/suit_storage_unit/phoenix/engineer
 	mod_type = /obj/item/mod/control/pre_equipped/phoenix/engineer
 
