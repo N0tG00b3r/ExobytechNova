@@ -616,7 +616,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 			healed = TRUE
 
 			/// EXOBYTECHNOVA EDIT ADDITION: Revert Black Alert automatically
-			var/current_sec_level = SSsecurity_level.get_current_level_as_number()
+			current_sec_level = SSsecurity_level.get_current_level_as_number()
 			if(current_sec_level == SEC_LEVEL_BLACK && previous_sec_level < SEC_LEVEL_BLACK)
 				SSsecurity_level.set_level(previous_sec_level)
 			/// EXOBYTECHNOVA EDIT ADDITION END
