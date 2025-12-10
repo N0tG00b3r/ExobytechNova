@@ -579,6 +579,13 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		header = "Meltdown Incoming",
 	)
 
+	/// EXOBYTECHNOVA EDIT ADDITION: Trigger Black Alert automatically
+	var/current_sec_level = SSsecurity_level.get_current_level_as_number()
+	var/previous_sec_level = current_sec_level
+	if(current_sec_level < SEC_LEVEL_BLACK)
+		SSsecurity_level.set_level(SEC_LEVEL_BLACK)
+	/// EXOBYTECHNOVA EDIT ADDITION END
+
 	var/list/count_down_messages = delamination_strategy.count_down_messages()
 
 	radio.talk_into(
@@ -607,6 +614,12 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		if(damage < explosion_point) // Cutting it a bit close there engineers
 			message = count_down_messages[2]
 			healed = TRUE
+
+			/// EXOBYTECHNOVA EDIT ADDITION: Revert Black Alert automatically
+			var/current_sec_level = SSsecurity_level.get_current_level_as_number()
+			if(current_sec_level == SEC_LEVEL_BLACK && previous_sec_level < SEC_LEVEL_BLACK)
+				SSsecurity_level.set_level(previous_sec_level)
+			/// EXOBYTECHNOVA EDIT ADDITION END
 		else if((i % 150) != 0 && i > 150) // A message once every 15 (prev: 5) seconds until the final 5 seconds which count down individualy
 			sleep(1 SECONDS)
 			continue
