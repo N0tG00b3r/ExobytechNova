@@ -186,7 +186,7 @@
 	var/static/list/servo_choices = list(/obj/item/stock_parts/servo/nano,/obj/item/stock_parts/servo/pico,/obj/item/stock_parts/servo/femto)
 	var/static/list/laser_choices = list(/obj/item/stock_parts/micro_laser/high,/obj/item/stock_parts/micro_laser/ultra,/obj/item/stock_parts/micro_laser/quadultra)
 	var/static/list/mbin_choices = list(/obj/item/stock_parts/matter_bin/adv,/obj/item/stock_parts/matter_bin/super,/obj/item/stock_parts/matter_bin/bluespace)
-	var/static/list/items_inside = list(
+	var/list/items_inside = list(
 		pick(capacitor_choices) = admin_generate_random_part_count(),
 		pick(scanner_choices) = admin_generate_random_part_count(),
 		pick(servo_choices) = admin_generate_random_part_count(),
