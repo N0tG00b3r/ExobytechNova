@@ -607,7 +607,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		if(damage < explosion_point) // Cutting it a bit close there engineers
 			message = count_down_messages[2]
 			healed = TRUE
-		else if((i % 50) != 0 && i > 50) // A message once every 5 seconds until the final 5 seconds which count down individualy
+		else if((i % 150) != 0 && i > 150) // A message once every 15 (prev: 5) seconds until the final 5 seconds which count down individualy
 			sleep(1 SECONDS)
 			continue
 		else if(i > 50)
