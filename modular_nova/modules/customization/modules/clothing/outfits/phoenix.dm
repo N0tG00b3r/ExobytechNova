@@ -136,17 +136,28 @@
 /// ------------------------------------------------------------------------------------------ ///
 
 /datum/outfit/phoenix/ert
+	name = "Phoenix ERT Base (DO NOT EQUIP)"
+	id = /obj/item/card/id/advanced/black/phoenix/ert
+
 	/// Whether or not this outfit should give x-ray eyes, defaults to false
 	var/pcert_give_xray = FALSE
+	/// Same as above, but for x-ray ears (wall penetrating ears)
+	var/pcert_give_xears = FALSE
+	/// Whether or not this outfit should give the Qani-Laaca Sensory Computer implant, defaults to false
+	var/pcert_give_qani = FALSE
 	/// What HUD implant this outfit should give, defaults to none
 	/// 0 = do not use, 1 = medical, 2 = security, 3 = diagnostic
-	/// DOES NOTHING (NOT YET IMPLEMENTED)
 	var/pcert_cyber_hud = 0
+	/// A list of genetic mutations we want to give this ERT outfit; default null
+	var/list/pcert_gene_mods
 
 /datum/outfit/phoenix/ert/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
 	if(visuals_only)
 		return
 	. = ..()
+
+	if(phoenixguy.get_quirk(/datum/quirk/body_purist)) // we respect the choice of the collective's members
+		return
 
 	var/obj/item/organ/cyberimp/chest/nutriment/plus/nutri = new /obj/item/organ/cyberimp/chest/nutriment/plus()
 	nutri.Insert(phoenixguy)
@@ -154,6 +165,32 @@
 	if (pcert_give_xray)
 		var/obj/item/organ/eyes/robotic/xray/xreyes = new /obj/item/organ/eyes/robotic/xray()
 		xreyes.Insert(phoenixguy)
+	if (pcert_give_xears)
+		var/obj/item/organ/ears/cybernetic/xray/xrears = new /obj/item/organ/ears/cybernetic/xray()
+		xrears.Insert(phoenixguy)
+	if (pcert_give_qani)
+		var/obj/item/organ/cyberimp/sensory_enhancer/qlaca = new /obj/item/organ/cyberimp/sensory_enhancer()
+		qlaca.Insert(phoenixguy)
+
+	if(pcert_cyber_hud > 0)
+		var/obj/item/organ/cyberimp/cyberhud
+		switch(pcert_cyber_hud)
+			if(1)
+				cyberhud = new /obj/item/organ/cyberimp/eyes/hud/medical()
+			if(2)
+				cyberhud = new /obj/item/organ/cyberimp/eyes/hud/security()
+			if(3)
+				cyberhud = new /obj/item/organ/cyberimp/eyes/hud/diagnostic()
+
+		if(cyberhud) // sanity check
+			cyberhud.Insert(phoenixguy)
+		else
+			CRASH("phoenix ERT outfit could not find cyberhud with ID [pcert_cyber_hud] what the fuck are you doing, ABORTING")
+
+	if(pcert_gene_mods) // AKA: "pissing off exobytech simulator"
+		for(var/datum/mutation/M as anything in pcert_gene_mods)
+			var/mutagen = M
+			phoenixguy.dna.add_mutation(mutagen, MUTATION_SOURCE_ACTIVATED, 0)
 
 /datum/outfit/phoenix/ert/command
 	name = "Phoenix Collective ERT - Commander"
@@ -161,7 +198,7 @@
 	id = /obj/item/card/id/advanced/black/phoenix/ert/cmdr
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
-	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/dna_pin
 	head = /obj/item/clothing/head/helmet/solfed/mk2
 	uniform = /obj/item/clothing/under/rank/security/nova/utility
 	shoes = /obj/item/clothing/shoes/winterboots/ice_boots/eva
@@ -169,7 +206,7 @@
 	back = /obj/item/mod/control/pre_equipped/phoenix/command
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/ert/cmdr
-	glasses = /obj/item/clothing/glasses/hud/health/night/science
+	glasses = /obj/item/clothing/glasses/hud/health/night
 	mask = /obj/item/clothing/mask/gas/sechailer
 	l_pocket = /obj/item/melee/energy/sword/saber/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
@@ -185,11 +222,13 @@
 	l_hand = null
 	r_hand = null
 
+	pcert_cyber_hud = 2
+
 /datum/outfit/phoenix/ert/command/elite
 	name = "Phoenix Collective ERT - Cmd-Elite"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert/cmdr/elite
-	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf/tweaked
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/plasma_marksman = 1,
 		/obj/item/ammo_box/magazine/pulse/extended = 3,
@@ -203,6 +242,10 @@
 	)
 
 	pcert_give_xray = TRUE;
+	pcert_give_xears = TRUE;
+	pcert_give_qani = TRUE;
+	pcert_gene_mods = list(/datum/mutation/inexorable, /datum/mutation/adaptation/thermal,
+		/datum/mutation/adaptation/pressure, /datum/mutation/strong, /datum/mutation/stimmed);
 
 /datum/outfit/phoenix/ert/command/pm
 	name = "Phoenix Collective ERT - Commander (Plasmaman)"
@@ -228,7 +271,7 @@
 	id = /obj/item/card/id/advanced/black/phoenix/ert/sec
 	belt = /obj/item/storage/medkit/frontier/phoenix/stocked
 	suit = /obj/item/clothing/suit/armor/vest/sol/marine/mk2
-	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/dna_pin
 	head = /obj/item/clothing/head/helmet/solfed/mk2
 	uniform = /obj/item/clothing/under/rank/security/nova/utility
 	shoes = /obj/item/clothing/shoes/winterboots/ice_boots/eva
@@ -236,7 +279,7 @@
 	back = /obj/item/mod/control/pre_equipped/phoenix/security
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/ert
-	glasses = /obj/item/clothing/glasses/hud/health/night/science
+	glasses = /obj/item/clothing/glasses/hud/health/night
 	l_pocket = /obj/item/melee/energy/sword/saber/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	mask = /obj/item/clothing/mask/gas/sechailer
@@ -256,7 +299,7 @@
 	name = "Phoenix Collective ERT - Sec-Elite"
 
 	id = /obj/item/card/id/advanced/black/phoenix/ert/sec/elite
-	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf
+	suit_store = /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf/tweaked
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/pulse/extended = 6,
 		/obj/item/storage/box/fragnades = 1,
@@ -267,6 +310,10 @@
 	)
 
 	pcert_give_xray = TRUE;
+	pcert_give_xears = TRUE;
+	pcert_give_qani = TRUE;
+	pcert_gene_mods = list(/datum/mutation/inexorable, /datum/mutation/adaptation/thermal,
+		/datum/mutation/adaptation/pressure, /datum/mutation/strong, /datum/mutation/stimmed);
 
 /datum/outfit/phoenix/ert/security/pm
 	name = "Phoenix Collective ERT - Security (Plasmaman)"
@@ -300,7 +347,7 @@
 	back = /obj/item/mod/control/pre_equipped/phoenix/medical/surgical
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/ert
-	glasses = /obj/item/clothing/glasses/hud/health/night/science
+	glasses = /obj/item/clothing/glasses/hud/health/night
 	mask = /obj/item/clothing/mask/gas/sechailer
 	l_pocket = /obj/item/melee/energy/sword/saber/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
@@ -341,7 +388,7 @@
 	back = /obj/item/mod/control/pre_equipped/phoenix/engineer
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/ert
-	glasses = /obj/item/clothing/glasses/hud/health/night/science
+	glasses = /obj/item/clothing/glasses/hud/health/night
 	mask = /obj/item/clothing/mask/gas/sechailer
 	l_pocket = /obj/item/melee/energy/sword/saber/red
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
@@ -357,6 +404,7 @@
 	r_hand = null
 
 	skillchips = list(/obj/item/skillchip/job/engineer)
+	pcert_cyber_hud = 3
 
 /datum/outfit/phoenix/ert/engie/pm
 	name = "Phoenix Collective ERT - Engineering (Plasmaman)"
@@ -373,20 +421,21 @@
 /datum/outfit/phoenix/centcom
 	name = "Phoenix Collective CentCom Official"
 
-	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
+	id = /obj/item/card/id/advanced/black/phoenix/centcom
+	belt = null
 	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
 	suit_store = null
 	uniform = /obj/item/clothing/under/rank/captain/nova/utility
 	shoes = /obj/item/clothing/shoes/laceup
-	back = /obj/item/mod/control/pre_equipped/phoenix/command
+	back = /obj/item/mod/control/pre_equipped/phoenix
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/cc
 	glasses = /obj/item/clothing/glasses/hud/medsechud
 	l_pocket = /obj/item/melee/energy/sword/saber/red
-	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(
+		/obj/item/gun/energy/disabler = 1,
 		/obj/item/gun/ballistic/automatic/pistol/clandestine/unrestricted = 1,
-		/obj/item/ammo_box/magazine/m10mm/hp = 3,
+		/obj/item/ammo_box/magazine/m10mm = 3,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
 		/obj/item/modular_computer/pda/ceti = 1,
@@ -394,8 +443,12 @@
 	l_hand = null
 	r_hand = null
 
-/datum/outfit/phoenix/centcom/cutefrisk
-	name = "Phoenix Collective CC - Azre's Loadout"
+/datum/outfit/phoenix/centcom/secops
+	name = "Phoenix Collective SecOps Official"
+	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
+
+/datum/outfit/phoenix/centcom/secops/cutefrisk
+	name = "Phoenix SecOps - Azrefrisk Dreemurr"
 
 	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
 	belt = /obj/item/storage/belt/utility/chief
@@ -413,12 +466,12 @@
 	l_pocket = /obj/item/storage/bag/sheetsnatcher/debug
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(
-		/obj/item/storage/part_replacer/bluespace/tier4maxout = 1,
+		/obj/item/storage/part_replacer/bluespace/randomitems = 1,
 		/obj/item/storage/toolbox/guncase/nova/opfor/phoenix/pulserifle/def/cutefrisk = 1,
 		/obj/item/storage/box/phoenixcc/azre = 1,
 		/obj/item/storage/box/cables = 1,
 		/obj/item/modular_computer/pda/heads/rd = 1,
-		/obj/item/stock_parts/power_store/cell/infinite/nif_cell = 1,
+		/obj/item/stock_parts/power_store/cell/infinite/abductor = 1,
 		/obj/item/dualsaber/purple = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
@@ -437,7 +490,7 @@
 
 	skillchips = list(/obj/item/skillchip/job/engineer)
 
-/datum/outfit/phoenix/centcom/cutefrisk/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
+/datum/outfit/phoenix/centcom/secops/cutefrisk/post_equip(mob/living/carbon/human/phoenixguy, visuals_only = FALSE)
 	if(visuals_only)
 		return
 	. = ..()

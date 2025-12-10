@@ -97,6 +97,10 @@
 		fortifications and powered armor with equal ease.<br><br>\
 		A warning etched near the ejection port reminds users: 'NEPONOVLJATI NAPAJANJE - Kristalna matrika može srušiti se'."
 
+/obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf/tweaked
+	pin = /obj/item/firing_pin/dna
+	projectile_damage_multiplier = 0.65
+
 /obj/item/gun/ballistic/automatic/pulse_rifle/phoenix/prenerf/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/automatic_fire, 0.1 SECONDS)

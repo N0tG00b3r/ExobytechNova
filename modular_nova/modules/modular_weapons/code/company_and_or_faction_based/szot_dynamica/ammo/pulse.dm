@@ -120,7 +120,8 @@
 
 /obj/item/ammo_casing/pulse/extended
 	name = "extended pulse energy cell"
-	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity."
+	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity. Each pulse also has a stronger military-grade payload, \
+		allowing fired projectiles to travel slightly faster than a standard plasma pulse."
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*0.4, /datum/material/plasma = SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = SHEET_MATERIAL_AMOUNT*0.9)
 	projectile_type = /obj/projectile/beam/laser/plasma_glob/pulse/phoenix
 	///Maximum amount of times this casing can be used.
@@ -143,11 +144,11 @@
 	var/pulse_brute_damage = 10
 
 /obj/projectile/beam/laser/plasma_glob/pulse/phoenix
-	/// EXOBYTECHNOVA CHANGE: High-speed version of the plasma pulse projectile
+	/// EXOBYTECHNOVA CHANGE: Higher-speed version of the plasma pulse projectile
 	name = "phoenix pulse energy"
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
 	icon_state = "plasma_pulse"
-	speed = 2
+	speed = 1.5 // formerly 2x (nerfed)
 
 /obj/projectile/beam/laser/plasma_glob/pulse/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()

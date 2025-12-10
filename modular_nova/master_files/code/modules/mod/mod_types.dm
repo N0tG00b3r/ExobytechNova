@@ -253,14 +253,13 @@
 /obj/item/mod/control/pre_equipped/phoenix
 	theme = /datum/mod_theme/phoenix
 	starting_frequency = MODLINK_FREQ_NANOTRASEN
-	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/nif_cell
+	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/abductor
 	applied_modules = list(
 		/obj/item/mod/module/emp_shield/advanced,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/status_readout,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/longfall,
-		/obj/item/mod/module/gps,
 	)
 	default_pins = list(
 		/obj/item/mod/module/flashlight,
@@ -308,10 +307,8 @@
 		/obj/item/mod/module/visor/meson,
 		/obj/item/mod/module/health_analyzer,
 		/obj/item/mod/module/mister/cleaner,
-		/obj/item/mod/module/anomaly_locked/kinesis/plus,
 		/obj/item/mod/module/timeline_jumper,
-		/obj/item/mod/module/shove_blocker/locked,
-		/obj/item/defibrillator/compact/combat,
+		/obj/item/mod/module/defibrillator/combat,
 		/obj/item/mod/module/quick_carry/advanced,
 	)
 	additional_pins = list(
@@ -320,9 +317,8 @@
 		/obj/item/mod/module/visor/meson,
 		/obj/item/mod/module/health_analyzer,
 		/obj/item/mod/module/mister/cleaner,
-		/obj/item/mod/module/anomaly_locked/kinesis/plus,
 		/obj/item/mod/module/timeline_jumper,
-		/obj/item/defibrillator/compact/combat,
+		/obj/item/mod/module/defibrillator/combat,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/medical
