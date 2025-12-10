@@ -161,8 +161,6 @@
 		new /obj/item/stock_parts/matter_bin(src)
 
 // EXOBYTECHNOVA UPD: Custom-set overloaded tier 4 RPED for admin outfits n shiz.
-/obj/item/storage/part_replacer/bluespace/tier4maxout
-
 /obj/item/storage/part_replacer/bluespace/tier4maxout/PopulateContents()
 	var/static/list/items_inside = list(
 		/obj/item/stock_parts/capacitor/quadratic = 50,
@@ -172,6 +170,30 @@
 		/obj/item/stock_parts/matter_bin/bluespace = 50,
 		/obj/item/stock_parts/power_store/battery/bluespace/empty = 50,
 		/obj/item/stock_parts/power_store/cell/bluespace/empty = 50,
+	)
+	generate_items_inside(items_inside, src)
+
+// EXOBYTECHNOVA UPD: Custom-set randomized RPED for admin outfits n shiz. Self-inflicted trolling! Yay!
+/obj/item/storage/part_replacer/bluespace/proc/admin_generate_random_part_count()
+	var/choice = rand(-5,30)
+	if (choice < 1)
+		return 0
+	return choice
+
+/obj/item/storage/part_replacer/bluespace/randomitems/PopulateContents()
+	var/static/list/capacitor_choices = list(/obj/item/stock_parts/capacitor/adv,/obj/item/stock_parts/capacitor/super,/obj/item/stock_parts/capacitor/quadratic)
+	var/static/list/scanner_choices = list(/obj/item/stock_parts/scanning_module/adv,/obj/item/stock_parts/scanning_module/phasic,/obj/item/stock_parts/scanning_module/triphasic)
+	var/static/list/servo_choices = list(/obj/item/stock_parts/servo/nano,/obj/item/stock_parts/servo/pico,/obj/item/stock_parts/servo/femto)
+	var/static/list/laser_choices = list(/obj/item/stock_parts/micro_laser/high,/obj/item/stock_parts/micro_laser/ultra,/obj/item/stock_parts/micro_laser/quadultra)
+	var/static/list/mbin_choices = list(/obj/item/stock_parts/matter_bin/adv,/obj/item/stock_parts/matter_bin/super,/obj/item/stock_parts/matter_bin/bluespace)
+	var/static/list/items_inside = list(
+		pick(capacitor_choices) = admin_generate_random_part_count(),
+		pick(scanner_choices) = admin_generate_random_part_count(),
+		pick(servo_choices) = admin_generate_random_part_count(),
+		pick(laser_choices) = admin_generate_random_part_count(),
+		pick(mbin_choices) = admin_generate_random_part_count(),
+		/obj/item/stock_parts/power_store/battery/bluespace/empty = admin_generate_random_part_count(),
+		/obj/item/stock_parts/power_store/cell/bluespace/empty = admin_generate_random_part_count(),
 	)
 	generate_items_inside(items_inside, src)
 
@@ -186,6 +208,6 @@
 	storage_type = /datum/storage/rped/bluespace
 
 /obj/item/storage/part_replacer/cyborg/small
-	desc = "Special mechanical module made to store, sort, and apply standard machine parts. This one has as much space, as your regular RPED"
+	desc = "Special mechanical module made to store, sort, and apply standard machine parts. This one has as much space as your regular RPED."
 	icon_state = "RPED"
 	storage_type = /datum/storage/rped
