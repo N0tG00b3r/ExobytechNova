@@ -21,9 +21,9 @@
 /obj/effect/meteor/dark_matteor/Initialize(mapload, turf/target)
 	. = ..()
 	var/current_sec_level = SSsecurity_level.get_current_level_as_number()
-	if(current_sec_level < SEC_LEVEL_RED)
+	if(current_sec_level < SEC_LEVEL_GAMMA) // EXONOVA EDIT: Previously SEC_LEVEL_RED
 		previous_security_level = current_sec_level
-		SSsecurity_level.set_level(SEC_LEVEL_RED)
+		SSsecurity_level.set_level(SEC_LEVEL_GAMMA) // EXONOVA EDIT: Previously SEC_LEVEL_RED
 	warp = new(src)
 	vis_contents += warp
 	spark_system = new /datum/effect_system/spark_spread/quantum()
