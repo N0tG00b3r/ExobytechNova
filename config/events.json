@@ -69,7 +69,7 @@
 		"weight": 15
 	},
 	"Random Heart Attack": {
-		"min_players": 40,
+		"min_players": 4,
 		"weight": 20
 	},
 	"Ion Storm": {
@@ -121,17 +121,17 @@
 	},
 	"Scrubber Overflow: Normal": {
 		"min_players": 10,
-		"weight": 10,
+		"weight": 0,
 		"earliest_start": 21000
 	},
 	"Scrubber Overflow: Threatening": {
 		"min_players": 25,
-		"weight": 4,
+		"weight": 0,
 		"earliest_start": 27000
 	},
 	"Scrubber Overflow: Catastrophic": {
 		"min_players": 35,
-		"weight": 2,
+		"weight": 0,
 		"earliest_start": 33000
 	},
 	"Scrubber Overflow: Every Vent": {

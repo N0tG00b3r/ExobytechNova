@@ -52,11 +52,11 @@ CRYO_MIN_SSD_TIME 15
 AUTOTRANSFER
 
 ## Enables starting transfer votes by the crew at large.
-#ALLOW_VOTE_TRANSFER
+ALLOW_VOTE_TRANSFER
 
-## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes) (now 240)
+## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes) (now... 120 again)
 ## Set to 0 to disable the subsystem altogether.
-VOTE_AUTOTRANSFER_INITIAL 72000
+VOTE_AUTOTRANSFER_INITIAL 36000
 
 ## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes) (now 120)
 VOTE_AUTOTRANSFER_INTERVAL 36000

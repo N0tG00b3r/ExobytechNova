@@ -10,15 +10,3 @@
 		</strong>
 	</span>
 </p>
-<p>
-	This server is running ExobytechNova v0.6.7 (December 9, 2025 version). ExobytechNova is a fork of Nova Sector created and maintained by N0tG00b3r, KevinGlitch, and Azrefrisk Dreemurr. You can report bugs with the codebase on
-	<a href="https://github.com/N0tG00b3r/ExobytechNova/issues" target="_blank">
-		 our public GitHub repository.
-	</a>
-</p>
-<p>
-	<strong>
-		 Developer Notice:
-	</strong>
-	 ExobytechNova uses a slightly modified version of the base game's lore. Please ahelp if you need assistance integrating. Enjoy your stay!
-</p>

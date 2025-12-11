@@ -136,15 +136,15 @@ ALLOW_ROCK_THE_VOTE
 MAX_ROCKING_VOTES 1
 
 ## min delay (deciseconds) between voting sessions (default 10 minutes)
-VOTE_DELAY 6000
+VOTE_DELAY 9000
 
 ## time period (deciseconds) which voting session will last (default 1 minute)
-VOTE_PERIOD 600
+VOTE_PERIOD 1200
 
 ## prevents dead players from voting or starting votes
 # NO_DEAD_VOTE
 
-## players' votes default to "No vote" (otherwise,  default to "No change")
+## players' votes default to "No vote" (otherwise, default to "No change")
 # DEFAULT_NO_VOTE
 
 ## Determines if players can respawn after death
@@ -153,8 +153,8 @@ VOTE_PERIOD 600
 ## 2 = Can respawn if choosing a different character
 ALLOW_RESPAWN 1
 
-## Respawn delay (deciseconds), which doesn't allow to return to lobby
-RESPAWN_DELAY 600
+## Respawn delay (deciseconds), which doesn't allow to return to lobby (previously 600 deciseconds; 1 minute)
+RESPAWN_DELAY 1200
 
 ## set a hosted by name for unix platforms
 HOSTEDBY KevinGlitch and RealNiko
@@ -570,7 +570,7 @@ URGENT_AHELP_COOLDOWN 300
 ## You can use this multiple times, and the MOTDs will be appended in order.
 ## Based on config directory, so "motd.txt" points to "config/motd.txt"
 MOTD motd.txt
-#MOTD motd_extra.txt
+MOTD motd_version.txt
 
 ## Assets can opt-in to caching their results into `cache/`.
 ## This is important, as preferences assets take upwards of 30 seconds (without sleeps) to collect.

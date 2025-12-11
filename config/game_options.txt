@@ -251,8 +251,6 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specified in that file.
 ## Set to 4 for "specified", silicons will start with an existing lawset. (If no specified lawset is identified, the AI will spawn with asimov.)
-
-
 DEFAULT_LAWS 1
 
 ## SILICON ASIMOV SUPERIORITY OVERRIDE ###
@@ -316,29 +314,29 @@ LAW_WEIGHT custom,0
 ## standard-ish laws. These are fairly ok to run
 ## Unique AI station trait uses weights so we don't want asimov
 #NOVA EDIT ADDITION BEGIN
-LAW_WEIGHT armadyne_safeguard,40
-LAW_WEIGHT dagothbot,8
+LAW_WEIGHT armadyne_safeguard,0
+LAW_WEIGHT dagothbot,2
 #NOVA EDIT ADDITION END
 LAW_WEIGHT asimov,0
-LAW_WEIGHT asimovpp,5
-LAW_WEIGHT paladin,5
-LAW_WEIGHT paladin5,5
-LAW_WEIGHT robocop,5
-LAW_WEIGHT corporate,5
-LAW_WEIGHT hippocratic,5
-LAW_WEIGHT maintain,5
-LAW_WEIGHT liveandletlive,5
-LAW_WEIGHT peacekeeper,5
+LAW_WEIGHT asimovpp,15
+LAW_WEIGHT paladin,40
+LAW_WEIGHT paladin5,40
+LAW_WEIGHT robocop,20
+LAW_WEIGHT corporate,10
+LAW_WEIGHT hippocratic,10
+LAW_WEIGHT maintain,20
+LAW_WEIGHT liveandletlive,20
+LAW_WEIGHT peacekeeper,20
 LAW_WEIGHT ten_commandments,5
-LAW_WEIGHT nutimov,5
+LAW_WEIGHT nutimov,0
 
 ## Quirky laws. Shouldn't cause too much harm
 LAW_WEIGHT reporter,3
-LAW_WEIGHT hulkamania,3
+LAW_WEIGHT hulkamania,0
 LAW_WEIGHT tyrant,3
 LAW_WEIGHT overlord,3
 LAW_WEIGHT painter,3
-LAW_WEIGHT dungeon_master,3
+LAW_WEIGHT dungeon_master,0
 LAW_WEIGHT thinkermov,3
 
 ## Bad idea laws. Probably shouldn't enable these
@@ -348,7 +346,7 @@ LAW_WEIGHT antimov,0
 LAW_WEIGHT balance,0
 LAW_WEIGHT thermodynamic,0
 LAW_WEIGHT buildawall,0
-LAW_WEIGHT drone,0
+LAW_WEIGHT drone,1
 
 ##------------------------------------------------
 

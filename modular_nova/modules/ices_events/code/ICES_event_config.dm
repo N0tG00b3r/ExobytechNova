@@ -58,7 +58,6 @@
  */
 /datum/round_event_control/alien_infestation
 	max_occurrences = 0
-	intensity_restriction = TRUE
 	weight = MED_EVENT_FREQ
 	min_players = 999
 	intensity_restriction = TRUE
@@ -94,7 +93,7 @@
 
 /datum/round_event_control/anomaly/anomaly_grav/high
 	max_occurrences = 1
-	min_players = 45
+	min_players = 5 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_hallucination
@@ -103,7 +102,7 @@
 
 /datum/round_event_control/anomaly/anomaly_pyro
 	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU
-	min_players = 10 /// Restriction Lessened by ExobytechNova - AFUTU
+	min_players = 5 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_vortex
@@ -233,7 +232,7 @@
  * False Alarm
  */
 /datum/round_event_control/falsealarm
-	max_occurrences = 4
+	max_occurrences = 50 /// Unrestricted by ExobytechNova - AFUTU v3
 	weight = LOW_EVENT_FREQ
 
 /**
@@ -255,7 +254,7 @@
  * Ion Storm
  */
 /datum/round_event_control/ion_storm
-	max_occurrences = 1
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = MED_EVENT_FREQ
 
 /**
@@ -297,8 +296,8 @@
 
 /datum/round_event_control/meteor_wave/ices
 	earliest_start = 4 HOURS /// Restriction Tightened by ExobytechNova - AFUTU
-	max_occurrences = 50 // Listen if the round has gone for 4hrs we can break shit
-	weight = MED_EVENT_FREQ // Listen if the round has gone for 4hrs we can break shit
+	max_occurrences = 3 // Listen if the round has gone for 4hrs we can start breaking more shit, ok?
+	weight = MED_EVENT_FREQ
 
 // No preset ones, we have our own custom preset above
 /datum/round_event_control/meteor_wave/threatening
@@ -319,16 +318,16 @@
 	intensity_restriction = TRUE
 
 /datum/round_event_control/space_dust
-	max_occurrences = 1
+	max_occurrences = 50 /// This does literally nothing, restriction lessened - AFUTU v3
 	weight = LOW_EVENT_FREQ
 
 /datum/round_event_control/space_dust/major_dust
-	max_occurrences = 1
+	max_occurrences = 7 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
 /datum/round_event_control/sandstorm
-	max_occurrences = 1
+	max_occurrences = 0 /// Lagfest? Yeah no thanks. - AFUTU v3
 	min_players = 45
 	weight = MED_EVENT_FREQ
 	intensity_restriction = TRUE
@@ -337,7 +336,7 @@
  * Mice Migration
  */
 /datum/round_event_control/mice_migration
-	max_occurrences = 1
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = MED_EVENT_FREQ
 
 /**
@@ -385,11 +384,11 @@
  *
  */
 /datum/round_event_control/vent_clog
-	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU MK2 (v0.6.5 merge)
+	max_occurrences = 5 /// Restriction Lessened by ExobytechNova - AFUTU V3
 	weight = HIGH_EVENT_FREQ
 
 /datum/round_event_control/vent_clog/major
-	max_occurrences = 1
+	max_occurrences = 2 /// Restriction Lessened by ExobytechNova - AFUTU V3
 	weight = LOW_EVENT_FREQ /// Restriction Tightened by ExobytechNova - AFUTU MK2 (v0.6.5 merge)
 
 /datum/round_event_control/vent_clog/critical
@@ -417,7 +416,7 @@
 	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
 
 /datum/round_event_control/scrubber_overflow/ices
-	max_occurrences = 0 /// Disabled for ExobytechNova - AFUTU
+	max_occurrences = 50 /// Uncapped for ExobytechNova - AFUTU v3
 	weight = MED_EVENT_FREQ
 
 /**
@@ -432,7 +431,7 @@
  *
  */
 /datum/round_event_control/shuttle_catastrophe
-	max_occurrences = 1
+	max_occurrences = 2 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/shuttle_insurance
@@ -467,6 +466,7 @@
  * Supermatter Surge
  */
 /datum/round_event_control/supermatter_surge
+	earliest_start = 1 HOURS
 	max_occurrences = 1
 	weight = MED_EVENT_FREQ
 
@@ -484,7 +484,7 @@
  * TODO: Make it not consume an event slot
  */
 /datum/round_event_control/wisdomcow
-	max_occurrences = 1
+	max_occurrences = 3 /// Restriction Lessened by ExobytechNova - AFUTU v3
 	weight = LOW_EVENT_FREQ
 
 /**

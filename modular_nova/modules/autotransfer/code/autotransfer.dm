@@ -35,10 +35,12 @@ SUBSYSTEM_DEF(autotransfer)
 	if(REALTIMEOFDAY < targettime)
 		return
 	if(maxvotes == NO_MAXVOTES_CAP || maxvotes > curvotes)
-		SSvote.initiate_vote(/datum/vote/transfer_vote, "automatic transfer", forced = TRUE)
+		/// EXOBYTECHNOVA EDIT UPD: This if statement fixes a bug where the autotransfer force kills a round that's left to run overnight.
+		if(TGS_CLIENT_COUNT > 0)
+			SSvote.initiate_vote(/datum/vote/transfer_vote, "automatic transfer", forced = TRUE)
 		targettime = targettime + voteinterval
 		curvotes++
-	else
+	elseif(TGS_CLIENT_COUNT > 0)
 		SSshuttle.autoEnd()
 
 /**
