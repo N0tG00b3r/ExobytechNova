@@ -40,7 +40,7 @@ SUBSYSTEM_DEF(autotransfer)
 			SSvote.initiate_vote(/datum/vote/transfer_vote, "automatic transfer", forced = TRUE)
 		targettime = targettime + voteinterval
 		curvotes++
-	elseif(TGS_CLIENT_COUNT > 0)
+	else
 		SSshuttle.autoEnd()
 
 /**
