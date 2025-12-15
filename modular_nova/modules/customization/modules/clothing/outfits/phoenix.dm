@@ -476,6 +476,10 @@
 		/obj/item/stock_parts/power_store/cell/phoenix_crystal = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,
+		/obj/item/clipboard = 1,
+		/obj/item/paper_bin = 1,
+		/obj/item/stamp/centcom = 1,
+		/obj/item/stamp/head/ce = 1,
 	)
 	belt_contents = list(
 		/obj/item/weldingtool/experimental = 1,
