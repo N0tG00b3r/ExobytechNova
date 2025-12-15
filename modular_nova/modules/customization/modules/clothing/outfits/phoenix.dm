@@ -243,9 +243,10 @@
 
 	pcert_give_xray = TRUE;
 	pcert_give_xears = TRUE;
-	pcert_give_qani = TRUE;
+	pcert_give_qani = FALSE;
 	pcert_gene_mods = list(/datum/mutation/inexorable, /datum/mutation/adaptation/thermal,
-		/datum/mutation/adaptation/pressure, /datum/mutation/strong, /datum/mutation/stimmed);
+		/datum/mutation/adaptation/pressure, /datum/mutation/strong, /datum/mutation/stimmed,
+		/datum/mutation/farsight, /datum/mutation/adrenaline_rush);
 
 /datum/outfit/phoenix/ert/command/pm
 	name = "Phoenix Collective ERT - Commander (Plasmaman)"
@@ -312,8 +313,8 @@
 	pcert_give_xray = TRUE;
 	pcert_give_xears = TRUE;
 	pcert_give_qani = TRUE;
-	pcert_gene_mods = list(/datum/mutation/inexorable, /datum/mutation/adaptation/thermal,
-		/datum/mutation/adaptation/pressure, /datum/mutation/strong, /datum/mutation/stimmed);
+	pcert_gene_mods = list(/datum/mutation/adaptation/thermal, /datum/mutation/adaptation/pressure,
+		/datum/mutation/strong, /datum/mutation/stimmed);
 
 /datum/outfit/phoenix/ert/security/pm
 	name = "Phoenix Collective ERT - Security (Plasmaman)"
@@ -427,10 +428,10 @@
 	suit_store = null
 	uniform = /obj/item/clothing/under/rank/captain/nova/utility
 	shoes = /obj/item/clothing/shoes/laceup
-	back = /obj/item/mod/control/pre_equipped/phoenix
+	back = /obj/item/storage/backpack/satchel
 	box = /obj/item/storage/box/survival/centcom
 	ears = /obj/item/radio/headset/phoenix/cc
-	glasses = /obj/item/clothing/glasses/hud/medsechud
+	glasses = /obj/item/clothing/glasses/hud/ar/aviator/security
 	l_pocket = /obj/item/melee/energy/sword/saber/red
 	backpack_contents = list(
 		/obj/item/gun/energy/disabler = 1,
@@ -447,8 +448,51 @@
 	name = "Phoenix Collective SecOps Official"
 	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
 
+/// ------------------------------------------------------------------------------------------ ///
+/// CENTRAL COMMAND AND SECTOR OPERATIONS: "AZREFRISK DREEMURR"
+/// DEPARTMENT OF INDUSTRY REPRESENTATIVE - CHARACTER PACKAGE
+/// ------------------------------------------------------------------------------------------ ///
 /datum/outfit/phoenix/centcom/secops/cutefrisk
-	name = "Phoenix SecOps - Azrefrisk Dreemurr"
+	name = "Phoenix SecOps - Azrefrisk Dreemurr (Casual)"
+
+	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
+	belt = /obj/item/storage/belt/utility/chief
+	suit = /obj/item/clothing/suit/armor/vest/darkcarapace
+	suit_store = null
+	head = null
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/nova/alt
+	gloves = /obj/item/clothing/gloves/color/red/insulated
+	back = /obj/item/storage/backpack/industrial
+	box = /obj/item/storage/box/survival/centcom
+	ears = /obj/item/radio/headset/phoenix/cc
+	glasses = /obj/item/clothing/glasses/hud/ar/aviator/diagnostic
+	mask = /obj/item/clothing/mask/gas/sechailer
+	l_pocket = null
+	r_pocket = /obj/item/gun/energy/disabler
+	backpack_contents = list(
+		/obj/item/storage/box/phoenixcc/azre = 1,
+		/obj/item/storage/box/cables = 1,
+		/obj/item/modular_computer/pda/heads/rd = 1,
+		/obj/item/stock_parts/power_store/cell/phoenix_crystal = 1,
+		/obj/item/flashlight/seclite = 1,
+		/obj/item/beamout_tool = 1,
+	)
+	belt_contents = list(
+		/obj/item/weldingtool/experimental = 1,
+		/obj/item/construction/rcd/ce = 1,
+		/obj/item/crowbar/power = 1,
+		/obj/item/construction/rtd/loaded = 1,
+		/obj/item/construction/rld = 1,
+		/obj/item/pipe_dispenser/bluespace = 1,
+		/obj/item/analyzer/ranged = 1,
+	)
+	l_hand = null
+	r_hand = null
+
+	skillchips = list(/obj/item/skillchip/job/engineer)
+
+/datum/outfit/phoenix/centcom/secops/cutefrisk/on_duty
+	name = "Phoenix SecOps - Azrefrisk Dreemurr (Job)"
 
 	id = /obj/item/card/id/advanced/black/phoenix/centcom/secops
 	belt = /obj/item/storage/belt/utility/chief
@@ -471,7 +515,7 @@
 		/obj/item/storage/box/phoenixcc/azre = 1,
 		/obj/item/storage/box/cables = 1,
 		/obj/item/modular_computer/pda/heads/rd = 1,
-		/obj/item/stock_parts/power_store/cell/infinite/abductor = 1,
+		/obj/item/stock_parts/power_store/cell/phoenix_crystal = 1,
 		/obj/item/dualsaber/purple = 1,
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/beamout_tool = 1,

@@ -68,6 +68,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
+/obj/machinery/chem_master/fullupgrade,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "dN" = (
@@ -397,8 +398,8 @@
 /turf/open/floor/pod,
 /area/shuttle/phoenix/ert/bridge)
 "oO" = (
-/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
 /obj/machinery/light/blacklight/directional/south,
+/obj/machinery/chem_dispenser/fullupgrade,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "oX" = (
@@ -605,7 +606,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/phoenix/ert/common)
 "wb" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "wj" = (
@@ -718,13 +719,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/phoenix/ert/armory)
 "Bf" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/medkit/robotic_repair/preemo/stocked{
-	pixel_y = 12
-	},
-/obj/item/storage/medkit/robotic_repair/preemo/stocked{
-	pixel_y = 4
-	},
+/obj/machinery/chem_mass_spec,
 /turf/open/floor/pod/light,
 /area/shuttle/phoenix/ert/medbay)
 "Bi" = (

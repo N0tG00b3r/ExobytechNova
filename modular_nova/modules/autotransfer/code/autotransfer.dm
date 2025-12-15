@@ -31,14 +31,17 @@ SUBSYSTEM_DEF(autotransfer)
 	voteinterval = SSautotransfer.voteinterval
 	curvotes = SSautotransfer.curvotes
 
+	if(REALTIMEOFDAY >= targettime) /// EXONOVA EDIT ADDITION: Force resets vote time on recovery if a vote should have been called.
+		targettime = REALTIMEOFDAY + (voteinterval / 2)
+
 /datum/controller/subsystem/autotransfer/fire()
 	if(REALTIMEOFDAY < targettime)
 		return
 	if(maxvotes == NO_MAXVOTES_CAP || maxvotes > curvotes)
 		/// EXOBYTECHNOVA EDIT UPD: This if statement fixes a bug where the autotransfer force kills a round that's left to run overnight.
-		if(TGS_CLIENT_COUNT > 0)
+		if(TGS_CLIENT_COUNT > 1)
 			SSvote.initiate_vote(/datum/vote/transfer_vote, "automatic transfer", forced = TRUE)
-		targettime = targettime + voteinterval
+		targettime = REALTIMEOFDAY + voteinterval /// EXONOVA EDIT - Original: targettime = targettime + voteinterval
 		curvotes++
 	else
 		SSshuttle.autoEnd()

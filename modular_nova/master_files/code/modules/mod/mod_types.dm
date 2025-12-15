@@ -253,7 +253,7 @@
 /obj/item/mod/control/pre_equipped/phoenix
 	theme = /datum/mod_theme/phoenix
 	starting_frequency = MODLINK_FREQ_NANOTRASEN
-	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/abductor
+	applied_cell = /obj/item/stock_parts/power_store/cell/phoenix_crystal
 	applied_modules = list(
 		/obj/item/mod/module/emp_shield/advanced,
 		/obj/item/mod/module/flashlight,

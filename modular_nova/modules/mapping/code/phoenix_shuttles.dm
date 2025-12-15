@@ -296,3 +296,39 @@
 	gpstag = "*PC - APRNTC"
 
 /*----- End of BLACK KNIFE Shuttle Code -----*/
+
+/*----- PHOENIX COLLECTIVE - "ERISGATE" Shuttle Code -----*/
+/area/shuttle/phoenix/vyra_portal
+	name = "Eris' Gate"
+	is_morrigi_space = TRUE
+
+/datum/map_template/shuttle/planetary/phoenix/vyra_portal
+	prefix = "_maps/shuttles/nova/phoenix/"
+	suffix = "phoenix_bluegate"
+	name = "\"Eris' Gate\" Phoenix Collective Portable Bluespace Shuttle"
+	description = "This shuttle was designed as a mobile habitat for Icewalkers. It gets its name from Eris Vyra, the first Icewalker \
+		successfully recovered and uplifted by the Phoenix Collective."
+	admin_notes = "Intended as a \"place-able minisat\" to properly add the Uplifted Icewalker ghost role to maps that don't have it."
+
+/obj/machinery/computer/shuttle/phoenix/vyra_portal
+	name = "\improper Eris' Gate control console"
+	desc = "Used to control a Eris' Gate model shuttle."
+	circuit = /obj/item/circuitboard/computer/phoenix/vyra_portal
+	shuttleId = "phoenix_vyragate"
+	possible_destinations = "phoenix_vyragate_custom;phoenix_general_home;whiteship_home;whiteship_lavaland;\
+		ferry_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
+
+/obj/item/circuitboard/computer/phoenix/vyra_portal
+	name = "Eris' Gate Control Console (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/phoenix/vyra_portal
+
+/obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/vyra_portal
+	name = "\improper Eris' Gate navigation computer"
+	desc = "The navigation console for a Eris' Gate model shuttle."
+	shuttleId = "phoenix_vyragate"
+	shuttlePortId = "phoenix_vyragate_custom"
+
+/obj/item/gps/computer/space/phoenix/vyra_portal
+	gpstag = "*PC - VYRA"
+
+/*----- End of BLACK KNIFE Shuttle Code -----*/

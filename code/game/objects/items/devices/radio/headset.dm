@@ -190,31 +190,8 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "team leader headset"
 	command = TRUE
 
-//EXOBYTECHNOVA UPD: phoenix collective headsets, originally "modded syndie tech" but now it's alt sec headset
-/obj/item/radio/headset/phoenix
-	name = "Phoenix Collective imperial headset"
-	desc = "A headset used by Phoenix Collective imperials. Protects ears from flashbangs."
-	icon_state = "sec_headset_alt"
-	worn_icon_state = "sec_headset_alt"
-	keyslot = /obj/item/encryptionkey/phoenix
-
-/obj/item/radio/headset/phoenix/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection)
-
-/obj/item/radio/headset/phoenix/ert
-	keyslot = /obj/item/encryptionkey/phoenix/ert
-
-/obj/item/radio/headset/phoenix/ert/cmdr
-	keyslot = /obj/item/encryptionkey/phoenix/ert/cmdr
-	command = TRUE
-
-/obj/item/radio/headset/phoenix/cc
-	name = "Phoenix Collective CentCom headset"
-	desc = "A headset used by Phoenix Collective Central Command staff. Protects ears from flashbangs."
-	keyslot = /obj/item/encryptionkey/phoenix/centcom
-	command = TRUE
-// EXOBYTECHNOVA UPDATE END
+// EXOBYTECHNOVA UPD: phoenix collective headsets, originally "modded syndie tech" but now it's alt sec headset
+// [ MOVED TO PHOENIXTECH MODULE ]
 
 /obj/item/radio/headset/binary
 	keyslot = /obj/item/encryptionkey/binary
