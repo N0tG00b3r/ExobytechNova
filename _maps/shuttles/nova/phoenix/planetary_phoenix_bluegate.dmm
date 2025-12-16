@@ -347,6 +347,7 @@
 /area/shuttle/phoenix/vyra_portal)
 "M" = (
 /obj/structure/bonfire,
+/obj/machinery/light/floor,
 /turf/open/misc/dirt/station{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},

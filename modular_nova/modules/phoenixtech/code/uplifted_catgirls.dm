@@ -12,7 +12,7 @@
 	uniform = /obj/item/clothing/under/misc/nova/utility
 	shoes = /obj/item/clothing/shoes/winterboots/ice_boots/primitive_catgirl_boots
 	gloves = /obj/item/clothing/gloves/fingerless/primitive_catgirl_armwraps
-	suit = /obj/item/clothing/suit/jacket/primitive_catgirl_coat
+	suit = /obj/item/clothing/under/misc/nova/gear_harness/suit
 	neck = /obj/item/clothing/neck/scarf/primitive_catgirl_scarf
 	ears = /obj/item/radio/headset
 	l_pocket = /obj/item/modular_computer/pda/ceti
@@ -21,9 +21,10 @@
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
 		/obj/item/forging/reagent_weapon/axe/fake_copper = 1,
+		/obj/item/hatchet/wooden = 1,
 		/obj/item/ore_sensor = 1,
 	)
-	belt = /obj/item/storage/belt/mining/primitive
+	belt = /obj/item/storage/belt/mining
 	belt_contents = list(
 		/obj/item/pickaxe/mini = 1,
 		/obj/item/storage/bag/ore = 1,
