@@ -61,6 +61,74 @@
 	},
 /area/shuttle/phoenix/vyra_portal)
 "l" = (
+/obj/machinery/space_heater/wall_mounted/directional/west{
+	target_temperature = 180;
+	on = 1;
+	cell = /obj/item/stock_parts/power_store/cell/infinite
+	},
+/obj/structure/closet/secure_closet/wall{
+	pixel_x = 32
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
 /turf/open/floor/noslip{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -70,9 +138,14 @@
 	dir = 8
 	},
 /obj/structure/bed/double/pelt/synthetic,
-/obj/effect/mapping_helpers/airalarm/tlv_cold_room,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/all_access,
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/machinery/space_heater/wall_mounted/directional/south{
+	cell = /obj/item/stock_parts/power_store/cell/infinite;
+	on = 1;
+	target_temperature = 180
+	},
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -142,12 +215,15 @@
 /area/shuttle/phoenix/vyra_portal)
 "u" = (
 /obj/machinery/pollution_scrubber{
-	pixel_x = -7
+	pixel_x = -7;
+	on = 1;
+	pixel_y = 3
 	},
 /obj/structure/table/wood,
 /obj/item/forging/tongs/primitive,
-/obj/item/forging/billow/primitive,
-/obj/item/forging/hammer/primitive,
+/obj/item/forging/billow/primitive{
+	pixel_y = 4
+	},
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -206,6 +282,7 @@
 /area/shuttle/phoenix/vyra_portal)
 "D" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/lattice,
 /turf/closed/wall/mineral/titanium/spaceship,
 /area/shuttle/phoenix/vyra_portal)
 "E" = (
@@ -234,7 +311,8 @@
 /obj/structure/table/wood,
 /obj/machinery/pollution_scrubber{
 	pixel_y = -4;
-	pixel_x = 6
+	pixel_x = 6;
+	on = 1
 	},
 /obj/item/book/manual/ancient_parchment{
 	pixel_x = -5;
@@ -297,23 +375,42 @@
 	},
 /area/shuttle/phoenix/vyra_portal)
 "P" = (
-/obj/structure/closet/crate/wooden/storage_barrel,
-/obj/item/stack/sheet/iron/twenty{
-	pixel_y = 4;
-	pixel_x = 2
+/obj/item/stack/sheet/iron/five{
+	pixel_x = -7
 	},
-/obj/item/stack/sheet/copporcitite/three{
-	pixel_x = 3
-	},
-/obj/item/stack/sheet/cobolterium/three{
-	pixel_x = -4;
+/obj/item/stack/sheet/glass{
 	pixel_y = 4
 	},
-/obj/item/stack/sheet/mineral/wood/thirty,
-/obj/item/stack/sheet/tinumium/three{
-	pixel_y = -4;
-	pixel_x = -2
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
 	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/copporcitite{
+	amount = 37;
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/obj/item/stack/sheet/cobolterium{
+	amount = 32;
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/stack/sheet/brussite{
+	amount = 20
+	},
+/obj/structure/closet/crate/wooden/storage_barrel,
+/obj/item/stack/sheet/mineral/wood{
+	amount = 15
+	},
+/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -341,6 +438,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/item/forging/hammer/primitive,
 /turf/open/misc/dirt/station{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -361,7 +459,9 @@
 	ignitionTime = 120
 	},
 /obj/structure/fans/tiny/forcefield,
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/keyed{
+	access_id = "vyragate_shuttle_exit"
+	},
 /turf/open/floor/noslip{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -379,12 +479,12 @@
 	dir = 4
 	},
 /obj/structure/bed/double/pelt/synthetic,
-/obj/machinery/space_heater/wall_mounted/directional/west{
-	target_temperature = 180;
-	on = 1;
-	cell = /obj/item/stock_parts/power_store/cell/infinite
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/space_heater/wall_mounted/directional/south{
+	cell = /obj/item/stock_parts/power_store/cell/infinite;
+	on = 1;
+	target_temperature = 180
+	},
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
