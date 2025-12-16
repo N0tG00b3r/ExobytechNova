@@ -1855,8 +1855,9 @@
 /turf/open/floor/iron/kitchen,
 /area/station/service/kitchen)
 "bzE" = (
-/turf/closed/wall/r_wall/plastitanium/nodiagonal,
-/area/station/science/xenobiology/hallway)
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/large,
+/area/station/science/xenobiology)
 "bzN" = (
 /turf/open/floor/iron,
 /area/station/medical/office)
@@ -2031,6 +2032,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/noslip,
 /area/station/hallway/secondary/entry)
 "bFx" = (
@@ -2795,10 +2797,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/lab)
-"coR" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/mineral/plastitanium,
-/area/station/science/xenobiology/control)
 "cpV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7894,7 +7892,7 @@
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "grR" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8723,7 +8721,7 @@
 	})
 "hap" = (
 /turf/open/floor/iron/large,
-/area/station/science/xenobiology/control)
+/area/station/science/xenobiology)
 "haF" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
@@ -9500,11 +9498,6 @@
 	},
 /turf/open/floor/iron/large,
 /area/station/engineering/atmos)
-"hFg" = (
-/turf/open/floor/iron/white/smooth_edge{
-	dir = 1
-	},
-/area/station/science/xenobiology/hallway)
 "hFp" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/bot,
@@ -11238,9 +11231,6 @@
 	dir = 8
 	},
 /area/station/commons/storage/primary)
-"jbx" = (
-/turf/closed/wall/r_wall/plastitanium/nodiagonal,
-/area/station/science/xenobiology/control)
 "jcf" = (
 /obj/effect/turf_decal/stripes,
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
@@ -13551,7 +13541,7 @@
 "kPu" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/mineral/plastitanium,
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "kPG" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/iron/large,
@@ -14472,7 +14462,7 @@
 /area/station/maintenance/department/engineering/engine_aft_port)
 "lyC" = (
 /obj/structure/table/reinforced,
-/obj/item/book/granter/action/spell/true_random,
+/obj/item/book/manual/random,
 /turf/open/floor/iron/checker,
 /area/station/science/lobby)
 "lyJ" = (
@@ -15053,6 +15043,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/noslip,
 /area/station/hallway/secondary/entry)
 "lYf" = (
@@ -15540,7 +15531,7 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "mrY" = (
 /obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark/textured_large/airless,
@@ -16821,6 +16812,7 @@
 	name = "Arrival Airlock"
 	},
 /obj/machinery/nova/fan/self_powered,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/noslip,
 /area/station/hallway/secondary/entry)
 "nzV" = (
@@ -18231,9 +18223,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
-"oGC" = (
-/turf/open/floor/iron/white/smooth_large,
-/area/station/science/xenobiology/hallway)
 "oGZ" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
@@ -19601,9 +19590,6 @@
 "pPC" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/main)
-"pPK" = (
-/turf/open/floor/iron/large,
-/area/station/science/xenobiology/hallway)
 "pQj" = (
 /obj/structure/cable,
 /turf/open/floor/iron/checker,
@@ -19699,7 +19685,7 @@
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "pUc" = (
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/bomb)
@@ -21085,7 +21071,7 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 4
 	},
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "rcu" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/briefcase/secure{
@@ -21431,6 +21417,7 @@
 	name = "Arrival Airlock"
 	},
 /obj/machinery/nova/fan/self_powered,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/noslip,
 /area/station/hallway/secondary/entry)
 "rpI" = (
@@ -22054,7 +22041,7 @@
 /turf/open/floor/iron/white/side{
 	dir = 1
 	},
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "rUk" = (
 /obj/machinery/incident_display/delam/directional/south,
 /turf/open/floor/iron,
@@ -24991,9 +24978,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
-"usK" = (
-/turf/open/floor/iron/white/smooth_edge,
-/area/station/science/xenobiology/hallway)
 "usT" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -25060,11 +25044,6 @@
 "uxP" = (
 /turf/closed/wall/r_wall/plastitanium,
 /area/station/medical/patients_rooms)
-"uxQ" = (
-/turf/open/floor/iron/white/smooth_edge{
-	dir = 8
-	},
-/area/station/science/xenobiology/hallway)
 "uyj" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -25306,7 +25285,7 @@
 	cycle_id = "DarkPhoenix_Xenobio"
 	},
 /turf/open/floor/iron/diagonal,
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "uHU" = (
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -25692,7 +25671,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
 /turf/open/floor/iron/diagonal,
-/area/station/science/xenobiology/control)
+/area/station/science/xenobiology)
 "uVc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -26314,7 +26293,7 @@
 "vuh" = (
 /obj/machinery/computer/camera_advanced/xenobio,
 /turf/open/floor/iron/large,
-/area/station/science/xenobiology/control)
+/area/station/science/xenobiology)
 "vuw" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -26640,7 +26619,7 @@
 	cycle_id = "DarkPhoenix_Xenobio"
 	},
 /turf/open/floor/iron/white/diagonal,
-/area/station/science/xenobiology/hallway)
+/area/station/science/xenobiology)
 "vFj" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -28228,11 +28207,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/port)
-"wPk" = (
-/turf/open/floor/iron/white/smooth_edge{
-	dir = 4
-	},
-/area/station/science/xenobiology/hallway)
 "wPu" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/machinery/light/blacklight/directional/east,
@@ -115711,12 +115685,12 @@ mjL
 mjL
 dMe
 nJg
-jbx
-jbx
-jbx
-jbx
-jbx
-jbx
+fnK
+fnK
+fnK
+fnK
+fnK
+fnK
 nSq
 nSq
 nSq
@@ -115968,8 +115942,8 @@ dMe
 dMe
 xiR
 hvk
-jbx
-hap
+fnK
+bzE
 hap
 hap
 hap
@@ -116225,7 +116199,7 @@ nJg
 nJg
 hvk
 nJg
-jbx
+fnK
 vuh
 hap
 hap
@@ -116482,9 +116456,9 @@ fnK
 fnK
 fnK
 fnK
-jbx
-coR
-jbx
+fnK
+kPu
+fnK
 hap
 hap
 hap
@@ -116741,7 +116715,7 @@ pgq
 rnw
 hGO
 cxB
-jbx
+fnK
 hap
 hap
 hap
@@ -116998,7 +116972,7 @@ hTS
 djT
 emb
 ybW
-jbx
+fnK
 hap
 hap
 hap
@@ -117255,7 +117229,7 @@ kCn
 rtu
 hDa
 iRB
-coR
+kPu
 hap
 hap
 hap
@@ -117512,7 +117486,7 @@ pgq
 rnw
 hGO
 cxB
-coR
+kPu
 hap
 hap
 hap
@@ -117769,7 +117743,7 @@ kNn
 djT
 emb
 qpK
-jbx
+fnK
 hap
 hap
 hap
@@ -118026,10 +118000,10 @@ kCn
 rtu
 hDa
 iRB
-jbx
-jbx
+fnK
+fnK
 uVa
-jbx
+fnK
 nSq
 nSq
 cDI
@@ -118283,13 +118257,13 @@ pgq
 rnw
 hGO
 cxB
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 kPu
 rcp
-wPk
+aYW
 rTM
 grN
 grN
@@ -118540,16 +118514,16 @@ jEB
 djT
 rvQ
 ybW
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 vFh
-oGC
-oGC
+iYF
+iYF
 rTM
-pPK
-pPK
+hap
+hap
 uHN
 sJm
 sJm
@@ -118797,16 +118771,16 @@ kCn
 rtu
 hDa
 iRB
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 kPu
-oGC
-oGC
+iYF
+iYF
 rTM
-pPK
-pPK
+hap
+hap
 kPu
 sJm
 sJm
@@ -119054,16 +119028,16 @@ pgq
 rnw
 hGO
 cxB
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 vFh
-oGC
-oGC
+iYF
+iYF
 rTM
-pPK
-pPK
+hap
+hap
 uHN
 sJm
 sJm
@@ -119311,13 +119285,13 @@ tRQ
 djT
 emb
 qpK
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 kPu
 mrU
-uxQ
+dZd
 rTM
 pTI
 pTI
@@ -119568,10 +119542,10 @@ kCn
 rtu
 hDa
 iRB
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 lZa
 lZa
 dbJ
@@ -119825,10 +119799,10 @@ pgq
 rnw
 hGO
 cxB
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 lZa
 jKs
 tNG
@@ -120082,10 +120056,10 @@ ulU
 djT
 emb
 ybW
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 lZa
 ixh
 xnZ
@@ -120339,10 +120313,10 @@ kCn
 vHu
 bDT
 suD
-bzE
-usK
-oGC
-hFg
+fnK
+xKP
+iYF
+jFv
 lZa
 ych
 xnZ
