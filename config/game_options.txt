@@ -61,15 +61,15 @@ ROUNDSTART_LOGOUT_REPORT_TIME_VARIANCE 1800
 ROUNDSTART_LOGOUT_REPORT_TIME_AVERAGE 6000
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-#REOPEN_ROUNDSTART_SUICIDE_ROLES
+REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
 ## If undefined, the delay defaults to 4 minutes.
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 240
+REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 600
 
 ## Unhash to enable a printed command report for reopened roles listing what roles were reopened.
 #REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_REPORT
@@ -150,7 +150,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 DYNAMIC_CONFIG_ENABLED
 
 ## Uncomment to enable event editing config file.
-#EVENTS_CONFIG_ENABLED
+EVENTS_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
@@ -434,7 +434,7 @@ ROUNDSTART_RACES kobold
 ## Disable roundstart species morgue cadavers?
 ## Cadavers in the morgue at the start of the round will be randomly picked from all enabled ROUNDSTART_RACES
 ## Recommended to leave this commented out so nonhuman species will have viable replacement bodies / organs when they die.
-# MORGUE_CADAVER_DISABLE_NONHUMANS
+#MORGUE_CADAVER_DISABLE_NONHUMANS
 
 ## Morgue Cadaver Species Probability
 ## The probability for nonhuman cadavers to spawn in the morgue.
@@ -606,7 +606,7 @@ MAX_POSITIVE_QUIRKS 6
 RANDOM_LOOT_WEIGHT_MODIFIER 1
 
 ## Custom shuttle spam prevention. Changine these numbers allows you to change the maxsize and amount of custom shuttles.
-MAX_SHUTTLE_COUNT 6
+MAX_SHUTTLE_COUNT 8
 MAX_SHUTTLE_SIZE 300
 
 ### Spy config
