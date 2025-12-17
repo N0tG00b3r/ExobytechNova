@@ -66,13 +66,8 @@ Edit =
 
 Name = Game Master
 Include = EVERYTHING
-Exclude = AUTOADMIN
-Edit = EVERYTHING
-
-Name = Lazy Master
-Include = EVERYTHING
-Exclude = AUTOADMIN
-Edit = EVERYTHING
+Exclude = AUTOADMIN PERMISSIONS DBRANKS
+Edit = 
 
 Name = Host
 Include = EVERYTHING
