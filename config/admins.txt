@@ -6,4 +6,3 @@
 
 Kevin_Glitch = Host
 RealNiko = Host
-Nazaki W. = Game Master
