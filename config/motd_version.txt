@@ -1,7 +1,7 @@
 <!-- PLEASE DO NOT TOUCH THIS EXCEPT WHEN UPDATING THE SERVER -->
 
 <p>
-	This server is running ExobytechNova v0.6.8 (December 15, 2025 version). ExobytechNova is a fork of Nova Sector created and maintained by N0tG00b3r, KevinGlitch, and Azrefrisk Dreemurr. You can report bugs with the codebase on
+	This server is running ExobytechNova v0.6.9 (December 16, 2025 version). ExobytechNova is a fork of Nova Sector created and maintained by N0tG00b3r, KevinGlitch, and Azrefrisk Dreemurr. You can report bugs with the codebase on
 	<a href="https://github.com/N0tG00b3r/ExobytechNova/issues">
 		 our public GitHub repository.
 	</a>
