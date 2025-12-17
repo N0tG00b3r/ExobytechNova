@@ -1,7 +1,7 @@
 {
 	"Spawn Bitrunning Glitch": {
 		"min_players": 2,
-		"weight": 100
+		"weight": 60
 	},
 	"Aurora Caelus": {
 		"min_players": 0,
@@ -22,7 +22,7 @@
 	},
 	"Camera Failure": {
 		"min_players": 0,
-		"weight": 100
+		"weight": 60
 	},
 	"Carp Migration": {
 		"min_players": 12,
