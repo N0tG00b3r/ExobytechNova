@@ -1,6 +1,7 @@
 /obj/item/clothing/suit/jacket
 	icon = 'icons/obj/clothing/suits/jacket.dmi'
 	worn_icon = 'icons/mob/clothing/suits/jacket.dmi'
+	abstract_type = /obj/item/clothing/suit/jacket
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
@@ -22,11 +23,12 @@
 /obj/item/clothing/suit/toggle/jacket
 	icon = 'icons/obj/clothing/suits/jacket.dmi'
 	worn_icon = 'icons/mob/clothing/suits/jacket.dmi'
+	abstract_type = /obj/item/clothing/suit/toggle/jacket
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
 		/obj/item/tank/internals/plasmaman,
-		/obj/item/tank/jetpack/oxygen/captain,
+		/obj/item/tank/jetpack/captain,
 		/obj/item/toy,
 		/obj/item/storage/fancy/cigarettes,
 		/obj/item/lighter,
@@ -64,6 +66,7 @@
 	flags_1 = IS_PLAYER_COLORABLE_1
 	blood_overlay_type = "coat"
 	flags_inv = HIDEBELT
+	clothing_flags = parent_type::clothing_flags | CARP_STYLE_FACTOR // I know kung-fu
 
 /obj/item/clothing/suit/toggle/jacket/trenchcoat/Initialize(mapload)
 	. = ..()
@@ -79,6 +82,7 @@
 	greyscale_config_worn = /datum/greyscale_config/blazer/worn
 	greyscale_colors = "#414344"
 	flags_1 = IS_PLAYER_COLORABLE_1
+	clothing_flags = parent_type::clothing_flags | CARP_STYLE_FACTOR
 
 /obj/item/clothing/suit/jacket/oversized
 	name = "oversized jacket"
