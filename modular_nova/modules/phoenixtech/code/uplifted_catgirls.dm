@@ -95,18 +95,26 @@
 		bank_account.replaceable = FALSE
 		spawned_human.add_mob_memory(/datum/memory/key/account, remembered_id = bank_account.account_id)
 	
-		var/obj/item/card/id/ID = spawned_human.wear_id
-		if(ID) // sanity check
-			ID.registered_name = spawned_human.real_name
-			ID.update_label()
-			ID.registered_account = bank_account
-			bank_account.bank_cards += ID
+		var/obj/item/card/id/catgirl_id = spawned_human.wear_id
+		if(catgirl_id) // sanity check
+			SSid_access.apply_trim_to_card(catgirl_id, /datum/id_trim/job/assistant)
+			catgirl_id.registered_name = spawned_human.real_name
+			catgirl_id.assignment = "Icewalker Assistant"
+			catgirl_id.registered_account = bank_account
+			bank_account.bank_cards += catgirl_id
+			catgirl_id.update_label()
 
 		// Uplifted: Grant extra languages and set Sol Common as the default language.
 		spawned_human.grant_language(/datum/language/common, source = LANGUAGE_MIND)
 		spawned_human.grant_language(/datum/language/spacer, source = LANGUAGE_MIND)
 		spawned_human.grant_language(/datum/language/solfed, source = LANGUAGE_MIND)
 		spawned_human.set_active_language(/datum/language/common)
+
+		// Uplifted: Inject this gato into the crew records, damnit!
+		GLOB.manifest.inject(spawned_human, person_client = spawned_human.client)
+
+		// Uplifted: Announce this gato, damnit!
+		announce_arrival(spawned_human, "Assistant (Uplifted Icemoon Walker)")
 	
 		// Apply antag role (not part of uplift)
 		spawned_human.mind.add_antag_datum(/datum/antagonist/primitive_catgirl_uplifted, team)
@@ -140,30 +148,28 @@
 	)
 
 	mail_goodies = list(
-		/obj/effect/spawner/random/exotic/snow_gear = 30,
-		/obj/effect/spawner/random/vendor_meal_sides/yangyu = 23,
-		/obj/item/food/butterbiscuit = 16,
-		/obj/item/food/grown/icepepper = 3,
+		/obj/effect/spawner/random/exotic/snow_gear = 42,
+		/obj/item/food/butterbiscuit = 18,
+		/obj/item/food/grown/icepepper = 8,
 
-		/obj/item/stack/sheet/hairlesshide{amount = 5} = 26,
 		/obj/item/stack/sheet/mineral/wood{amount = 5} = 22,
-		/obj/item/stack/sheet/bone{amount = 5} = 22,
-		/obj/item/stack/stone{amount = 5} = 22,
+		/obj/item/stack/sheet/bone{amount = 3} = 22,
 		/obj/item/stack/sheet/cobolterium/three = 20,
 		/obj/item/stack/sheet/copporcitite/three = 20,
-		/obj/item/stack/sheet/leather/five = 18,
-		/obj/item/smelling_salts = 8,
-		/obj/item/xenoarch/useless_relic = 6,
+		/obj/item/stack/sheet/hairlesshide = 18,
+		/obj/item/stack/sheet/leather = 18,
+		/obj/item/xenoarch/useless_relic = 10,
+		/obj/item/smelling_salts = 3,
 
-		/obj/item/secateurs/ashwalker = 3,
-		/obj/item/crowbar/ashwalker = 3,
-		/obj/item/screwdriver/ashwalker = 2,
-		/obj/item/wirecutters/ashwalker = 2,
-		/obj/item/forging/hammer/primitive = 1,
-		/obj/item/forging/tongs/primitive = 1,
-		/obj/item/forging/billow/primitive = 1,
+		/obj/item/secateurs/ashwalker = 6,
+		/obj/item/crowbar/ashwalker = 6,
+		/obj/item/screwdriver/ashwalker = 6,
+		/obj/item/wirecutters/ashwalker = 6,
+		/obj/item/forging/hammer/primitive = 5,
+		/obj/item/forging/tongs/primitive = 5,
+		/obj/item/forging/billow/primitive = 5,
 
-		/obj/item/stack/spacecash/c100 = 5,
+		/obj/item/stack/spacecash/c100 = 10,
 	)
 
 	allow_bureaucratic_error = FALSE

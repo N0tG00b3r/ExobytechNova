@@ -315,8 +315,8 @@
 	desc = "Used to control a Eris' Gate model shuttle."
 	circuit = /obj/item/circuitboard/computer/phoenix/vyra_portal
 	shuttleId = "phoenix_vyragate"
-	possible_destinations = "phoenix_vyragate_custom;phoenix_general_home;whiteship_home;whiteship_lavaland;\
-		ferry_home;syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
+	possible_destinations = "tradership_away;phoenix_vyragate_custom;phoenix_general_home;whiteship_home;whiteship_lavaland;ferry_home;\
+		syndicate_ne;syndicate_nw;syndicate_n;syndicate_se;syndicate_sw;syndicate_s"
 
 /obj/item/circuitboard/computer/phoenix/vyra_portal
 	name = "Eris' Gate Control Console (Computer Board)"

@@ -67,7 +67,8 @@
 	cell = /obj/item/stock_parts/power_store/cell/infinite
 	},
 /obj/structure/closet/secure_closet/wall{
-	pixel_x = 32
+	pixel_x = 32;
+	name = "Shuttle Keys"
 	},
 /obj/item/key_card{
 	name = "Eris' Gate shuttle key";
@@ -128,6 +129,10 @@
 	name = "Eris' Gate shuttle key";
 	color = "#3FA9FA";
 	access_id = "vyragate_shuttle_exit"
+	},
+/obj/machinery/camera/xray/directional/west{
+	c_tag = "Eris' Gate Shuttle";
+	network = list("ErisGate")
 	},
 /turf/open/floor/noslip{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
@@ -178,13 +183,12 @@
 /area/shuttle/phoenix/vyra_portal)
 "q" = (
 /obj/effect/turf_decal/siding/wood/corner,
-/obj/structure/closet/crate/wooden,
-/obj/item/stack/sheet/leather/five,
-/obj/item/stack/sheet/cloth/ten,
-/obj/item/gun/ballistic/bow/longbow,
-/obj/item/storage/bag/quiver/full{
-	pixel_y = -4;
-	pixel_x = -4
+/obj/structure/closet/crate/engineering,
+/obj/item/construction/rcd/loaded/upgraded,
+/obj/item/crowbar/power,
+/obj/item/paper{
+	default_raw_text = "As a reminder, these are not toys. Use the RCD and Jaws of Life provided ONLY for the purposes of constructing a safe entrance to the station, and please remember to leave everything as you found it before departing. -mgmt";
+	name = "Reminder Note"
 	},
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
@@ -223,6 +227,9 @@
 /obj/item/forging/tongs/primitive,
 /obj/item/forging/billow/primitive{
 	pixel_y = 4
+	},
+/obj/item/healthanalyzer/simple{
+	pixel_x = 8
 	},
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
@@ -275,7 +282,7 @@
 /area/shuttle/phoenix/vyra_portal)
 "C" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/colony_recycler,
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -308,16 +315,21 @@
 	},
 /area/shuttle/phoenix/vyra_portal)
 "I" = (
-/obj/structure/table/wood,
-/obj/machinery/pollution_scrubber{
-	pixel_y = -4;
-	pixel_x = 6;
-	on = 1
+/obj/structure/closet/crate/science{
+	name = "thermal adaptation DNA injectors"
 	},
-/obj/item/book/manual/ancient_parchment{
-	pixel_x = -5;
-	pixel_y = 2
-	},
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -353,15 +365,22 @@
 	},
 /area/shuttle/phoenix/vyra_portal)
 "N" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/stack/sheet/leather/five,
-/obj/item/stack/sheet/cloth/ten,
-/obj/item/gun/ballistic/bow/longbow,
-/obj/item/storage/bag/quiver/full{
-	pixel_y = -4;
-	pixel_x = -4
-	},
 /obj/effect/turf_decal/siding/wood,
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/obj/structure/closet/crate/medical,
 /turf/open/floor/wood{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
@@ -452,12 +471,12 @@
 	dir = 2;
 	shuttle_id = "phoenix_vyragate";
 	name = "Eris' Gate shuttle";
-	callTime = 300;
+	callTime = 150;
 	can_move_docking_ports = 1;
 	port_direction = 2;
 	launch_status = 0;
 	preferred_direction = 2;
-	ignitionTime = 120
+	ignitionTime = 50
 	},
 /obj/structure/fans/tiny/forcefield,
 /obj/machinery/door/airlock/keyed{
