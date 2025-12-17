@@ -14,7 +14,7 @@ ALERT_EPSILON_DOWNTO The Galactic Security Committee has released Military Comma
 ALERT_FEDERAL The Galactic Security Committee has placed this galactic sector under its full command. All star systems within this sector are now under Military Law. Comply with all official Galactic Security Committee instructions.
 
 ## How long until someone can be put in cryo if they are SSD
-CRYO_MIN_SSD_TIME 15
+CRYO_MIN_SSD_TIME 60
 
 ## log subtler emotes in game.txt
 #LOG_SUBTLER
@@ -23,7 +23,7 @@ CRYO_MIN_SSD_TIME 15
 #AUTOTRANSFER
 
 ## Enables starting transfer votes by the crew at large.
-#ALLOW_VOTE_TRANSFER
+ALLOW_VOTE_TRANSFER
 
 ## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes)
 ## Set to 0 to disable the subsystem altogether.
@@ -35,7 +35,7 @@ VOTE_AUTOTRANSFER_INTERVAL 18000
 ## autovote maximum votes until automatic transfer call. (default 4)
 ## Set to 0 to force automatic crew transfer after the 'vote_autotransfer_initial' elapsed.
 ## Set to -1 to disable the maximum votes cap.
-VOTE_AUTOTRANSFER_MAXIMUM 4
+VOTE_AUTOTRANSFER_MAXIMUM 10
 
 ## Policy for what people remember after dying and being brought back to life
 BLACKOUTPOLICY You remember nothing after you've blacked out and you do not remember who or what events killed you, however, you can have faint recollection of what led up to it.
@@ -50,7 +50,7 @@ GAME_ALERT_ROLE_ID
 ROLE_ASSIGN_CHANNEL_ID
 
 ##Rockplanet Ruins Budget
-ROCKPLANET_BUDGET 60
+ROCKPLANET_BUDGET 90
 
 ## Splits the rounds threat budget between midrounds and roundstart
 #SPLIT_THREAT_BUDGET
@@ -95,10 +95,10 @@ MINIMUM_ALERT_FOR_PODS 0
 LORECASTER_DELAY 18000
 
 ## If uncommented, suicide will be disabled.
-# DISABLE_SUICIDE
+#DISABLE_SUICIDE
 
 ## If uncommented, the initial (stationary) singulo created by insterting one bag of holding into another will be disabled.
-# DISABLE_STATIONARY_BOH_SINGULARITY
+#DISABLE_STATIONARY_BOH_SINGULARITY
 
 ## The gravitational pull of the stationary singularity created by bag of holding tears. TG's default is 21.
 STATIONARY_BOH_SINGULARITY_GRAV_PULL 4
