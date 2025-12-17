@@ -20,7 +20,7 @@ $include map_vote.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-# SERVERNAME tgstation
+SERVERNAME Space Station 13
 
 ## Server tagline: This will appear right below the server's title.
 # SERVERTAGLINE A generic TG-based server
@@ -59,7 +59,7 @@ ROUND_END_COUNTDOWN 90
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
-#  LOAD_LEGACY_RANKS_ONLY
+#LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
 ENABLE_LOCALHOST_RANK
@@ -75,7 +75,7 @@ ENABLE_LOCALHOST_RANK
 #USE_ACCOUNT_AGE_FOR_JOBS
 
 ## Unhash this to track player playtime in the database. Requires database to be enabled.
-#USE_EXP_TRACKING
+USE_EXP_TRACKING
 ## Unhash this to enable playtime requirements for head jobs.
 #USE_EXP_RESTRICTIONS_HEADS
 ## Unhash this to override head jobs' playtime requirements with this number of hours.
@@ -86,11 +86,11 @@ ENABLE_LOCALHOST_RANK
 ## Unhash this to enable playtime requirements for certain non-head jobs, like Engineer and Scientist.
 #USE_EXP_RESTRICTIONS_OTHER
 ## Allows admins to bypass job playtime requirements.
-#USE_EXP_RESTRICTIONS_ADMIN_BYPASS
+USE_EXP_RESTRICTIONS_ADMIN_BYPASS
 ## Unhash this to have intern tags automatically added to ID cards for station roles depending on the living hours of the player holding them.
-#USE_LOW_LIVING_HOUR_INTERN
+USE_LOW_LIVING_HOUR_INTERN
 ## If USE_LOW_LIVING_HOUR_INTERN is unhashed, players under this number of living hours have [Intern] added to their ID card. If this isn't set, uses USE_EXP_RESTRICTIONS_HEADS_HOURS instead. If that isn't set, it finally defaults to a hardcoded fallback of 15 hours.
-#USE_LOW_LIVING_HOUR_INTERN_HOURS 50
+USE_LOW_LIVING_HOUR_INTERN_HOURS 20
 
 ##Log camera pictures - Must have picture logging enabled
 PICTURE_LOGGING_CAMERA
@@ -102,7 +102,7 @@ INACTIVITY_PERIOD 600
 AFK_PERIOD 1200
 
 ## disconnect players who are considered afk
-# KICK_INACTIVE
+#KICK_INACTIVE
 
 ## Comment this out to stop admins being able to choose their personal ooccolor
 ALLOW_ADMIN_OOCCOLOR
@@ -111,7 +111,7 @@ ALLOW_ADMIN_OOCCOLOR
 ALLOW_ADMIN_ASAYCOLOR
 
 ## Job slot open/close by identification consoles delay in seconds
-ID_CONSOLE_JOBSLOT_DELAY 30
+ID_CONSOLE_JOBSLOT_DELAY 10
 
 ## Request Emergency Temporary Access - RETA System
 ## Enables temporary department access when Requests Console emergency calls are made
@@ -396,15 +396,15 @@ AUTOADMIN_RANK Game Master
 #AUTO_DEADMIN_ON_READY_OR_LATEJOIN
 
 ## Number of game ticks before player-admins will be automatically deadminned.
-#AUTO_DEADMIN_TIMEGATE 600
+AUTO_DEADMIN_TIMEGATE 1200
 
 ## Uncomment to automatically deadmin antagonists when they gain the role.
-#AUTO_DEADMIN_ANTAGONISTS
+AUTO_DEADMIN_ANTAGONISTS
 
 ## Uncomment to automatically deadmin specific role sets when a player joins the game.
-#AUTO_DEADMIN_HEADS
-#AUTO_DEADMIN_SECURITY
-#AUTO_DEADMIN_SILICONS
+AUTO_DEADMIN_HEADS
+AUTO_DEADMIN_SECURITY
+AUTO_DEADMIN_SILICONS
 
 
 ## CLIENT VERSION CONTROL
