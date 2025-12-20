@@ -120,6 +120,9 @@
 		spawned_human.mind.add_antag_datum(/datum/antagonist/primitive_catgirl_uplifted, team)
 		team.players_spawned += (spawned_human.ckey)
 
+	// preserve return
+	return spawned_mob
+
 /obj/effect/mob_spawn/ghost_role/human/primitive_catgirl_uplifted/mouse_drop_receive(mob/living/carbon/human/target, mob/user, params)
 	if(!istype(target))
 		return
