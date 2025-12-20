@@ -2259,7 +2259,8 @@
 	access = list("away_general", "away_maintenance");
 	name = "Rakoran-09 Complex Card (Maintenance)";
 	desc = "An access card that can open the various maintenance tunnels around the complex.";
-	assignment = "Maintenance"
+	assignment = "Maintenance";
+	trim = null
 	},
 /turf/open/indestructible/vault,
 /area/awaymission/secret/powered)
