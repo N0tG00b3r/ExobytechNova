@@ -148,12 +148,18 @@
 			else
 				currentcolor = colors[selection]
 	else if(istype(action, /datum/action/item_action/dtcleargrid))
-		var/yesnomaybe = tgui_alert("Are you sure you wanna clear the canvas?", "", list("Yes", "No", "Maybe"))
+		var/yesnomaybe = tgui_alert(user, "Are you sure you wanna clear the canvas?", "", list("Yes", "No", "Maybe"))
 		if(QDELETED(src) || !user.can_perform_action(src))
 			return
 		switch(yesnomaybe)
 			if("Yes")
-				reset_grid()
+				workspace = new(width,
+					height,
+					color_mode = SPRITE_EDITOR_COLOR_MODE_RGB,
+					config_flags = NONE,
+					tool_flags = SPRITE_EDITOR_TOOL_PENCIL | SPRITE_EDITOR_TOOL_BUCKET,
+					initial_layer_color = "[canvas_color]ff" // To avoid needing to handle strings of mixed lengths, sprite editor workspaces always use the alpha channel
+				)
 				SStgui.update_uis(src)
 			if("No")
 				return
@@ -2484,6 +2490,42 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/suit.dmi'
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
+/obj/item/clothing/head/gabeny
+	name = "\improper Triumvirate officer's cap"
+	desc = "A militaristic, dark grey cap with a of gold badge on the front. The emblem depicts the triangular fox-faced emblem of Triumvirate Textiles."
+	icon_state = "gabeny_cap"
+	worn_icon_state = "gabeny_cap"
+	icon = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
+	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
+
+/obj/item/clothing/under/gabeny
+	name = "\improper Triumvirate officer's formal uniform"
+	desc = "A dark grey military-style uniform with golden cuffs and epaulet on the right shoulder. The top of this uniform is double-breasted with navy blue buttons and highlights."
+	icon_state = "gabeny_jumpsuit"
+	worn_icon_state = "gabeny_jumpsuit"
+	icon = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'
+	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/uniform.dmi'
+	worn_icon_digi = 'modular_nova/master_files/icons/donator/mob/clothing/uniform_digi.dmi'
+
+/obj/item/clothing/suit/toggle/labcoat/gabeny
+	name = "\improper Triumvirate medsci officer's labcoat"
+	desc = "A dark grey labcoat with navy blue accents and the fox-faced emblem of Triumvirate Textiles on the right breast pocket. Despite having a spot on the right sleeve for a company patch, there doesn't seem to be one. \
+		The materials used to make this coat make it perfectly sanitary for any medical or research needs."
+	icon_state = "gabeny_labcoat"
+	worn_icon_state = "gabeny_labcoat"
+	icon = 'modular_nova/master_files/icons/donator/obj/clothing/suits.dmi'
+	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/suit.dmi'
+
+/obj/item/clothing/suit/jacket/gabeny
+	name = "\improper Triumvirate officer's great coat"
+	desc = "A dark grey great coat with navy blue accents and gold buttons with a patch of the Sol Federation flag on the right shoulder. \
+		There's a few other patches across the chest, and left sleeve, most recognizable being the fox-faced emblem of Triumvirate Textiles on the left breast pocket."
+	icon_state = "gabeny_greatcoat"
+	worn_icon_state = "gabeny_greatcoat"
+	icon = 'modular_nova/master_files/icons/donator/obj/clothing/suits.dmi'
+	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/suit.dmi'
+	armor_type = /datum/armor/colonist_clothing
+
 // Kaynite Donor Items
 /obj/item/clothing/suit/hooded/merctac_hoodie
 	name = "\improper MercTac hoodie"
@@ -2557,3 +2599,68 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 	. = ..()
 	allowed = GLOB.security_vest_allowed
 
+/obj/item/storage/belt/espatier
+	name = "dated Espatier holster"
+	desc = "An old outdated holster used by the Sol Federation Espatiers during the Rimward War \
+		with a sidearm holster and four pouches capable of containing anything from ammo and meds, \
+		to lucky charms. This one's been refurbished DarkRilo Apparel, though it's clearly been through a lot."
+	icon = 'modular_nova/master_files/icons/donator/obj/clothing/belts.dmi'
+	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/belt.dmi'
+	icon_state = "espatier"
+	worn_icon_state = "espatier"
+	content_overlays = TRUE
+	storage_type = /datum/storage/holster/espatier
+
+/datum/storage/holster/espatier
+	max_slots = 5
+	max_limited_store = 1
+	max_specific_storage = 5
+	max_total_storage = WEIGHT_CLASS_SMALL * 5
+	open_sound = 'sound/items/handling/holster_open.ogg'
+	open_sound_vary = TRUE
+	rustle_sound = null
+
+/datum/storage/holster/espatier/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
+	. = ..()
+	set_holdable(list(
+		/obj/item/gun/ballistic/revolver/c38/detective,
+		/obj/item/gun/ballistic/revolver/c38/super,
+		/obj/item/ammo_box/speedloader/c38,
+		/obj/item/gun/ballistic/automatic/pistol/sol,
+		/obj/item/ammo_box/magazine/c35sol_pistol,
+		/obj/item/healthanalyzer,
+		/obj/item/healthanalyzer/advanced,
+		/obj/item/door_remote, //All Command door remote
+		/obj/item/anomaly_neutralizer,
+		/obj/item/pen, //All pen
+		/obj/item/stamp, //All stamps
+		/obj/item/paper, //All paper
+		/obj/item/clipboard,
+		/obj/item/folder,
+		/obj/item/reagent_containers/hypospray/medipen, //All medipen
+		/obj/item/stack/sticky_tape/surgical,
+		/obj/item/reagent_containers/cup/vial/small,
+		/obj/item/reagent_containers/cup/vial/large,
+		/obj/item/storage/pill_bottle,
+		/obj/item/radio,
+		/obj/item/restraints/handcuffs, //include cable
+		/obj/item/knife/combat/throwing,
+		/obj/item/binoculars,
+		/obj/item/gps,
+		/obj/item/experi_scanner,
+		/obj/item/mining_scanner, //manual mining scanner
+		/obj/item/t_scanner/adv_mining_scanner, // Automatic and advanced mining scanner
+		/obj/item/stack/cable_coil,
+		/obj/item/reagent_containers/cup/bottle,
+		/obj/item/hypospray,
+		/obj/item/reagent_containers/cup/glass/flask,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/cigarette,
+		/obj/item/lighter,
+		/obj/item/reagent_containers/cup/beaker,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/flashlight,
+		/obj/item/hand_tele,
+		/obj/item/petri_dish,
+		/obj/item/food/grown/banana,
+	))
