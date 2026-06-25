@@ -227,7 +227,7 @@ export function PageMain(props) {
           {!!canMessageAssociates && (
             <Button
               icon="bullhorn"
-              color="gold"
+              color="purple"
               disabled={!importantActionReady}
               onClick={() => act('messagethefeds')}
             >
