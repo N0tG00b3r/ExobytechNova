@@ -92,3 +92,29 @@
 		/obj/item/cigarette/pipe/crackpipe = 2,
 	)
 	generate_items_inside(items_inside, src)
+
+/// EXOBYTECHNOVA UPD: I am tired of Azre going through hell to get to this point.
+
+/obj/item/storage/box/phoenixcc
+	name = "secure assets box"
+	desc = "A secure box used by members of Phoenix Collective Central Command for varied purposes."
+	icon_state = "syndiebox_large"
+	storage_type = /datum/storage/box/doubletime
+
+/obj/item/storage/box/phoenixcc/azre/PopulateContents()
+	var/static/list/items_inside = list(
+		/obj/item/grenade/flashbang = 2,
+		/obj/item/borg/upgrade/syndicate = 1,
+		/obj/item/door_remote/omni = 1,
+		/obj/item/lightreplacer/blue = 1,
+		/obj/item/t_scanner = 1,
+		/obj/item/airlock_painter/decal = 1,
+		/obj/item/rcd_upgrade/silo_link = 3,
+		/obj/item/rcd_upgrade/simple_circuits = 1,
+		/obj/item/rcd_upgrade/frames = 1,
+		/obj/item/rcd_upgrade/furnishing = 1,
+		/obj/item/assembly/signaler/anomaly/bluespace = 1,
+	)
+	generate_items_inside(items_inside, src)
+
+/// EXOBYTECHNOVA UPD END

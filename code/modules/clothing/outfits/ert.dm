@@ -654,3 +654,5 @@
 ///Identical to medical MODsuit, but uses the alternate skin by default.
 /datum/mod_theme/medical/corpsman
 	default_skin = "corpsman"
+
+/// EXOBYTECHNOVA UPD: Phoenix Collective ERT definitions have been moved to a different file

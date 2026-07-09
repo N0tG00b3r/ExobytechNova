@@ -1503,6 +1503,9 @@
 	registered_age = null
 	inherent_assigned_name = "Captain"
 
+/// EXOBYTECHNOVA UPD: PHOENIX COLLECTIVE ID CARD OBJECTS
+/// (MOVED TO THE PHOENIX COLLECTIVE OUTFITS DM FILE)
+
 /obj/item/card/id/advanced/debug
 	name = "\improper Debug ID"
 	desc = "A debug ID card. Has ALL the all access and a boatload of money, you really shouldn't have this."

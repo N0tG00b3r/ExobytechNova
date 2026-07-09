@@ -1,0 +1,647 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"c" = (
+/obj/structure/reagent_water_basin,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"d" = (
+/obj/machinery/computer/camera_advanced{
+	dir = 1
+	},
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"e" = (
+/obj/structure/reagent_crafting_bench,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"g" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"h" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/tank/air/layer4,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"j" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/phoenix/vyra_portal)
+"k" = (
+/obj/effect/mob_spawn/ghost_role/human/primitive_catgirl_uplifted,
+/turf/open/floor/circuit{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"l" = (
+/obj/machinery/space_heater/wall_mounted/directional/west{
+	target_temperature = 180;
+	on = 1;
+	cell = /obj/item/stock_parts/power_store/cell/infinite
+	},
+/obj/structure/closet/secure_closet/wall{
+	pixel_x = 32;
+	name = "Shuttle Keys"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/item/key_card{
+	name = "Eris' Gate shuttle key";
+	color = "#3FA9FA";
+	access_id = "vyragate_shuttle_exit"
+	},
+/obj/machinery/camera/xray/directional/west{
+	c_tag = "Eris' Gate Shuttle";
+	network = list("ErisGate")
+	},
+/turf/open/floor/noslip{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"m" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/bed/double/pelt/synthetic,
+/obj/machinery/airalarm/directional/east,
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/obj/machinery/space_heater/wall_mounted/directional/south{
+	cell = /obj/item/stock_parts/power_store/cell/infinite;
+	on = 1;
+	target_temperature = 180
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"n" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 10
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"o" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"p" = (
+/obj/structure/reagent_forge,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"q" = (
+/obj/effect/turf_decal/siding/wood/corner,
+/obj/structure/closet/crate/engineering,
+/obj/item/construction/rcd/loaded/upgraded,
+/obj/item/crowbar/power,
+/obj/item/paper{
+	default_raw_text = "As a reminder, these are not toys. Use the RCD and Jaws of Life provided ONLY for the purposes of constructing a safe entrance to the station, and please remember to leave everything as you found it before departing. -mgmt";
+	name = "Reminder Note"
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"r" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/airless,
+/area/shuttle/phoenix/vyra_portal)
+"s" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"t" = (
+/obj/machinery/atmospherics/components/unary/passive_vent/layer2{
+	dir = 4;
+	name = "passive waste vent"
+	},
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/phoenix/vyra_portal)
+"u" = (
+/obj/machinery/pollution_scrubber{
+	pixel_x = -7;
+	on = 1;
+	pixel_y = 3
+	},
+/obj/structure/table/wood,
+/obj/item/forging/tongs/primitive,
+/obj/item/forging/billow/primitive{
+	pixel_y = 4
+	},
+/obj/item/healthanalyzer/simple{
+	pixel_x = 8
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"w" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"x" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/obj/structure/railing/corner,
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"z" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 6
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"A" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/shuttle/phoenix/vyra_portal)
+"B" = (
+/obj/machinery/computer/communications{
+	dir = 4
+	},
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"C" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"D" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/lattice,
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/shuttle/phoenix/vyra_portal)
+"E" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/shuttle/phoenix/vyra_portal)
+"F" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/structure/railing,
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"H" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/vyra_portal{
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"I" = (
+/obj/structure/closet/crate/science{
+	name = "thermal adaptation DNA injectors"
+	},
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/obj/item/dnainjector/firemut,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"J" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"K" = (
+/obj/machinery/computer{
+	dir = 4
+	},
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"L" = (
+/obj/machinery/power/shuttle_engine/propulsion/left{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/phoenix/vyra_portal)
+"M" = (
+/obj/structure/bonfire,
+/obj/machinery/light/floor,
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"N" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/obj/structure/closet/crate/medical,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"O" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"P" = (
+/obj/item/stack/sheet/iron/five{
+	pixel_x = -7
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/copporcitite{
+	amount = 37;
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/obj/item/stack/sheet/cobolterium{
+	amount = 32;
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/stack/sheet/brussite{
+	amount = 20
+	},
+/obj/structure/closet/crate/wooden/storage_barrel,
+/obj/item/stack/sheet/mineral/wood{
+	amount = 15
+	},
+/obj/item/stack/sheet/mineral/coal/ten,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"Q" = (
+/obj/item/gps/computer/space/phoenix/vyra_portal,
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"R" = (
+/obj/machinery/computer/shuttle/phoenix/vyra_portal{
+	dir = 1;
+	req_access = null
+	},
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"S" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/obj/structure/reagent_anvil,
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/item/forging/hammer/primitive,
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"T" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/shuttle/phoenix/vyra_portal)
+"U" = (
+/obj/docking_port/mobile{
+	dir = 2;
+	shuttle_id = "phoenix_vyragate";
+	name = "Eris' Gate shuttle";
+	callTime = 150;
+	can_move_docking_ports = 1;
+	port_direction = 2;
+	launch_status = 0;
+	preferred_direction = 2;
+	ignitionTime = 50
+	},
+/obj/structure/fans/tiny/forcefield,
+/obj/machinery/door/airlock/keyed{
+	access_id = "vyragate_shuttle_exit"
+	},
+/turf/open/floor/noslip{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"V" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"W" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/bed/double/pelt/synthetic,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/space_heater/wall_mounted/directional/south{
+	cell = /obj/item/stock_parts/power_store/cell/infinite;
+	on = 1;
+	target_temperature = 180
+	},
+/turf/open/floor/wood{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"X" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/misc/dirt/station{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+"Y" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/turf/open/floor/plating,
+/area/shuttle/phoenix/vyra_portal)
+"Z" = (
+/turf/open/misc/snow/actually_safe{
+	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+	},
+/area/shuttle/phoenix/vyra_portal)
+
+(1,1,1) = {"
+a
+T
+A
+A
+Y
+Y
+Y
+A
+T
+t
+j
+"}
+(2,1,1) = {"
+A
+A
+A
+I
+K
+k
+B
+Q
+A
+D
+j
+"}
+(3,1,1) = {"
+L
+r
+q
+b
+b
+b
+J
+J
+W
+E
+T
+"}
+(4,1,1) = {"
+A
+A
+N
+Z
+x
+g
+n
+Z
+s
+H
+Y
+"}
+(5,1,1) = {"
+U
+l
+o
+Z
+F
+M
+X
+Z
+s
+R
+Y
+"}
+(6,1,1) = {"
+A
+A
+C
+Z
+w
+S
+z
+Z
+s
+d
+Y
+"}
+(7,1,1) = {"
+L
+r
+h
+O
+O
+O
+O
+V
+m
+A
+T
+"}
+(8,1,1) = {"
+A
+A
+A
+P
+e
+p
+c
+u
+A
+T
+a
+"}
+(9,1,1) = {"
+a
+T
+A
+A
+Y
+Y
+Y
+A
+T
+a
+a
+"}

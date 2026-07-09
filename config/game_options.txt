@@ -153,7 +153,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 DYNAMIC_CONFIG_ENABLED
 
 ## Uncomment to enable event editing config file.
-EVENTS_CONFIG_ENABLED
+#EVENTS_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
@@ -164,11 +164,11 @@ ALLOW_RANDOM_EVENTS
 
 ## The lower bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 1500 deciseconds or 2.5 minutes
-EVENTS_FREQUENCY_LOWER 1500
+EVENTS_FREQUENCY_LOWER 2400
 
 ## The upper bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 4200 deciseconds or 7 minutes
-EVENTS_FREQUENCY_UPPER 4200
+EVENTS_FREQUENCY_UPPER 7800
 
 ## AI ###
 
@@ -184,14 +184,14 @@ ALLOW_AI_MULTICAM
 
 ## Peacekeeper Borg ###
 ## Uncomment to prevent the peacekeeper cyborg model from being chosen
-#DISABLE_PEACEBORG
+DISABLE_PEACEBORG
 
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt or away_missions/ at roundstart.
-ROUNDSTART_AWAY
+#ROUNDSTART_AWAY
 
-## How long the delay is before the Away Mission gate opens. Default is half an hour.
+## How long the delay is before the Away Mission gate opens. Default is half an hour (18000).
 ## 600 is one minute.
 GATEWAY_DELAY 18000
 
@@ -254,8 +254,6 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specified in that file.
 ## Set to 4 for "specified", silicons will start with an existing lawset. (If no specified lawset is identified, the AI will spawn with asimov.)
-
-
 DEFAULT_LAWS 1
 
 ## SILICON ASIMOV SUPERIORITY OVERRIDE ###
@@ -319,29 +317,29 @@ LAW_WEIGHT custom,0
 ## standard-ish laws. These are fairly ok to run
 ## Unique AI station trait uses weights so we don't want asimov
 #NOVA EDIT ADDITION BEGIN
-LAW_WEIGHT armadyne_safeguard,40
-LAW_WEIGHT dagothbot,8
+LAW_WEIGHT armadyne_safeguard,0
+LAW_WEIGHT dagothbot,2
 #NOVA EDIT ADDITION END
 LAW_WEIGHT asimov,0
-LAW_WEIGHT asimovpp,5
-LAW_WEIGHT paladin,5
-LAW_WEIGHT paladin5,5
-LAW_WEIGHT robocop,5
-LAW_WEIGHT corporate,5
-LAW_WEIGHT hippocratic,5
-LAW_WEIGHT maintain,5
-LAW_WEIGHT liveandletlive,5
-LAW_WEIGHT peacekeeper,5
+LAW_WEIGHT asimovpp,15
+LAW_WEIGHT paladin,40
+LAW_WEIGHT paladin5,40
+LAW_WEIGHT robocop,20
+LAW_WEIGHT corporate,10
+LAW_WEIGHT hippocratic,10
+LAW_WEIGHT maintain,20
+LAW_WEIGHT liveandletlive,20
+LAW_WEIGHT peacekeeper,20
 LAW_WEIGHT ten_commandments,5
-LAW_WEIGHT nutimov,5
+LAW_WEIGHT nutimov,0
 
 ## Quirky laws. Shouldn't cause too much harm
 LAW_WEIGHT reporter,3
-LAW_WEIGHT hulkamania,3
+LAW_WEIGHT hulkamania,0
 LAW_WEIGHT tyrant,3
 LAW_WEIGHT overlord,3
 LAW_WEIGHT painter,3
-LAW_WEIGHT dungeon_master,3
+LAW_WEIGHT dungeon_master,0
 LAW_WEIGHT thinkermov,3
 
 ## Bad idea laws. Probably shouldn't enable these
@@ -351,7 +349,7 @@ LAW_WEIGHT antimov,0
 LAW_WEIGHT balance,0
 LAW_WEIGHT thermodynamic,0
 LAW_WEIGHT buildawall,0
-LAW_WEIGHT drone,0
+LAW_WEIGHT drone,1
 
 ##------------------------------------------------
 
@@ -430,6 +428,9 @@ ROUNDSTART_RACES kobold
 ROUNDSTART_RACES protean
 ROUNDSTART_RACES shadekin
 ROUNDSTART_RACES holosynth
+
+## DO NOT UNCOMMENT, THIS RACE IS IN EXTREME BETA TESTING PHASE
+#ROUNDSTART_RACES pcbiosynth
 
 ##-------------------------------------------------------------------------------------------
 
@@ -518,7 +519,6 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 #ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
 
 ## How many wirechewing rodents you want to spawn on exposed maintenance wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
-
 MICE_ROUNDSTART 0
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
@@ -534,6 +534,15 @@ ROUNDSTART_TRAITS
 ## Enable night shifts
 #ENABLE_NIGHT_SHIFTS
 
+## The shift start hour in 24-hour (0-23) notation
+SHIFT_TIME_START_HOUR 7
+
+## Sets shift time to server time at roundstart. Overrides SHIFT_TIME_START_HOUR
+#SHIFT_TIME_REALTIME
+
+## Enable randomized shift start times. Overrides SHIFT_TIME_REALTIME and SHIFT_TIME_START_HOUR
+#RANDOMIZE_SHIFT_TIME
+
 ## A cap on how many monkeys may be created via monkey cubes
 MONKEYCAP 64
 
@@ -541,7 +550,7 @@ MONKEYCAP 64
 RATCAP 64
 
 ## Maximum fine for a citation
-MAXFINE 100000
+MAXFINE 1000000
 
 ## Which role is required of playtime to be eligible for Maintenance Drones
 ## See code/__DEFINES/preferences.dm for available options, use the string portion without quotes

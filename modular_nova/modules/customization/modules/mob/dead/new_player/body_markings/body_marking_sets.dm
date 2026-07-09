@@ -246,7 +246,7 @@
 	body_marking_list = list("Vox Talon", "Vox Heart Tattoo")
 
 /datum/body_marking_set/synthliz
-	recommended_species = list(SPECIES_SYNTH = 1)
+	recommended_species = list(SPECIES_SYNTH = 1, SPECIES_PCSYNTH = 1)
 
 /datum/body_marking_set/synthliz/scutes
 	name = "Synth Scutes"

@@ -48,6 +48,7 @@
 	var/power_gen = 200 KILO WATTS
 	var/active = FALSE
 	var/power_output = 1
+	var/is_mapu = FALSE
 
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
@@ -73,11 +74,13 @@
 
 /obj/machinery/power/micro_reactor/attack_hand(mob/user, list/modifiers)
 	. = ..()
-	TogglePower()
+	if (!is_mapu)
+		TogglePower()
 
 /obj/machinery/power/micro_reactor/attack_robot(mob/user)
 	. = ..()
-	TogglePower()
+	if (!is_mapu)
+		TogglePower()
 
 /obj/machinery/power/micro_reactor/proc/handleInactive()
 	return
@@ -136,3 +139,6 @@
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
 	light_color = LIGHT_COLOR_ELECTRIC_CYAN
+
+/// EXOBYTECHNOVA UPD: Phoenix Collective MAPU
+/// Moved to modular_nova/modules/eng_mapu_control.

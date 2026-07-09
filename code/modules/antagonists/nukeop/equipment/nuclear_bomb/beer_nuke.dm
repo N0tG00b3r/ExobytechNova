@@ -72,3 +72,16 @@
 	SIGNAL_HANDLER
 	UnregisterSignal(overflow_control, COMSIG_CREATED_ROUND_EVENT)
 	created_event.forced_reagent_type = flood_reagent
+
+/obj/machinery/nuclearbomb/beer/catnip
+	name = "\improper Nanotrasen-brand mew-clear fission explosive"
+	flood_reagent = /datum/reagent/consumable/catnip_tea
+
+/obj/machinery/nuclearbomb/beer/nikos_surprise
+	name = "\improper Niko's Party Surprise"
+	desc = "An obviously modified Nanotrasen-brand nuclear fission warhead with an unlabeled beer tap on the back of it. This one has a tag attached: \"Prank 'em, John. With love, -Niko.\""
+	flood_reagent = /datum/reagent/mutationtoxin/felinid
+
+/obj/machinery/nuclearbomb/beer/nikos_surprise/erp
+	name = "\improper Niko's Cuddle Party Surprise"
+	flood_reagent = /datum/reagent/drug/aphrodisiac/crocin/hexacrocin

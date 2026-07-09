@@ -1,0 +1,7488 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/freezer/sansufentanyl,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"ah" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/light/blacklight/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"as" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot4";
+	codes_txt = "patrol;next_patrol=ptrader_bot5"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"av" = (
+/obj/structure/table,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"ax" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"az" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/holopad/secure,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"aB" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"aE" = (
+/obj/machinery/atmospherics/components/binary/pump/on/yellow/visible/layer4{
+	dir = 8;
+	target_pressure = 4500;
+	name = "Output Pump C"
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"aJ" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"bc" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Aft Port Maintenance"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/away/engineering,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"bd" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"be" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"bj" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"bu" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/card/id/away{
+	icon_state = "eng_budget";
+	color = "#FF9900";
+	name = "Apprenticeship Freighter Engineering ID";
+	assignment = "Tradeship Engineer";
+	pixel_y = 4;
+	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's engineer.";
+	access = list("away_general","away_supply","away_maintenance","away_engineering")
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"bz" = (
+/turf/closed/wall/r_wall,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"bB" = (
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger_multi,
+/obj/machinery/status_display/shuttle/directional/south{
+	pixel_x = 16;
+	shuttle_id = "phoenix_tradership"
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"bJ" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/structure/closet/crate/medical,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"bK" = (
+/obj/machinery/atmospherics/components/trinary/mixer/on{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"bP" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"cj" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"ck" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"cl" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"cu" = (
+/turf/closed/wall/mineral/titanium/spaceship/interior,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"cC" = (
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"cE" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/awaymission/phoenix/tradeship/storage/ord)
+"cK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"cN" = (
+/turf/open/floor/engine/air,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"cX" = (
+/obj/machinery/computer/camera_advanced{
+	dir = 1
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"dc" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"df" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"dm" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"dq" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored{
+	dir = 8;
+	id_tag = "ptsmix_out"
+	},
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "o2=10500;n2o=39500;TEMP=293.15"
+	},
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"dr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"dt" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"dE" = (
+/obj/machinery/door/poddoor{
+	name = "Freight External Doors A";
+	id = "phoenix_tradership_fs1e"
+	},
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"dI" = (
+/obj/machinery/button/door/directional/east{
+	id = "phoenix_tradership_fs1";
+	name = "Shutter Control"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"dM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"dV" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"dW" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"ec" = (
+/obj/structure/cable,
+/obj/machinery/navbeacon{
+	location = "ptrader_bot2";
+	codes_txt = "patrol;next_patrol=ptrader_bot3"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ef" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"eh" = (
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"ej" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"et" = (
+/obj/effect/turf_decal/vg_decals/atmos/air,
+/turf/open/floor/engine/air,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"eE" = (
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"eF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"eH" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"eI" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"eQ" = (
+/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"eR" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/awaymission/phoenix/tradeship/hallway)
+"eZ" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"fa" = (
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"fd" = (
+/obj/structure/fluff/shower_drain,
+/obj/machinery/shower/directional/south,
+/obj/structure/curtain/cloth,
+/obj/effect/turf_decal/trimline/dark_blue/end,
+/turf/open/indestructible/kitchen,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"fr" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/ord)
+"fy" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"fz" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/reefer/deforest,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"fC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"fH" = (
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"fN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"fQ" = (
+/obj/structure/sink/directional/north,
+/obj/structure/mirror/directional/south,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"fR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"fS" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"ge" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"go" = (
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"gp" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Ordnance Shipping Storage"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"gC" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"gF" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"gG" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"gK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"gM" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#00FFFF"
+	},
+/obj/machinery/portable_atmospherics/canister/anesthetic_mix{
+	filled = 0
+	},
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"gW" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/dark_green/filled/corner,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"hc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/arrows{
+	dir = 1
+	},
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"hp" = (
+/obj/machinery/wall_healer/free/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ht" = (
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"hA" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"hD" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"hF" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"hG" = (
+/obj/machinery/computer/apc_control/away{
+	dir = 8
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"hO" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"hS" = (
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"hW" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 4
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"hY" = (
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"ia" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"ig" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"il" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"iu" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"iG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"iS" = (
+/turf/closed/wall/mineral/titanium/interior,
+/area/awaymission/phoenix/tradeship/bridge)
+"iX" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/ansem{
+	pixel_y = 2
+	},
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/ansem{
+	pixel_y = 7
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"je" = (
+/obj/effect/turf_decal/arrows{
+	dir = 1
+	},
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"jf" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_liquid_solder{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/robot_system_cleaner{
+	pixel_y = -3
+	},
+/obj/structure/closet/crate/deforest,
+/obj/item/storage/backpack/duffelbag/synth_treatment_kit,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"jh" = (
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"jk" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"jq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"jx" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"jD" = (
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"jE" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"jH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"jI" = (
+/obj/machinery/button/door/directional/south{
+	name = "External Shutter Control";
+	id = "phoenix_tradership_fs2e"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"jO" = (
+/obj/structure/toilet{
+	pixel_y = 12
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"jT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"jX" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"ka" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor{
+	id = "phoenix_tradership_windows";
+	name = "Window Blast Shutters"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/bridge)
+"kj" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"km" = (
+/obj/machinery/light/floor,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"ko" = (
+/obj/effect/turf_decal/siding/white/corner,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"ky" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"kz" = (
+/obj/machinery/door/poddoor{
+	name = "Freight External Doors B";
+	id = "phoenix_tradership_fs2e"
+	},
+/obj/structure/fans/tiny/forcefield{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"kA" = (
+/obj/effect/turf_decal/vg_decals/atmos/mix,
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "o2=10500;n2o=39500;TEMP=293.15"
+	},
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"kF" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/sign/warning/no_smoking/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"kL" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control{
+	atmos_chambers = list("ptsmix" = "Atmos Shipping Storage");
+	name = "Freighter Atmos Storage Monitoring Console"
+	},
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"kU" = (
+/obj/machinery/holopad/secure,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"kX" = (
+/obj/machinery/computer/communications{
+	dir = 8
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"la" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"lh" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"lm" = (
+/obj/machinery/status_display/shuttle/directional/west{
+	shuttle_id = "phoenix_tradership"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"lq" = (
+/obj/machinery/power/terminal{
+	cable_layer = 1
+	},
+/obj/structure/cable/layer1,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"lr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"lw" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"lx" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"lA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"lI" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"lS" = (
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"lU" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"me" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/deforest,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"mf" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"mh" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/girder/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"mk" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/layer_manifold/general/visible{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"mn" = (
+/obj/effect/turf_decal/vg_decals/atmos/carbon_dioxide,
+/turf/open/floor/engine/vacuum,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"mq" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"mx" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4;
+	name = "Crew Quarters"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/general,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"mD" = (
+/obj/machinery/door/airlock/colony_prefab{
+	name = "Bridge"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/unres,
+/obj/effect/mapping_helpers/airlock/access/any/away/command,
+/turf/open/floor/iron/white,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"mE" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"mF" = (
+/obj/effect/turf_decal/vg_decals/atmos/nitrogen,
+/turf/open/floor/engine/n2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"mL" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/storage/ord)
+"mM" = (
+/obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"mT" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"mU" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"mZ" = (
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 8
+	},
+/turf/open/floor/plating/reinforced/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"ng" = (
+/obj/effect/turf_decal/arrows,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"nl" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1
+	},
+/turf/open/floor/engine/o2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"nq" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst/left{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"nr" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/medical,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -8
+	},
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 8
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -8
+	},
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 8
+	},
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"nt" = (
+/turf/open/space/basic,
+/area/space)
+"nx" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"nF" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"nP" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/button/door/directional/south{
+	name = "Windows Blast Door Control";
+	id = "phoenix_tradership_windows"
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"nQ" = (
+/obj/structure/cable,
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/awaymission/phoenix/tradeship/storage/ord)
+"nR" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"nV" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"ol" = (
+/obj/machinery/sleeper/self_control{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"on" = (
+/obj/machinery/hydroponics/constructable/fullupgrade,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"or" = (
+/obj/structure/cable,
+/obj/machinery/navbeacon{
+	location = "ptrader_bot5";
+	codes_txt = "patrol;next_patrol=ptrader_bot6"
+	},
+/mob/living/basic/bot/cleanbot/autopatrol,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ox" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"oy" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	dir = 8
+	},
+/turf/open/floor/engine/vacuum,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"oA" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"oG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"oR" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/interdyne,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"pl" = (
+/obj/machinery/door/airlock/external{
+	id_tag = "phoenix_tradership_exitbolts"
+	},
+/obj/effect/mapping_helpers/airlock/access/any/away/general,
+/obj/structure/fans/tiny/forcefield,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "phoenix_tradeship_cycle_dock"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"pm" = (
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"pw" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	name = "Air to Distro"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"pz" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"pI" = (
+/obj/structure/fluff/shower_drain,
+/obj/structure/curtain/cloth,
+/obj/effect/turf_decal/trimline/dark_blue/end,
+/obj/machinery/shower/directional/north,
+/turf/open/indestructible/kitchen,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"pK" = (
+/obj/structure/girder/reinforced,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"pN" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"pW" = (
+/obj/machinery/smesbank/super,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"pY" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"qc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"qd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/machinery/recharger{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/machinery/status_display/evac/directional/south{
+	pixel_x = -16
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"qh" = (
+/obj/machinery/atmospherics/miner/oxygen,
+/turf/open/floor/engine/o2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"qj" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"qo" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"qp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/firealarm/directional/west,
+/obj/effect/landmark/awaystart{
+	id = "PHOENIX_TRADERSHIP_AWAY_GENERIC"
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"qt" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"qv" = (
+/obj/structure/table,
+/obj/machinery/status_display/shuttle/directional/east{
+	shuttle_id = "phoenix_tradership"
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"qE" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/freezer/organ,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"qM" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"qQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/girder/reinforced,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"qU" = (
+/obj/machinery/status_display/evac/directional/west,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"qW" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"ra" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#00FFFF"
+	},
+/obj/machinery/portable_atmospherics/canister/nob,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"rb" = (
+/obj/machinery/status_display/shuttle/directional/west{
+	shuttle_id = "phoenix_tradership"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"rg" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/caution/stand_clear{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"rh" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"ru" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 9
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"rx" = (
+/obj/machinery/light/blacklight/directional/west,
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"rA" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"rQ" = (
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible{
+	dir = 6
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"rZ" = (
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"sa" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4;
+	name = "Aft Starboard Maintenance"
+	},
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/engineering,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"sg" = (
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"sl" = (
+/obj/structure/girder/reinforced,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"sK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"sL" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
+	dir = 8;
+	id_tag = "ptsmix_in"
+	},
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "o2=10500;n2o=39500;TEMP=293.15"
+	},
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"sN" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"tc" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Freight Storage B"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"tq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"tM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"tR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/arrows{
+	dir = 1
+	},
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"tT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"tU" = (
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "Distro to Filter";
+	target_pressure = 4500
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"ua" = (
+/obj/machinery/light/blacklight/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ut" = (
+/obj/effect/turf_decal/bot_red,
+/obj/structure/tank_holder/extinguisher/advanced,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"uv" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"uw" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"uB" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"uM" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"uQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"uR" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"uS" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"uV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"uZ" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"ve" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 5
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"vk" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"vo" = (
+/obj/machinery/button/door/directional/south{
+	name = "External Shutter Control";
+	id = "phoenix_tradership_fs1e"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"vq" = (
+/obj/docking_port/stationary{
+	shuttle_id = "phoenix_tradership_dock";
+	name = "Apprenticeship Shuttle Dock";
+	dwidth = 3;
+	width = 7;
+	height = 15;
+	roundstart_template = /datum/map_template/shuttle/tradership/phoenix_trade_shuttle
+	},
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/hallway)
+"vv" = (
+/obj/machinery/door/poddoor/shutters{
+	dir = 8;
+	name = "Freight Storage B Shutter";
+	id = "phoenix_tradership_fs2"
+	},
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"vD" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"vQ" = (
+/obj/machinery/hydroponics/constructable/fullupgrade,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"vT" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"wb" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/sign/warning/chem_diamond/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"we" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"wj" = (
+/obj/machinery/status_display/evac/directional/east,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"wk" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	dir = 1
+	},
+/turf/open/floor/engine/o2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"wn" = (
+/obj/machinery/button/door/directional/north{
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	id = "phoenix_tradership_exitbolts";
+	name = "Exterior Bolt Control";
+	pixel_x = 5
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"wp" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"wu" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"ww" = (
+/obj/structure/fence/door{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"wE" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"wG" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"wI" = (
+/obj/machinery/space_heater,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"wJ" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/sign/warning/cold_temp/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"wL" = (
+/obj/machinery/button/door/directional/north{
+	name = "External Shutter Control";
+	id = "phoenix_tradership_fs1e"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"wQ" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"wT" = (
+/obj/machinery/atmospherics/components/binary/pump/on/green/visible/layer4{
+	dir = 4;
+	name = "Input Pump";
+	target_pressure = 4500
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"xc" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/obj/item/reagent_containers/cup/beaker/cryoxadone{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/cup/beaker/cryoxadone{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/cup/beaker/cryoxadone{
+	pixel_y = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"xh" = (
+/obj/machinery/atmospherics/components/binary/pump/on/yellow/visible/layer2{
+	dir = 8;
+	target_pressure = 4500;
+	name = "Output Pump A"
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"xk" = (
+/obj/machinery/computer/shuttle/phoenix/trader{
+	dir = 1;
+	req_access = list("away_supply")
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"xo" = (
+/obj/structure/girder/reinforced,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"xJ" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"xR" = (
+/obj/structure/grille,
+/turf/closed/wall/r_wall,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"yb" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/wallframe/defib_mount/charging,
+/obj/item/defibrillator,
+/obj/structure/closet/crate/medical,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"ye" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/blacklight/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"yj" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"yw" = (
+/turf/open/floor/iron/recharge_floor,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"yC" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 4
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"yF" = (
+/obj/machinery/atmospherics/components/binary/pump/off/yellow/visible/layer2{
+	name = "Port Extractor";
+	target_pressure = 4500;
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off/green/visible/layer4{
+	dir = 8;
+	target_pressure = 4500;
+	name = "CO2 Waste Release"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"yM" = (
+/obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"yN" = (
+/obj/machinery/button/door/directional/north{
+	name = "External Shutter Control";
+	id = "phoenix_tradership_fs2e"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"yQ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 8
+	},
+/turf/open/floor/engine/vacuum,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"yR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"yU" = (
+/obj/machinery/status_display/shuttle/directional/south{
+	shuttle_id = "phoenix_tradership"
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"za" = (
+/obj/effect/turf_decal/vg_decals/atmos/oxygen,
+/turf/open/floor/engine/o2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"zb" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/reefer/interdyne,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"zc" = (
+/obj/effect/turf_decal/bot_red,
+/obj/structure/tank_holder/extinguisher/advanced,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"zk" = (
+/obj/machinery/airalarm/directional/east,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"zn" = (
+/obj/machinery/wall_healer/free/directional/south,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"zv" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "Recycle Pump";
+	target_pressure = 4500
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"zF" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"zI" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1
+	},
+/turf/open/floor/engine/n2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"zL" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"zV" = (
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "o2=10500;n2o=39500;TEMP=293.15"
+	},
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"zW" = (
+/obj/structure/girder/tram,
+/turf/closed/wall/mineral/titanium/interior,
+/area/awaymission/phoenix/tradeship/bridge)
+"zY" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ag" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ah" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Ai" = (
+/obj/machinery/computer/atmos_control{
+	dir = 8;
+	atmos_chambers = list("ptsmix" = "Atmos Shipping Storage");
+	name = "Freighter Atmos Storage Monitoring Console"
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"As" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Ax" = (
+/obj/machinery/light/cold/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"AG" = (
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"AH" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"AQ" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"AS" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"AZ" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/anesthetic_machine_kit,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"Bc" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Bg" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"Bp" = (
+/obj/structure/girder/reinforced,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"Bq" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot3";
+	codes_txt = "patrol;next_patrol=ptrader_bot4"
+	},
+/mob/living/basic/bot/firebot{
+	bot_mode_flags = 31
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"BE" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"BH" = (
+/obj/machinery/power/smes/connector,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"BI" = (
+/obj/machinery/atmospherics/components/binary/pump/on/green/visible/layer2{
+	dir = 4;
+	name = "Input Pump";
+	target_pressure = 4500
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"BK" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/mod/module/visor/medhud,
+/obj/item/mod/module/visor/medhud,
+/obj/item/mod/module/visor/medhud,
+/obj/structure/closet/crate/mod,
+/obj/item/mod/module/visor/medhud,
+/obj/item/mod/module/visor/medhud,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"BX" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Cm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/arrows{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"Cx" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"Cz" = (
+/obj/machinery/door/poddoor{
+	name = "Freight External Doors B";
+	id = "phoenix_tradership_fs2e"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"CF" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4;
+	name = "Primary Shipping Storage"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"CM" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"CS" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"CZ" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"De" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Dg" = (
+/obj/machinery/status_display/shuttle/directional/west{
+	shuttle_id = "phoenix_tradership"
+	},
+/obj/machinery/status_display/evac/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"Dh" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Dj" = (
+/obj/machinery/power/micro_reactor{
+	cable_layer = 1
+	},
+/obj/structure/cable/layer1,
+/turf/open/floor/iron/dark,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Dp" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Dx" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/machinery/firealarm/directional/west,
+/obj/effect/landmark/awaystart{
+	id = "PHOENIX_TRADERSHIP_AWAY_GENERIC"
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"DE" = (
+/obj/machinery/door/airlock/colony_prefab{
+	name = "Primary Access Airlock"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"DG" = (
+/obj/machinery/navbeacon{
+	location = "ptrader_bot6";
+	codes_txt = "patrol;next_patrol=ptrader_bot1"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"DO" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"DP" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/freezer/surplus_limbs,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"DT" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/science/robo,
+/obj/item/storage/medkit/robotic_repair/preemo/stocked,
+/obj/item/cybernetic_repair_paste,
+/obj/item/stack/medical/synth_repair,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"DX" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Command Hallway Maintenance"
+	},
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/away/maintenance,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"Eh" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Ej" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"Eo" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/obj/machinery/atmospherics/components/binary/pump/off/yellow/visible/layer2{
+	name = "Port Extractor";
+	target_pressure = 4500;
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Et" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Eu" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ex" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ez" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/cold/directional/north,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"EE" = (
+/turf/closed/wall/mineral/titanium/spaceship/interior,
+/area/awaymission/phoenix/tradeship/hallway)
+"EN" = (
+/obj/structure/table/reinforced,
+/obj/machinery/airalarm/directional/north,
+/obj/machinery/light/cold/directional/north,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"EO" = (
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ET" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"EW" = (
+/obj/machinery/computer/shuttle/phoenix/trader,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"EZ" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Fc" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Fm" = (
+/obj/structure/girder/reinforced,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ft" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Fv" = (
+/obj/machinery/atmospherics/components/binary/pump/on/green/visible{
+	name = "Input Pump";
+	target_pressure = 4500;
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Fw" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Fx" = (
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"FC" = (
+/obj/machinery/wall_healer/free/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"FH" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"FO" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"FU" = (
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/awaymission/phoenix/tradeship/storage/ord)
+"FW" = (
+/turf/closed/wall/mineral/titanium,
+/area/awaymission/phoenix/tradeship/bridge)
+"Gb" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Gd" = (
+/obj/machinery/atmospherics/miner/nitrogen,
+/turf/open/floor/engine/n2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Gm" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/circuitboard/computer/operating,
+/obj/item/circuitboard/computer/crew,
+/obj/structure/closet/crate/engineering,
+/obj/item/circuitboard/machine/chem_dispenser,
+/obj/item/circuitboard/machine/chem_heater,
+/obj/item/circuitboard/machine/chem_mass_spec,
+/obj/item/circuitboard/machine/chem_master,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"GG" = (
+/obj/machinery/button/door/directional/west{
+	name = "Shutter Control";
+	id = "phoenix_tradership_fs2"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"GN" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"GQ" = (
+/obj/machinery/computer/station_alert{
+	dir = 4
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"GV" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"GW" = (
+/obj/structure/girder/reinforced,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"GX" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Hg" = (
+/obj/structure/cable,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Hi" = (
+/obj/structure/table/reinforced,
+/obj/item/language_manual/tradecreole,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Hm" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"Hn" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Hq" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/o2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Hs" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"Hv" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
+	dir = 4
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"HC" = (
+/obj/machinery/power/shuttle_engine/propulsion/burst/right{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"HG" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/shipping_container/oms,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"HI" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/bridge)
+"Ic" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Id" = (
+/obj/machinery/light/floor,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Ik" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 4
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"It" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Iy" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/layer_manifold/general/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Iz" = (
+/obj/machinery/door/poddoor/shutters{
+	dir = 4;
+	name = "Freight Storage A Shutter";
+	id = "phoenix_tradership_fs1"
+	},
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"IF" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"II" = (
+/obj/machinery/atmospherics/components/trinary/filter/flipped{
+	dir = 4;
+	name = "Output Filter B"
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"IJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/arrows,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"IL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"IN" = (
+/turf/closed/wall/mineral/titanium/spaceship/interior,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"IO" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/awaymission/phoenix/tradeship/storage/ord)
+"Ja" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 4
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Jf" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Jm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"Jr" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/card/id/away{
+	icon_state = "civ_budget";
+	color = "#FF9900";
+	name = "Apprenticeship Freighter Crew ID";
+	assignment = "Tradeship Crew";
+	pixel_y = 4;
+	desc = "An identification card for Phoenix Collective freighter crew.";
+	access = list("away_general","away_supply")
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"Js" = (
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"Jw" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 4
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"JG" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4;
+	name = "Freight Storage A"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"JW" = (
+/obj/machinery/cryo_cell,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"Kb" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"Kd" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Ke" = (
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Kg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"Km" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"KG" = (
+/obj/machinery/vending/clothing{
+	all_products_free = 1;
+	onstation = 0;
+	allow_custom = 0
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"KL" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"KO" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/card/id/away{
+	icon_state = "sec_budget";
+	color = "#FF9900";
+	name = "Apprenticeship Freighter Captain ID";
+	assignment = "Tradeship Captain";
+	pixel_y = 4;
+	desc = "An identification card for Phoenix Collective freighter crew. This one seems like it belongs to the ship's captain.";
+	access = list("away_general","away_supply","away_maintenance","away_engineering","away_command")
+	},
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"KQ" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"KY" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Lc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Ld" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 6
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Lj" = (
+/obj/effect/turf_decal/bot/right,
+/obj/effect/turf_decal/box/red/corners,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"Ls" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"LB" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/arrows,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"LD" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/caution{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"LH" = (
+/obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"LP" = (
+/obj/machinery/computer/mech_bay_power_console,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"LQ" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"LU" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 4;
+	name = "Primary Shipping Storage"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"Ma" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"Mc" = (
+/turf/closed/wall/mineral/titanium/spaceship/interior,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Md" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/arrows,
+/obj/machinery/door/firedoor,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"Mg" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/caution,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Mp" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Mt" = (
+/obj/structure/table,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_y = 2
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"Mv" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/green/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"MA" = (
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"MD" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"MH" = (
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"MM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/girder/reinforced,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"MN" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"MO" = (
+/obj/structure/tank_dispenser,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"MR" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/purple/filled/corner,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"MU" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"MZ" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/co2{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Ne" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"Nf" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Nl" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"No" = (
+/obj/structure/grille,
+/turf/closed/wall/r_wall,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Np" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Nq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Nt" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"Ny" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage)
+"NS" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"NU" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"NZ" = (
+/mob/living/basic/bot/hygienebot{
+	bot_mode_flags = 31
+	},
+/obj/machinery/navbeacon{
+	location = "ptrader_bot1";
+	codes_txt = "patrol;next_patrol=ptrader_bot2"
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Og" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Oh" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Oo" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"Or" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/purple/filled/corner{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Os" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	dir = 1
+	},
+/turf/open/floor/engine/n2,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Ox" = (
+/obj/structure/table/reinforced,
+/obj/item/grenade/gas_crystal/healium_crystal,
+/turf/open/floor/pod/dark{
+	initial_gas_mix = "TEMP=2.7"
+	},
+/area/awaymission/phoenix/tradeship/storage/ord)
+"OA" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"OB" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/turf/open/floor/plating/elevatorshaft,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"OE" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/freezer/blood,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"OL" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 4
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"ON" = (
+/obj/structure/cable,
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"OQ" = (
+/obj/machinery/door/airlock/bathroom{
+	name = "Unisex Showers"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"OV" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/door/airlock/public{
+	name = "Cabin"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/general,
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"Pd" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/storage)
+"Pj" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Pq" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Ps" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Pv" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"PA" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"PC" = (
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"PM" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"PU" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1
+	},
+/turf/open/floor/engine/air,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"PZ" = (
+/turf/closed/wall/mineral/titanium/spaceship/interior,
+/area/awaymission/phoenix/tradeship/storage)
+"Qc" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage)
+"Qi" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Qj" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"Qp" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Qq" = (
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Qr" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Biological Shipping Storage"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"Qs" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"QF" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/sign/warning/vacuum/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"QI" = (
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"QP" = (
+/obj/machinery/air_sensor{
+	chamber_id = "ptsmix";
+	inlet_id = "ptsmix_in";
+	outlet_id = "ptsmix_out"
+	},
+/turf/open/floor/engine/n2o{
+	initial_gas_mix = "o2=10500;n2o=39500;TEMP=293.15"
+	},
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"QQ" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/machinery/door/airlock/public{
+	name = "Cabin"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/general,
+/turf/open/floor/wood/tile,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"QT" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Ra" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/layer_manifold/general/visible,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Rf" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"RF" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"RG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"RI" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Atmos Shipping Storage"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/access/any/away/supply,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"RK" = (
+/obj/structure/table/reinforced,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north{
+	pixel_x = -5
+	},
+/obj/machinery/light/cold/directional/north,
+/obj/machinery/light_switch/directional/north{
+	pixel_x = 8
+	},
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"RN" = (
+/obj/machinery/computer/atmos_alert{
+	dir = 4
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"RS" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/sign/departments/botany/alt1/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"RV" = (
+/obj/machinery/portable_atmospherics/pump,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"RW" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"Sg" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold/green/visible,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Sh" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/yellow/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/purple/visible,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Sj" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/dark_green/filled/corner{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Sl" = (
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Sn" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Sq" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"SC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"SK" = (
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"SO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"SU" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/mid_joiner{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Tg" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Tr" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/awaymission/phoenix/tradeship/bridge)
+"Ts" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"TF" = (
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"TI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/girder/reinforced,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"TJ" = (
+/obj/structure/cable/layer1,
+/turf/open/floor/iron/dark,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"TM" = (
+/obj/machinery/door/airlock/multi_tile/metal{
+	dir = 8;
+	name = "Crew Restrooms"
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"TO" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating/elevatorshaft,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"TR" = (
+/obj/machinery/door/airlock/service{
+	name = "Bathroom Stall"
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"TS" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"TZ" = (
+/obj/structure/cable,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"Uc" = (
+/obj/structure/girder/reinforced,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Ue" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/turf_decal/box/red/corners{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"Uh" = (
+/turf/open/space/basic,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Ul" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"Uo" = (
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"Ur" = (
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Us" = (
+/turf/open/floor/iron/dark,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Uu" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Ux" = (
+/obj/structure/girder/reinforced,
+/obj/effect/turf_decal/trimline/blue/filled/corner,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"UE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"UF" = (
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"UH" = (
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"UJ" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/two)
+"UY" = (
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Vc" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer4{
+	dir = 9
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Ve" = (
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer4{
+	dir = 9
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Vg" = (
+/obj/machinery/hydroponics/constructable/fullupgrade,
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"Vk" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 10
+	},
+/obj/structure/fence,
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"Vo" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"Vv" = (
+/obj/machinery/telecomms/allinone{
+	syndicate = 1
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/bathrooms)
+"Vw" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"VA" = (
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/mineral/plastitanium,
+/area/awaymission/phoenix/tradeship/hallway)
+"VF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway/command)
+"VH" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/item/surgery_tray/full/advanced,
+/obj/structure/closet/crate/medical,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"VI" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"VJ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	dir = 1
+	},
+/turf/open/floor/engine/air,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"VW" = (
+/obj/structure/fireaxecabinet/jawsofrecovery/directional/east,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"VY" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"VZ" = (
+/turf/closed/wall/r_wall/plastitanium,
+/area/awaymission/phoenix/tradeship/storage/ord)
+"Wg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Wh" = (
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Wi" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Wo" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Wp" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/storage/ord)
+"Ws" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Wu" = (
+/turf/closed/wall/mineral/titanium/spaceship,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/left)
+"Wv" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/bridge)
+"WI" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"WK" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 4
+	},
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"WY" = (
+/turf/open/floor/engine/vacuum,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"WZ" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/phoenix/tradeship/maintenance/engine/right)
+"Xg" = (
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"Xi" = (
+/obj/machinery/wall_healer/free/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"XI" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/effect/turf_decal/box/white{
+	color = "#CC9F00"
+	},
+/obj/structure/closet/crate/medical,
+/obj/item/holosign_creator/hardlight_wheelchair,
+/obj/item/holosign_creator/medical/treatment_zone,
+/obj/item/holosign_creator/medical,
+/obj/item/healthanalyzer/advanced,
+/obj/item/storage/medkit/emergency,
+/obj/item/clothing/glasses/hud/health/prescription,
+/turf/open/floor/iron/shuttle/exploration,
+/area/awaymission/phoenix/tradeship/storage)
+"XK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"XL" = (
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/freight/one)
+"XP" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"XS" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Ym" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/bluespace,
+/area/awaymission/phoenix/tradeship/hallway)
+"YB" = (
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"YC" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/phoenix/trader{
+	dir = 1;
+	req_access = list("away_supply")
+	},
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"YG" = (
+/obj/machinery/atmospherics/components/binary/valve/on{
+	dir = 4;
+	name = "Atmos Waste Release"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"YI" = (
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"YM" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/phoenix/tradeship/storage/bio)
+"YW" = (
+/obj/machinery/door/airlock/research{
+	name = "Borg Stall"
+	},
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"Za" = (
+/obj/machinery/firealarm/directional/south,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"Zb" = (
+/turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Zm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/shower)
+"Zn" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/button/door/directional/south{
+	name = "Windows Blast Door Control";
+	id = "phoenix_tradership_windows"
+	},
+/obj/item/gun/ballistic/shotgun/riot/sol/super/plus{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/advanced/s12gauge/buckshot,
+/turf/open/floor/oldshuttle,
+/area/awaymission/phoenix/tradeship/bridge)
+"Zs" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer2{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"Zt" = (
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron,
+/area/awaymission/phoenix/tradeship/crew/dorms)
+"Zw" = (
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/thrusters/right)
+"Zy" = (
+/turf/open/floor/plastic,
+/area/awaymission/phoenix/tradeship/crew/bath)
+"ZD" = (
+/obj/machinery/status_display/shuttle/directional/east{
+	shuttle_id = "phoenix_tradership"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ZI" = (
+/obj/machinery/door/airlock/external{
+	id_tag = "phoenix_tradership_exitbolts"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/access/any/away/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "phoenix_tradeship_cycle_dock"
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/hallway)
+"ZM" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/effect/turf_decal/trimline/purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/purple/filled/mid_joiner{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot_blue,
+/obj/machinery/suit_storage_unit/standard_unit{
+	storage_type = /obj/item/tank/internals/oxygen/yellow
+	},
+/obj/structure/sign/warning/explosives/alt/directional/east,
+/turf/open/floor/iron/shuttle/cargo,
+/area/awaymission/phoenix/tradeship/hallway)
+"ZO" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/layer_manifold/general/visible{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+"ZR" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/phoenix/tradeship/maintenance/engine/left)
+"ZY" = (
+/obj/machinery/atmospherics/components/binary/pump/on/yellow/visible{
+	dir = 8;
+	name = "Output Pump B";
+	target_pressure = 4500
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/phoenix/tradeship/storage/atmos)
+
+(1,1,1) = {"
+nt
+nt
+nt
+nt
+hA
+hA
+hA
+nR
+Tg
+nR
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+hA
+Uu
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(2,1,1) = {"
+nt
+nt
+nt
+DO
+dt
+GN
+Mc
+hA
+Ps
+hA
+Mc
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+hA
+Uu
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(3,1,1) = {"
+nt
+nt
+nt
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+hA
+hA
+hA
+hA
+Uu
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Pd
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nx
+uR
+uR
+uR
+OB
+OB
+uR
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(4,1,1) = {"
+nt
+nt
+DO
+DO
+WZ
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Us
+Us
+hA
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+Pd
+PZ
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+PZ
+Qc
+Ne
+ef
+hF
+hF
+hF
+hF
+ef
+hF
+hF
+hF
+hF
+ef
+hF
+hF
+hF
+hF
+ef
+uR
+eQ
+qp
+QQ
+Kg
+Kg
+OV
+Dx
+eQ
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(5,1,1) = {"
+nt
+nt
+DO
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Dj
+Us
+hA
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+Pd
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+Qc
+qM
+qM
+qM
+qM
+qM
+ko
+aB
+aB
+aB
+aB
+aB
+aB
+vT
+qM
+ko
+aB
+aB
+aB
+vT
+Cx
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+dE
+uR
+Jr
+ol
+uR
+Ez
+Zt
+uR
+ol
+Jr
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(6,1,1) = {"
+nt
+nt
+DO
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+TJ
+Us
+hA
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+Pd
+Qc
+Qc
+Qc
+PZ
+qM
+qM
+ko
+aB
+aB
+aB
+aB
+aB
+aB
+vT
+qM
+qM
+rZ
+ab
+hY
+DP
+qE
+hY
+OE
+zL
+qM
+rZ
+jf
+hY
+DT
+zL
+Cx
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+eI
+uR
+uR
+uR
+uR
+Kg
+yM
+uR
+uR
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(7,1,1) = {"
+nt
+nt
+nt
+DO
+dt
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Us
+Us
+Us
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+lq
+ON
+hA
+Wu
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+Wu
+Qc
+ko
+aB
+aB
+vT
+qM
+qM
+rZ
+VH
+hY
+Gm
+yb
+hY
+nr
+zL
+qM
+qM
+rZ
+ab
+km
+DP
+qE
+km
+OE
+zL
+qM
+rZ
+jf
+km
+DT
+zL
+Cx
+wL
+uw
+me
+XL
+uw
+me
+XL
+uw
+oR
+XL
+uw
+oR
+XL
+uw
+HG
+vo
+uR
+eQ
+qp
+QQ
+Kg
+Kg
+OV
+Dx
+eQ
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(8,1,1) = {"
+nt
+nt
+nt
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+yw
+Qq
+Us
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+lq
+ON
+hA
+MU
+HC
+nt
+bP
+bP
+Qs
+nt
+HC
+MU
+Qc
+rZ
+BK
+km
+zL
+qM
+qM
+rZ
+VH
+km
+Gm
+yb
+km
+nr
+zL
+qM
+qM
+rZ
+ab
+hY
+DP
+qE
+hY
+OE
+zL
+qM
+rZ
+jf
+hY
+DT
+zL
+Cx
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+uR
+Jr
+ol
+uR
+fC
+Zt
+uR
+ol
+Jr
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(9,1,1) = {"
+nt
+nt
+DO
+DO
+WZ
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+jE
+LP
+Us
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+lq
+ON
+hA
+MU
+wE
+HC
+df
+df
+df
+HC
+NU
+MU
+Qc
+rZ
+bJ
+hY
+zL
+qM
+qM
+rZ
+VH
+hY
+Hm
+yb
+hY
+nr
+zL
+qM
+qM
+rZ
+ab
+hY
+DP
+qE
+hY
+OE
+zL
+qM
+rZ
+jf
+hY
+DT
+zL
+Cx
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+uR
+uR
+uR
+uR
+Kg
+ht
+uR
+uR
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(10,1,1) = {"
+nt
+nt
+DO
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Id
+Qq
+Us
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+MN
+hA
+MU
+MA
+qW
+df
+df
+df
+oA
+MA
+MU
+Qc
+rZ
+BK
+hY
+zL
+qM
+qM
+rZ
+AZ
+hY
+Hm
+yb
+hY
+nr
+zL
+qM
+qM
+rZ
+ab
+km
+DP
+qE
+km
+OE
+zL
+qM
+rZ
+jf
+km
+DT
+zL
+Cx
+XL
+uw
+me
+XL
+uw
+me
+XL
+uw
+oR
+XL
+uw
+oR
+XL
+uw
+HG
+XL
+uR
+eQ
+qp
+QQ
+Kg
+Kg
+OV
+Dx
+eQ
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(11,1,1) = {"
+nt
+nt
+DO
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+yw
+Qq
+fS
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+MN
+kj
+hA
+MU
+MA
+MA
+Qj
+NU
+oA
+MA
+MA
+MU
+Qc
+rZ
+bJ
+km
+zL
+qM
+qM
+rZ
+AZ
+km
+Hm
+XI
+km
+XI
+zL
+qM
+qM
+rZ
+ab
+hY
+DP
+qE
+hY
+OE
+zL
+qM
+rZ
+jf
+hY
+DT
+zL
+Cx
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+MD
+MD
+WI
+uR
+Jr
+ol
+uR
+Ez
+Zt
+uR
+ol
+Jr
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(12,1,1) = {"
+nt
+nt
+nt
+DO
+dt
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+jE
+LP
+fS
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+hA
+MU
+MU
+MA
+be
+be
+be
+MA
+MU
+MU
+Qc
+mq
+CZ
+CZ
+cl
+qM
+qM
+rZ
+AZ
+hY
+Hm
+XI
+hY
+XI
+zL
+qM
+qM
+mq
+CZ
+CZ
+CZ
+CZ
+CZ
+CZ
+cl
+qM
+mq
+CZ
+CZ
+CZ
+cl
+Cx
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+mU
+Lj
+XL
+uR
+uR
+uR
+uR
+gK
+ht
+uR
+uR
+uR
+uR
+uR
+uR
+uR
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(13,1,1) = {"
+nt
+nt
+nt
+DO
+Sl
+GN
+FH
+FH
+FH
+FH
+FH
+FH
+Us
+Us
+Us
+fS
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+FH
+Ts
+Ts
+RV
+wI
+hA
+pK
+MU
+MU
+Kb
+fy
+be
+MU
+MU
+pK
+Qc
+PZ
+qM
+qM
+qM
+qM
+qM
+mq
+CZ
+CZ
+CZ
+CZ
+CZ
+CZ
+cl
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+qM
+Nt
+qM
+Ny
+KL
+qM
+qM
+qM
+Cx
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+dI
+Ej
+XL
+XL
+XL
+XL
+XL
+XL
+uR
+eQ
+qp
+QQ
+eF
+Kg
+OV
+Dx
+eQ
+uR
+uR
+uR
+uR
+uR
+uR
+Wv
+Wv
+Wv
+HI
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(14,1,1) = {"
+nt
+nt
+nt
+nt
+Uu
+hA
+hA
+hA
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+cC
+sa
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Bp
+Bp
+Bg
+Bg
+rA
+Bg
+Bg
+Bp
+Bp
+Eu
+Eu
+Eu
+Eu
+Eu
+RW
+LU
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+RW
+LU
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+RW
+CF
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Iz
+Iz
+Iz
+Iz
+Iz
+Eu
+Eu
+Eu
+Fx
+JG
+Eu
+Eu
+Eu
+uR
+bu
+ol
+uR
+tq
+Zt
+uR
+ol
+KO
+uR
+uR
+uR
+uR
+uR
+uR
+Tr
+Tr
+Tr
+Tr
+ka
+ka
+ka
+ka
+ka
+FW
+nt
+"}
+(15,1,1) = {"
+nt
+nt
+nt
+Uu
+hA
+hA
+hA
+hA
+Eu
+LH
+hp
+TF
+Fm
+ua
+TF
+UY
+ua
+Fm
+ua
+eZ
+TF
+ua
+Fm
+ua
+qU
+lm
+ua
+Fm
+ua
+EO
+TF
+TF
+lI
+TF
+TF
+UY
+TF
+TF
+lI
+TF
+hp
+TF
+ua
+Sn
+rx
+EZ
+EZ
+rx
+FO
+ua
+YI
+TF
+ua
+Sn
+rx
+EZ
+EZ
+rx
+FO
+ua
+qU
+lm
+ua
+Sn
+rx
+EZ
+SU
+rx
+FO
+ua
+EO
+hp
+ua
+Fm
+ye
+TF
+TF
+TF
+TF
+TF
+ah
+Fm
+ua
+TF
+TF
+lm
+lI
+Za
+uR
+uR
+uR
+uR
+Jm
+mx
+uR
+uR
+uR
+uR
+uR
+uR
+uR
+uR
+uR
+Tr
+zW
+Hi
+AG
+AG
+AG
+GQ
+RN
+nP
+Tr
+FW
+"}
+(16,1,1) = {"
+nt
+nt
+nt
+Eu
+Eu
+Eu
+Eu
+Eu
+EE
+MO
+Bq
+TF
+lA
+TF
+TF
+UY
+TF
+Wo
+TF
+UY
+TF
+TF
+lA
+TF
+TF
+TF
+TF
+Wo
+TF
+TF
+TF
+TF
+lw
+TF
+TF
+ec
+TF
+TF
+Hn
+TF
+TF
+TF
+TF
+lA
+TF
+TF
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+TF
+UY
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+LD
+TF
+TF
+TF
+TF
+TF
+Mg
+zY
+TF
+TF
+NZ
+TF
+TF
+TF
+TO
+KG
+Ax
+Uo
+tT
+sg
+rb
+Ax
+FC
+PC
+cu
+pY
+pY
+pY
+pY
+Tr
+RK
+NS
+AG
+AG
+AG
+AG
+AS
+AG
+bB
+ka
+"}
+(17,1,1) = {"
+nt
+eR
+eR
+Eu
+Eu
+Eu
+Eu
+Eu
+wn
+TF
+TF
+TF
+Ag
+UF
+je
+TZ
+je
+IL
+je
+TZ
+je
+UF
+Cm
+UF
+je
+UF
+je
+IL
+je
+UF
+je
+UF
+hc
+UF
+je
+TZ
+je
+UF
+tR
+UF
+je
+UF
+je
+Ag
+TF
+TF
+TF
+TF
+Wo
+TF
+TF
+TF
+TF
+lA
+TF
+TF
+TF
+TF
+Wo
+TF
+TF
+TF
+TF
+lA
+TF
+TF
+UY
+TF
+Wo
+TF
+TF
+TF
+TF
+lA
+Bc
+TF
+TF
+TF
+TF
+TF
+oG
+Wo
+TF
+TF
+TF
+TF
+lw
+TF
+TO
+sg
+sg
+sg
+tT
+sg
+sg
+gF
+sg
+sg
+sg
+Ax
+fH
+cu
+pY
+iS
+Hg
+mE
+AG
+AG
+AG
+AG
+Et
+AG
+YC
+ka
+"}
+(18,1,1) = {"
+vq
+pl
+yj
+Ul
+Dg
+jq
+yR
+ZI
+Ft
+Ft
+Ft
+Ft
+mh
+TI
+GW
+sl
+sl
+xo
+sl
+sl
+sl
+sl
+xo
+sl
+sl
+sl
+sl
+xo
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+sl
+MM
+qQ
+Wg
+Wg
+Wg
+Wg
+uV
+Wg
+Wg
+Wg
+Wg
+uV
+Wg
+Wg
+Wg
+Wg
+uV
+Wg
+Wg
+Wg
+Wg
+uV
+Wg
+Wg
+Wg
+Wg
+uV
+Wg
+Wg
+Wg
+Wg
+uV
+rg
+Wg
+Wg
+Wg
+Wg
+Wg
+It
+uV
+Wg
+Wg
+Wg
+Wg
+Wg
+Wg
+DE
+tT
+tT
+tT
+tT
+tT
+az
+tT
+tT
+tT
+tT
+tT
+tT
+tT
+mD
+uQ
+uQ
+jH
+jH
+jH
+kU
+jH
+ia
+Pq
+xk
+ka
+"}
+(19,1,1) = {"
+nt
+eR
+eR
+Eu
+Eu
+Eu
+Eu
+Eu
+EW
+TF
+TF
+TF
+IL
+UF
+ng
+Ym
+ng
+Ag
+ng
+UF
+ng
+UF
+Md
+UF
+ng
+UF
+ng
+Ag
+ng
+UF
+ng
+UF
+IJ
+UF
+ng
+TZ
+ng
+UF
+LB
+UF
+ng
+UF
+ng
+IL
+TF
+TF
+UY
+TF
+Ex
+TF
+TF
+TF
+TF
+uv
+TF
+Wg
+TF
+TF
+Ex
+TF
+TF
+TF
+TF
+uv
+TF
+Wg
+TF
+TF
+Ex
+TF
+TF
+TF
+TF
+uv
+Bc
+TF
+TF
+TF
+TF
+TF
+oG
+Ex
+TF
+TF
+TF
+TF
+Oh
+TF
+TO
+sg
+sg
+sg
+tT
+sg
+sg
+VF
+QI
+sg
+sg
+il
+Oo
+cu
+pY
+iS
+AG
+Ah
+AG
+AG
+AG
+AG
+BX
+AG
+cX
+ka
+"}
+(20,1,1) = {"
+nt
+nt
+nt
+Eu
+Eu
+Eu
+Eu
+Eu
+EE
+ut
+as
+TF
+uv
+TF
+TF
+Wg
+TF
+Ex
+TF
+TF
+TF
+TF
+uv
+TF
+TF
+TF
+TF
+Ex
+TF
+TF
+TF
+TF
+Oh
+TF
+TF
+or
+TF
+TF
+we
+TF
+TF
+TF
+TF
+uv
+TF
+TF
+UY
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+Wg
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+TF
+Wg
+TF
+TF
+zY
+TF
+TF
+TF
+TF
+zY
+LD
+TF
+TF
+TF
+TF
+TF
+Mg
+zY
+TF
+TF
+DG
+TF
+TF
+TF
+TO
+Oo
+il
+ej
+tT
+sg
+go
+il
+QI
+sg
+cu
+pY
+pY
+pY
+pY
+Tr
+EN
+NS
+AG
+AG
+AG
+AG
+Pv
+AG
+qd
+ka
+"}
+(21,1,1) = {"
+nt
+nt
+nt
+dV
+Zb
+Zb
+Zb
+Zb
+Eu
+YB
+Xi
+TF
+Fm
+MH
+TF
+Wg
+MH
+Fm
+MH
+TF
+TF
+MH
+Fm
+MH
+wj
+ZD
+MH
+Fm
+MH
+zk
+TF
+TF
+lI
+TF
+TF
+UY
+TF
+TF
+lI
+TF
+Xi
+TF
+MH
+MR
+QF
+hS
+Wh
+ZM
+Or
+MH
+Ke
+TF
+MH
+gW
+wJ
+GX
+Gb
+RS
+Sj
+MH
+wj
+ZD
+MH
+Ux
+kF
+ET
+zF
+wb
+Nf
+MH
+zk
+Xi
+MH
+Fm
+la
+TF
+TF
+TF
+TF
+TF
+TS
+Fm
+MH
+TF
+TF
+ZD
+lI
+zn
+QT
+QT
+QT
+QT
+sK
+TM
+QT
+eH
+DX
+eH
+eH
+eH
+eH
+eH
+eH
+Tr
+zW
+NS
+AG
+AG
+AG
+kX
+hG
+Zn
+Tr
+FW
+"}
+(22,1,1) = {"
+nt
+nt
+nt
+nt
+dV
+Zb
+Zb
+Zb
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+cC
+bc
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Bp
+Bp
+Bg
+Bg
+rA
+Bg
+Bg
+Bp
+Bp
+Eu
+Eu
+Eu
+Eu
+Eu
+VA
+gp
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+SC
+Qr
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+SC
+RI
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+vv
+vv
+vv
+vv
+vv
+Eu
+Eu
+Eu
+Fx
+tc
+Eu
+Eu
+Eu
+QT
+jO
+TR
+fN
+Fw
+Ur
+QT
+pW
+Hs
+eH
+eH
+eH
+eH
+eH
+eH
+Tr
+Tr
+Tr
+Tr
+ka
+ka
+ka
+ka
+ka
+FW
+nt
+"}
+(23,1,1) = {"
+nt
+nt
+nt
+lh
+Qi
+XS
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+dM
+pz
+pz
+pz
+Ld
+Ic
+ve
+VY
+RF
+gC
+gC
+gC
+Ra
+zI
+mF
+Zb
+Uc
+Dh
+Dh
+xJ
+Jf
+uZ
+Dh
+Dh
+Uc
+Wp
+fr
+fr
+fr
+VZ
+FU
+nQ
+VZ
+fr
+fr
+fr
+Wp
+fR
+BE
+RG
+UE
+Xg
+vQ
+cj
+on
+aJ
+gM
+ra
+AH
+Fc
+Nq
+Eh
+As
+zc
+zc
+zc
+qt
+nF
+nF
+nF
+nF
+nF
+nF
+nF
+nF
+GG
+PM
+nF
+nF
+nF
+nF
+nF
+nF
+QT
+QT
+QT
+Lc
+Zy
+fQ
+QT
+Vv
+Hs
+eH
+eH
+eH
+eH
+eH
+eH
+Wv
+Wv
+Wv
+HI
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(24,1,1) = {"
+nt
+nt
+nt
+lh
+PA
+XS
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+jT
+vk
+vk
+vk
+ox
+vk
+Ls
+gC
+Qp
+OA
+IF
+Eo
+Ra
+Os
+Gd
+Zb
+Dh
+Dh
+Zw
+xJ
+xJ
+xJ
+Zw
+Dh
+Dh
+Wp
+fr
+FU
+FU
+FU
+FU
+nQ
+nQ
+nQ
+cE
+fr
+Wp
+CM
+JW
+cK
+SO
+Js
+on
+Js
+Vg
+aJ
+gM
+gM
+lU
+eE
+jh
+jh
+AQ
+nV
+nV
+Pj
+qt
+nF
+rh
+fz
+nF
+rh
+fz
+nF
+rh
+zb
+nF
+rh
+zb
+nF
+rh
+Km
+nF
+QT
+jO
+TR
+Fw
+Vw
+fQ
+QT
+wu
+Hs
+eH
+eH
+eH
+eH
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(25,1,1) = {"
+nt
+nt
+lh
+lh
+VI
+XS
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+jT
+hD
+tU
+gC
+Qp
+vk
+ox
+vk
+vk
+wp
+gG
+Sq
+xR
+Wi
+Wi
+Zb
+Dh
+Zw
+Zw
+OL
+hW
+Ja
+Zw
+Zw
+Dh
+Wp
+fr
+IO
+FU
+Ox
+FU
+FU
+IO
+FU
+IO
+fr
+Wp
+qc
+xc
+YM
+SO
+Js
+on
+Js
+on
+aJ
+gM
+gM
+lU
+pN
+jk
+Kd
+pN
+jk
+Kd
+Rf
+qt
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+QT
+QT
+QT
+Fw
+Zy
+fQ
+QT
+BH
+mT
+eH
+eH
+eH
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(26,1,1) = {"
+nt
+nt
+lh
+lh
+PA
+XS
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+lr
+ge
+pw
+uS
+uS
+uS
+jD
+uS
+uS
+lS
+uS
+uS
+Ra
+VJ
+cN
+Zb
+Dh
+Zw
+OL
+Mp
+Mp
+iu
+Ja
+Zw
+Dh
+Wp
+fr
+IO
+FU
+IO
+FU
+FU
+IO
+FU
+IO
+fr
+Wp
+qc
+JW
+cK
+SO
+iG
+mf
+Js
+on
+aJ
+kL
+XP
+ig
+xh
+ZY
+aE
+BI
+Fv
+wT
+GV
+qt
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+QT
+jO
+TR
+Fw
+Ws
+fQ
+QT
+Mt
+Vo
+eH
+eH
+eH
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(27,1,1) = {"
+nt
+nt
+lh
+lh
+PA
+XS
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+vk
+ox
+vk
+vk
+wp
+vk
+vk
+Wi
+et
+cN
+Zb
+Dh
+hW
+nq
+Mp
+Mp
+Mp
+nq
+hW
+Dh
+Wp
+fr
+IO
+FU
+IO
+FU
+FU
+IO
+FU
+IO
+fr
+Wp
+qc
+bz
+WK
+XK
+Js
+on
+Js
+on
+aJ
+fa
+fa
+ww
+Vk
+Jw
+Vc
+Hv
+yC
+Ik
+fa
+qt
+nF
+rh
+fz
+nF
+rh
+fz
+nF
+rh
+zb
+nF
+rh
+zb
+nF
+rh
+Km
+nF
+QT
+QT
+QT
+Lc
+Zy
+fQ
+QT
+iX
+Vo
+eH
+eH
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(28,1,1) = {"
+nt
+nt
+nt
+lh
+Qi
+XS
+vk
+vk
+RF
+gC
+gC
+gC
+gC
+gC
+bK
+gC
+gC
+gC
+gC
+KY
+vk
+ox
+OA
+uS
+mM
+vk
+vk
+Wi
+cN
+cN
+Zb
+Dh
+nq
+nt
+Uh
+Uh
+Uh
+nt
+nq
+Dh
+Wp
+fr
+FU
+FU
+FU
+FU
+FU
+FU
+FU
+FU
+fr
+Wp
+qc
+JW
+cK
+dr
+Ma
+hO
+Js
+on
+aJ
+eE
+eE
+rQ
+pm
+Sh
+pm
+zv
+Sg
+Ve
+eE
+qt
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+jx
+jx
+UJ
+QT
+vD
+YW
+Fw
+Fw
+yU
+QT
+UH
+Vo
+eH
+eH
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(29,1,1) = {"
+nt
+nt
+nt
+lh
+PA
+XS
+vk
+vk
+ox
+vk
+vk
+vk
+vk
+vk
+dW
+Mv
+ax
+vk
+vk
+ox
+vk
+ox
+wp
+vk
+sN
+uS
+uS
+KQ
+PU
+cN
+Zb
+De
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+De
+Wp
+fr
+fr
+fr
+fr
+fr
+fr
+fr
+fr
+fr
+fr
+Wp
+qc
+xc
+YM
+cK
+Js
+on
+Js
+on
+aJ
+eE
+eE
+II
+qo
+ru
+Ai
+eE
+uB
+eE
+eE
+qt
+yN
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+nF
+Ue
+wQ
+jI
+dc
+dc
+dc
+dc
+OQ
+dc
+dc
+dc
+dc
+dc
+dc
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(30,1,1) = {"
+nt
+nt
+lh
+lh
+VI
+XS
+vk
+vk
+ox
+vk
+vk
+vk
+vk
+vk
+vk
+Zs
+lx
+vk
+vk
+ox
+vk
+ox
+wp
+vk
+vk
+Zs
+Sq
+xR
+Wi
+Wi
+Zb
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+mL
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+bj
+JW
+cK
+cK
+Js
+on
+Js
+Vg
+aJ
+Dp
+No
+ZO
+Dp
+Dp
+Dp
+Dp
+ZO
+No
+aJ
+qt
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+dc
+fd
+SK
+jX
+tM
+eh
+SK
+pI
+dc
+dc
+dc
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(31,1,1) = {"
+nt
+nt
+lh
+lh
+PA
+XS
+vk
+vk
+ox
+vk
+vk
+vk
+vk
+vk
+vk
+ZR
+yF
+RF
+gC
+MZ
+vk
+ox
+sN
+uS
+uS
+wG
+Eo
+Ra
+wk
+qh
+Zb
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+mL
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+Wp
+bj
+bd
+cK
+VW
+Js
+on
+Js
+on
+aJ
+zV
+zV
+dq
+kA
+QP
+zV
+zV
+sL
+zV
+aJ
+qt
+kz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+Cz
+dc
+fd
+SK
+SK
+Zm
+ck
+SK
+pI
+dc
+dc
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(32,1,1) = {"
+nt
+nt
+lh
+lh
+PA
+XS
+vk
+vk
+ox
+vk
+vk
+vk
+vk
+vk
+vk
+xR
+mk
+Iy
+xR
+ox
+vk
+Hq
+gC
+gC
+gC
+gC
+gC
+Ra
+nl
+za
+Zb
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+mL
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+aJ
+zV
+zV
+zV
+zV
+zV
+zV
+zV
+zV
+zV
+aJ
+dm
+Nl
+LQ
+LQ
+LQ
+LQ
+Nl
+LQ
+LQ
+LQ
+LQ
+Nl
+LQ
+LQ
+LQ
+LQ
+Nl
+dc
+fd
+uM
+av
+qv
+av
+uM
+pI
+dc
+dc
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(33,1,1) = {"
+nt
+nt
+nt
+lh
+Qi
+XS
+vk
+vk
+YG
+vk
+vk
+vk
+vk
+vk
+vk
+Wi
+oy
+yQ
+Wi
+dW
+gC
+Qp
+vk
+vk
+vk
+vk
+Zb
+Zb
+Zb
+Zb
+dV
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+qj
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+ky
+dc
+dc
+dc
+dc
+dc
+dc
+dc
+dc
+dc
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(34,1,1) = {"
+nt
+nt
+nt
+lh
+PA
+XS
+IN
+Zb
+Np
+Zb
+IN
+vk
+vk
+vk
+vk
+Wi
+mn
+WY
+Wi
+vk
+vk
+vk
+vk
+vk
+vk
+Zb
+Zb
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}
+(35,1,1) = {"
+nt
+nt
+nt
+nt
+Zb
+Zb
+Zb
+Og
+mZ
+Og
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+Zb
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+nt
+"}

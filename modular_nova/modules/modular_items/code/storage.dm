@@ -27,3 +27,7 @@
 			/obj/item/forging/reagent_weapon/katana,
 		)
 	)
+
+/// EXOBYTECHNOVA UPD: fuckin bandage boxes no work!!!!!!
+/datum/storage/box/doubletime
+	max_slots = 14

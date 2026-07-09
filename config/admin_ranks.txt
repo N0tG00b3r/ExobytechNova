@@ -45,8 +45,8 @@ Exclude =
 Edit =
 
 Name = Admin Candidate
-Include = @
-Exclude =
+Include = @ SPAWN VAREDIT BAN
+Exclude = AUTOADMIN
 Edit =
 
 Name = Trial Admin
@@ -55,7 +55,7 @@ Exclude = AUTOADMIN
 Edit =
 
 Name = Badmin
-Include = @ POSSESS POLL BUILD SERVER FUN
+Include = @ POSSESS POLL BUILD 
 Exclude =
 Edit =
 

@@ -380,6 +380,27 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
 
+/obj/item/mod/control/pre_equipped/elite
+	theme = /datum/mod_theme/elite
+	starting_frequency = MODLINK_FREQ_SYNDICATE
+	applied_cell = /obj/item/stock_parts/power_store/cell/bluespace
+	req_access = list(ACCESS_SYNDICATE)
+	applied_modules = list(
+		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/shock_absorber,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/hat_stabilizer/syndicate,
+		/obj/item/mod/module/quick_cuff,
+	)
+	default_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+	)
+
 /obj/item/mod/control/pre_equipped/interdyne
 	theme = /datum/mod_theme/interdyne
 	starting_frequency = MODLINK_FREQ_SYNDICATE

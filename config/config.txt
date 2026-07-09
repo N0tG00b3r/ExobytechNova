@@ -41,14 +41,15 @@ SERVERNAME Exobytech Station 13
 #MAX_HUB_POP 100
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 120
+LOBBY_COUNTDOWN 180
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
-ROUND_END_COUNTDOWN 90
+ROUND_END_COUNTDOWN 120
 
 ## Comment this out if you want to use the SQL based admin system, the legacy system uses admins.txt.
 ## You need to set up your database to use the SQL based system.
 ## This flag is automatically enabled if SQL_ENABLED isn't
+#ADMIN_LEGACY_SYSTEM
 #ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
@@ -62,6 +63,7 @@ ROUND_END_COUNTDOWN 90
 #LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
+#ENABLE_LOCALHOST_RANK
 #ENABLE_LOCALHOST_RANK
 
 ## Uncomment this entry to have certain jobs require your account to be at least a certain number of days old to select. You can configure the exact age requirement for different jobs by editing
@@ -97,6 +99,7 @@ PICTURE_LOGGING_CAMERA
 
 ## period of time in seconds for players to be considered inactive
 INACTIVITY_PERIOD 600
+INACTIVITY_PERIOD 600
 
 ## period of time in seconds for players to be considered afk and kickable
 AFK_PERIOD 1200
@@ -130,15 +133,15 @@ RETA_DEPT_COOLDOWN_DS 150
 #ALLOW_VOTE_MAP
 
 ## min delay (deciseconds) between voting sessions (default 10 minutes)
-VOTE_DELAY 6000
+VOTE_DELAY 9000
 
 ## time period (deciseconds) which voting session will last (default 1 minute)
-VOTE_PERIOD 600
+VOTE_PERIOD 1200
 
 ## prevents dead players from voting or starting votes
 # NO_DEAD_VOTE
 
-## players' votes default to "No vote" (otherwise,  default to "No change")
+## players' votes default to "No vote" (otherwise, default to "No change")
 # DEFAULT_NO_VOTE
 
 ## Determines if players can respawn after death
@@ -147,15 +150,15 @@ VOTE_PERIOD 600
 ## 2 = Can respawn if choosing a different character
 ALLOW_RESPAWN 1
 
-## Respawn delay (deciseconds), which doesn't allow to return to lobby
-RESPAWN_DELAY 600
+## Respawn delay (deciseconds), which doesn't allow to return to lobby (previously 600 deciseconds; 1 minute)
+RESPAWN_DELAY 1200
 
 ## set a hosted by name for unix platforms
-HOSTEDBY Kevin_Glitch
+HOSTEDBY KevinGlitch and RealNiko
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting).
 ## You probably want this enabled for a production server.
-#GUEST_BAN
+GUEST_BAN
 
 ## IPINTEL:
 ## This allows you to detect likely proxies by checking ips against getipintel.net
@@ -567,7 +570,7 @@ URGENT_AHELP_COOLDOWN 300
 ## You can use this multiple times, and the MOTDs will be appended in order.
 ## Based on config directory, so "motd.txt" points to "config/motd.txt"
 MOTD motd.txt
-#MOTD motd_extra.txt
+MOTD motd_version.txt
 
 ## Assets can opt-in to caching their results into `cache/`.
 ## This is important, as preferences assets take upwards of 30 seconds (without sleeps) to collect.
@@ -668,3 +671,37 @@ GENERATE_ASSETS_IN_INIT
 ## Path from the config folder to the policy json
 POLICY_JSON_PATH policy.json
 
+########################################################
+## EXOBYTECHNOVA SPECIFIC CONFIGURATION OPTIONS START
+##
+## WARNING:
+## THESE OPTIONS ARE HEAVILY WIP.
+## THEY MAY NOT FUNCTION AT ALL OR CAUSE SEVERE BUGS/GLITCHES.
+## ONLY MESS WITH THESE SETTINGS IF YOU'RE A DEVELOPER OR IF
+## YOU KNOW WHAT YOU ARE DOING
+########################################################
+
+## Determines if the "Global Carry Over" system is enabled.
+## When active, a player who survives the round will preserve certain items on their character to the next station.
+## These include cybernetics/implants, items in back slots, etc.
+## AI and Cyborgs are not eligible for global carry over.
+## WARNING: THIS IS VERY UNBALANCED. IT ALSO WORKS FOR ANTAGONISTS. YOU PROBABLY WANT TO LEAVE THIS OFF.
+## NOT YET IMPLEMENTED. HERE FOR THE FUTURE.
+## 0 = the system is completely disabled. default option, recommended for most servers.
+## 1 = the system is completely enabled.
+## 2 = the system is enabled, but only if the player uses the same character who survived the last round.
+## 3 = same as 2, but if at least one non-antagonist human player does not survive, nobody gets to carry over items. this creates an actual "antagonist victory" consequence
+#EXO_ALLOW_GLOBAL_CARRY 0
+
+########################################################
+## [!!!] NSFW/ERP-RELATED OPTIONS FOLLOW.
+########################################################
+
+## While this is uncommented, all of the exhibitionist-related ERP traits are disabled.
+## This is overridden by the DISABLE_ERP_PREFERENCES setting; if enabled, they won't show up no matter what.
+## NOT YET IMPLEMENTED. HERE FOR THE FUTURE.
+#EXO_DISABLE_FETISH_TRAITS
+
+########################################################
+## EXOBYTECHNOVA SPECIFIC CONFIGURATION OPTIONS END
+########################################################

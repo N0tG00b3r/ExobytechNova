@@ -259,11 +259,11 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	/// Boolean for Solfed message
 	if(tgui_input_list(user, call_solfed_check1, "Call 911", list("Yes", "No")) != "Yes")
 		return
-	message_admins("[ADMIN_LOOKUPFLW(user)] has acknowledged the faulty SolFed call consequences.")
+	message_admins("[ADMIN_LOOKUPFLW(user)] has acknowledged the faulty Exobytech call consequences.")
 	/// Variable for reason in calling the feeds
-	var/reason_to_call_da_feds = stripped_input(user, "What do you wish to call the Federation for?", "Call the Federation", null, MAX_MESSAGE_LEN)
+	var/reason_to_call_da_feds = stripped_input(user, "What do you wish to call Exobytech for?", "Call Exobytech", null, MAX_MESSAGE_LEN)
 	if(!reason_to_call_da_feds)
-		to_chat(user, "You decide not to call the Federation.")
+		to_chat(user, "You decide not to call Exobytech.")
 		return
 
 	GLOB.fedmessage = reason_to_call_da_feds
@@ -277,7 +277,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	log_game("[key_name(user)] has called Exobytech for the following reason:\n[GLOB.fedmessage]")
 	deadchat_broadcast(" has called Exobytech for the following reason:\n[GLOB.fedmessage]", span_name("[user.real_name]"), user, message_type = DEADCHAT_ANNOUNCEMENT)
 
-	to_chat(user, span_notice("Authorization confirmed. SolFed Intervention request sent, standby for official instructions."))
+	to_chat(user, span_notice("Authorization confirmed. Exobytech Intervention request sent, standby for official instructions."))
 	playsound(src, 'sound/machines/terminal/terminal_prompt_confirm.ogg', 50, FALSE)
 
 /obj/machinery/computer/communications/proc/calling_911(mob/user, called_group_pretty = "EMTs", called_group = EMERGENCY_RESPONSE_EMT)
@@ -314,7 +314,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 /datum/antagonist/ert/request_911/greet()
 	var/missiondesc =  ""
 	missiondesc += "<B><font size=5 color=red>You are NOT a Nanotrasen Employee. You work for Exobytech as a [role].</font></B>"
-	missiondesc += "<BR>You are responding to emergency calls from the station for immediate SolFed [department] assistance!\n"
+	missiondesc += "<BR>You are responding to emergency calls from the station for immediate Exobytech [department] assistance!\n"
 	missiondesc += "<BR>Use the Cell Phone in your backpack to confer with fellow first responders!\n"
 	missiondesc += "<BR><B>911 Transcript is as follows</B>:"
 	missiondesc += "<BR> [GLOB.call_911_msg]"
@@ -416,8 +416,8 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	id_trim = /datum/id_trim/solfed/atmos
 
 /obj/item/radio/headset/headset_solfed/atmos
-	name = "\improper SolFed adv. atmos headset"
-	desc = "A headset used by the Solar Federation response teams."
+	name = "\improper Exobytech adv. atmos headset"
+	desc = "A headset used by the Exobytech response teams."
 	icon_state = "med_headset"
 	keyslot = /obj/item/encryptionkey/headset_solfed/atmos
 	radio_talk_sound = 'modular_nova/modules/radiosound/sound/radio/security.ogg'
@@ -427,7 +427,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	icon = 'icons/map_icons/items/_item.dmi'
 
 /obj/item/encryptionkey/headset_solfed/atmos
-	name = "\improper SolFed adv. atmos encryption key"
+	name = "\improper Exobytech adv. atmos encryption key"
 	special_channels = RADIO_SPECIAL_CENTCOM
 	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_COMMAND = 1)
 	icon_state = "/obj/item/encryptionkey/headset_solfed/atmos"
@@ -436,14 +436,14 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	greyscale_colors = "#ebebeb#2b2793"
 
 /obj/item/radio/headset/headset_solfed/sec
-	name = "\improper SolFed adv. Security headset"
-	desc = "A headset used by the Solar Federation response teams."
+	name = "\improper Exobytech adv. Security headset"
+	desc = "A headset used by the Exobytech response teams."
 	icon_state = "med_headset"
 	keyslot = /obj/item/encryptionkey/headset_solfed/sec
 	radio_talk_sound = 'modular_nova/modules/radiosound/sound/radio/security.ogg'
 
 /obj/item/encryptionkey/headset_solfed/sec
-	name = "\improper SolFed adv. Security encryption key"
+	name = "\improper Exobytech adv. Security encryption key"
 	special_channels = RADIO_SPECIAL_CENTCOM
 	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_COMMAND = 1)
 	icon_state = "/obj/item/encryptionkey/headset_solfed/sec"
@@ -452,14 +452,14 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	greyscale_colors = "#ebebeb#2b2793"
 
 /obj/item/radio/headset/headset_solfed/med
-	name = "\improper SolFed adv. Medical headset"
-	desc = "A headset used by the Solar Federation response teams."
+	name = "\improper Exobytech adv. Medical headset"
+	desc = "A headset used by Exobytech response teams."
 	icon_state = "med_headset"
 	keyslot = /obj/item/encryptionkey/headset_solfed/med
 	radio_talk_sound = 'modular_nova/modules/radiosound/sound/radio/security.ogg'
 
 /obj/item/encryptionkey/headset_solfed/med
-	name = "\improper SolFed adv. Medical encryption key"
+	name = "\improper Exobytech adv. Medical encryption key"
 	special_channels = RADIO_SPECIAL_CENTCOM
 	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_COMMAND = 1)
 	icon_state = "/obj/item/encryptionkey/headset_solfed/med"
@@ -558,12 +558,12 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 
 /datum/antagonist/ert/request_911/treason_destroyer/greet()
 	var/missiondesc =  ""
-	missiondesc += "<B><font size=5 color=red>You are NOT a local Exobytech employee. You work for Exobytech as a [role].</font></B>"
+	missiondesc += "<B><font size=5 color=red>You are NOT a station crewmember. You work for the Galactic Council as a [role].</font></B>"
 	missiondesc += "<BR>You are here to assume control of [station_name()] due to the occupants engaging in Treason as reported by our SWAT team.\n"
 	missiondesc += "<BR><B>Your Mission</B>:"
 	missiondesc += "<BR> <B>1.</B> Contact the SWAT Team and the First Responders via your cell phone to get the situation from them."
 	missiondesc += "<BR> <B>2.</B> Arrest all suspects involved in the treason attempt."
-	missiondesc += "<BR> <B>3.</B> Assume control of the station for Exobytech, and initiate evacuation procedures to get non-offending citizens \
+	missiondesc += "<BR> <B>3.</B> Assume control of the station for the Galactic Council, and initiate evacuation procedures to get non-offending citizens \
 		away from the scene."
 	missiondesc += "<BR> <B>4.</B> If you need to use lethal force, do so, but only if you must."
 	to_chat(owner, missiondesc)
@@ -571,7 +571,7 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	greeted_mob.playsound_local(greeted_mob, 'sound/effects/families_police.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE)
 
 /datum/outfit/request_911/treason_destroyer
-	name = "911 Response: SolFed Military"
+	name = "911 Response: Exobytech Military"
 
 	uniform = /obj/item/clothing/under/solfed/marines
 	head = /obj/item/clothing/head/helmet/solfed
@@ -598,8 +598,8 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	id_trim = /datum/id_trim/solfed
 
 /obj/item/solfed_reporter
-	name = "SolFed reporter"
-	desc = "Use this in-hand to vote to call SolFed backup. If half your team votes for it, SWAT will be dispatched."
+	name = "Exobytech reporter"
+	desc = "Use this in-hand to vote to call Exobytech backup. If half your team votes for it, SWAT will be dispatched."
 	icon = 'modular_nova/modules/goofsec/icons/reporter.dmi'
 	icon_state = "reporter_off"
 	w_class = WEIGHT_CLASS_SMALL
@@ -711,12 +711,12 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 
 /obj/item/solfed_reporter/swat_caller
 	name = "S.W.A.T. backup caller"
-	desc = "Use this in-hand to vote to call SolFed S.W.A.T. backup. If half your team votes for it, SWAT will be dispatched."
+	desc = "Use this in-hand to vote to call Exobytech S.W.A.T. backup. If half your team votes for it, SWAT will be dispatched."
 	type_to_check = /datum/antagonist/ert/request_911
 	type_of_callers = "911_responders"
 	announcement_source = "Exobytech S.W.A.T."
 	fine_station = TRUE
-	ghost_poll_msg = "The Sol-Fed 911 services have requested a S.W.A.T. backup. Do you wish to become a S.W.A.T. member?"
+	ghost_poll_msg = "The Exobytech 911 services have requested a S.W.A.T. backup. Do you wish to become a S.W.A.T. member?"
 	amount_to_summon = 6
 	type_to_summon = /datum/antagonist/ert/request_911/condom_destroyer
 	summoned_type = "swat"
@@ -810,8 +810,8 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	l_hand = /obj/item/pizzabox/vegetable
 
 /datum/antagonist/ert/pizza/false_call/greet()
-	var/missiondesc =  ""
-	missiondesc += "<B><font size=5 color=red>You are NOT a Nanotrasen Employee. You work for Dogginos as a delivery person.</font></B>"
+	var/missiondesc = ""
+	missiondesc += "<B><font size=5 color=red>You are NOT a local Employee. You work for Dogginos as a delivery person.</font></B>"
 	missiondesc += "<BR>You are here to deliver some pizzas from Dogginos!\n"
 	missiondesc += "<BR>Use the Cell Phone in your backpack to confer with fellow Dogginos employees!\n"
 	missiondesc += "<BR><B>Your Mission</B>:"
@@ -821,8 +821,8 @@ GLOBAL_LIST_INIT(call911_do_and_do_not, list(
 	to_chat(owner, missiondesc)
 
 /datum/antagonist/ert/pizza/leader/false_call/greet()
-	var/missiondesc =  ""
-	missiondesc += "<B><font size=5 color=red>You are NOT a Nanotrasen Employee. You work for Dogginos as a Regional Manager.</font></B>"
+	var/missiondesc = ""
+	missiondesc += "<B><font size=5 color=red>You are NOT a local Employee. You work for Dogginos as a Regional Manager.</font></B>"
 	missiondesc += "<BR>You are here to resolve a dispute with some customers who refuse to pay their bill!\n"
 	missiondesc += "<BR>Use the Cell Phone in your backpack to confer with fellow Dogginos employees!\n"
 	missiondesc += "<BR><B>Your Mission</B>:"

@@ -42,6 +42,7 @@ em						{font-style: normal;	font-weight: bold;}
 .binarysay a:active, .binarysay a:visited {color: #88ff88;}
 .syndradio				{color: #6d3f40;}
 .centcomradio			{color: #686868;}
+.phoenixradio			{color: #ff5d00;} // exonova edit
 .aiprivradio			{color: #ff00ff;}
 .redteamradio			{color: #ff0000;}
 .blueteamradio			{color: #0000ff;}

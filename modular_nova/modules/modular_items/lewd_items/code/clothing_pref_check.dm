@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(pref_checked_clothes, list(
 	/obj/item/clothing/glasses/hypno,
 	/obj/item/clothing/neck/collar,
 	/obj/item/clothing/neck/mind_collar,
-	/obj/item/electropack/shockcollar,
+	/// /obj/item/electropack/shockcollar, /// EXONOVA EDIT REMOVAL: Shock collars are used in real life for purposes other than ERP.
 	/obj/item/clothing/glasses/blindfold/dorms,
 	/obj/item/clothing/ears/dorms_headphones,
 	/obj/item/clothing/suit/straight_jacket/kinky_sleepbag,

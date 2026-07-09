@@ -241,7 +241,11 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	QDEL_NULL(radio)
 	QDEL_NULL(countdown)
 	if(is_main_engine && GLOB.main_supermatter_engine == src)
-		SSpersistence.reset_delam_counter() // NOVA EDIT ADDITION BEGIN - DELAM SCRAM
+		/// EXOBYTECHNOVA EDIT UPDATE: Do not reset the delamination counter if the game is not actively in progress.
+		/// This allows for admins to delete the Supermatter crystal and replace it with something else during setup time w/o interfering w/ delam incident displays.
+		if(SSticker.current_state == GAME_STATE_PLAYING)
+			SSpersistence.reset_delam_counter() // NOVA EDIT ADDITION BEGIN - DELAM SCRAM
+		/// EXOBYTECHNOVA UPD END
 		GLOB.main_supermatter_engine = null
 	QDEL_NULL(soundloop)
 	return ..()
@@ -575,6 +579,13 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		header = "Meltdown Incoming",
 	)
 
+	/// EXOBYTECHNOVA EDIT ADDITION: Trigger Black Alert automatically
+	var/current_sec_level = SSsecurity_level.get_current_level_as_number()
+	var/previous_sec_level = current_sec_level
+	if(current_sec_level < SEC_LEVEL_BLACK)
+		SSsecurity_level.set_level(SEC_LEVEL_BLACK)
+	/// EXOBYTECHNOVA EDIT ADDITION END
+
 	var/list/count_down_messages = delamination_strategy.count_down_messages()
 
 	radio.talk_into(
@@ -603,7 +614,13 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 		if(damage < explosion_point) // Cutting it a bit close there engineers
 			message = count_down_messages[2]
 			healed = TRUE
-		else if((i % 50) != 0 && i > 50) // A message once every 5 seconds until the final 5 seconds which count down individualy
+
+			/// EXOBYTECHNOVA EDIT ADDITION: Revert Black Alert automatically
+			current_sec_level = SSsecurity_level.get_current_level_as_number()
+			if(current_sec_level == SEC_LEVEL_BLACK && previous_sec_level < SEC_LEVEL_BLACK)
+				SSsecurity_level.set_level(previous_sec_level)
+			/// EXOBYTECHNOVA EDIT ADDITION END
+		else if((i % 150) != 0 && i > 150) // A message once every 15 (prev: 5) seconds until the final 5 seconds which count down individualy
 			sleep(1 SECONDS)
 			continue
 		else if(i > 50)

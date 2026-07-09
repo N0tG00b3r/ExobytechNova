@@ -18,3 +18,7 @@ _maps/RandomZLevels/moonoutpost19.dmm
 #_maps/RandomZLevels/mothership_astrum.dmm
 _maps/RandomZLevels/heretic.dmm
 _maps/RandomZLevels/maintsroom.dmm
+
+# ExoNova Away Missions
+_maps/RandomZLevels/exonova/phoenix_thefleshthathates.dmm
+_maps/RandomZLevels/exonova/trader_phoenix_derelict.dmm

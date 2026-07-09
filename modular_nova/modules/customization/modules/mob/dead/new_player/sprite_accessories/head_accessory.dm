@@ -30,6 +30,9 @@
 /datum/sprite_accessory/head_accessory/sylveon_bow
 	name = "Sylveon Bow"
 	icon_state = "sylveon_bow"
+	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+	color_src = USE_MATRIXED_COLORS
+	ckey_whitelist = list("whirlsam" = TRUE, "realniko" = TRUE)
 
 /datum/sprite_accessory/head_accessory/moogle_pom
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/moogle_pom.dmi'

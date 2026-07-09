@@ -95,3 +95,8 @@ endmap
 map oceanpubby
     votable
 endmap
+
+## EXONOVA MAPS ##
+
+map darkphoenix
+endmap

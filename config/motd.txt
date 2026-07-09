@@ -1,6 +1,14 @@
 <!-- Most valid html will work in here, but you have to use URL links for images. -->
 
-<h1>Welcome to Space Station 13!</h1>
+<h1>
+	Welcome to Exobytech Station 13!
+</h1>
+<p>
+	<span style="color: #ff0000;">
+		<strong>
+			 Please ask the server admins to change this default MOTD to something more useful!
+		</strong>
+	</span>
+</p>
 
-<i>This server is running a /tg/station 13 Git build.</i>
-<i>WARNING: The server is being hosted through unofficial means, and is missing a few external files that help with stability. Please contact your administrator and let them know.</i>
+<i>WARNING: The server is being hosted through unofficial means, and may be missing a few external files that help with stability. Please contact your administrator and let them know.</i>

@@ -1,7 +1,7 @@
 {
 	"Spawn Bitrunning Glitch": {
-		"min_players": 1,
-		"weight": 100
+		"min_players": 2,
+		"weight": 60
 	},
 	"Aurora Caelus": {
 		"min_players": 0,
@@ -18,11 +18,11 @@
 	},
 	"Bureaucratic Error": {
 		"min_players": 0,
-		"weight": 5
+		"weight": 0
 	},
 	"Camera Failure": {
 		"min_players": 0,
-		"weight": 100
+		"weight": 60
 	},
 	"Carp Migration": {
 		"min_players": 12,
@@ -49,8 +49,8 @@
 		"earliest_start": 6000
 	},
 	"Fake Virus": {
-		"min_players": 0,
-		"weight": 20
+		"min_players": 1,
+		"weight": 10
 	},
 	"False Alarm": {
 		"min_players": 0,
@@ -58,7 +58,7 @@
 	},
 	"Gravity Generator Blackout": {
 		"min_players": 0,
-		"weight": 30
+		"weight": 20
 	},
 	"Grey Tide": {
 		"min_players": 5,
@@ -66,10 +66,10 @@
 	},
 	"Grid Check": {
 		"min_players": 0,
-		"weight": 10
+		"weight": 15
 	},
 	"Random Heart Attack": {
-		"min_players": 40,
+		"min_players": 4,
 		"weight": 20
 	},
 	"Ion Storm": {
@@ -78,19 +78,19 @@
 	},
 	"Market Crash": {
 		"min_players": 0,
-		"weight": 10
+		"weight": 20
 	},
 	"Mass Hallucination": {
 		"min_players": 1,
-		"weight": 10
+		"weight": 5
 	},
 	"Mice Migration": {
 		"min_players": 0,
 		"weight": 10
 	},
 	"Portal Storm: Syndicate Shocktroops": {
-		"min_players": 15,
-		"weight": 2,
+		"min_players": 30,
+		"weight": 0,
 		"earliest_start": 18000
 	},
 	"Portal Storm: Constructs": {
@@ -98,16 +98,16 @@
 		"weight": 0
 	},
 	"Processor Overload": {
-		"min_players": 20,
-		"weight": 15
+		"min_players": 5,
+		"weight": 5
 	},
 	"Radiation Leak": {
-		"min_players": 0,
+		"min_players": 10,
 		"weight": 15
 	},
 	"Radiation Storm": {
 		"min_players": 0,
-		"weight": 10
+		"weight": 0
 	},
 	"Sandstorm: Directional": {
 		"min_players": 35,
@@ -121,43 +121,46 @@
 	},
 	"Scrubber Overflow: Normal": {
 		"min_players": 10,
-		"weight": 10
+		"weight": 0,
+		"earliest_start": 21000
 	},
 	"Scrubber Overflow: Threatening": {
 		"min_players": 25,
-		"weight": 4,
-		"earliest_start": 21000
+		"weight": 0,
+		"earliest_start": 27000
 	},
 	"Scrubber Overflow: Catastrophic": {
 		"min_players": 35,
-		"weight": 2,
-		"earliest_start": 27000
+		"weight": 0,
+		"earliest_start": 33000
 	},
 	"Scrubber Overflow: Every Vent": {
 		"min_players": 10,
 		"weight": 0
 	},
 	"Shuttle Catastrophe": {
-		"min_players": 0,
-		"weight": 10
+		"min_players": 4,
+		"weight": 10,
+		"earliest_start": 12000
 	},
 	"Shuttle Insurance": {
 		"min_players": 0,
-		"weight": 10
+		"weight": 16
 	},
 	"Stray Cargo Pod": {
-		"min_players": 0,
+		"min_players": 2,
 		"weight": 20,
-		"earliest_start": 6000
+		"earliest_start": 10000
 	},
 	"Stray Syndicate Cargo Pod": {
-		"min_players": 0,
+		"min_players": 4,
 		"weight": 6,
 		"earliest_start": 18000
 	},
 	"Supermatter Surge": {
-		"min_players": 0,
-		"weight": 15
+		"min_players": 15,
+		"weight": 10,
+		"earliest_start": 36000
 	},
 	"Supermatter Surge: Poly's Revenge": {
 		"min_players": 0,
@@ -165,35 +168,35 @@
 	},
 	"Tram Malfunction": {
 		"min_players": 0,
-		"weight": 30,
+		"weight": 0,
 		"earliest_start": 9000
 	},
 	"Ventilation Clog: Minor": {
 		"min_players": 0,
 		"weight": 25,
-		"earliest_start": 3000
+		"earliest_start": 10000
 	},
 	"Ventilation Clog: Major": {
-		"min_players": 0,
+		"min_players": 5,
 		"weight": 12,
-		"earliest_start": 6000
+		"earliest_start": 12000
 	},
 	"Ventilation Clog: Critical": {
 		"min_players": 15,
 		"weight": 8,
-		"earliest_start": 15000
+		"earliest_start": 20000
 	},
 	"Ventilation Clog: Strange": {
 		"min_players": 0,
-		"weight": 5,
-		"earliest_start": 3000
+		"weight": 0,
+		"earliest_start": 30000
 	},
 	"Wisdom Cow": {
 		"min_players": 0,
 		"weight": 20
 	},
 	"Wormholes": {
-		"min_players": 2,
+		"min_players": 8,
 		"weight": 2
 	},
 	"Anomaly: Energetic Flux": {
@@ -202,7 +205,7 @@
 	},
 	"Anomaly: Bioscrambler": {
 		"min_players": 10,
-		"weight": 20
+		"weight": 0
 	},
 	"Anomaly: Bluespace": {
 		"min_players": 1,
@@ -210,7 +213,7 @@
 	},
 	"Anomaly: Dimensional": {
 		"min_players": 10,
-		"weight": 20
+		"weight": 0
 	},
 	"Anomaly: Ectoplasmic Outburst": {
 		"min_players": 30,
@@ -226,19 +229,21 @@
 	},
 	"Anomaly: Gravitational (High Intensity)": {
 		"min_players": 1,
-		"weight": 15
+		"weight": 10,
+		"earliest_start": 18000
 	},
 	"Anomaly: Hallucination": {
-		"min_players": 10,
+		"min_players": 1,
 		"weight": 20
 	},
 	"Anomaly: Pyroclastic": {
 		"min_players": 1,
-		"weight": 20
+		"weight": 10,
+		"earliest_start": 33000
 	},
 	"Anomaly: Vortex": {
-		"min_players": 20,
-		"weight": 10
+		"min_players": 30,
+		"weight": 4
 	},
 	"Lone Operative": {
 		"min_players": 0,
@@ -246,56 +251,58 @@
 	},
 	"Random Human-level Intelligence": {
 		"min_players": 0,
-		"weight": 10
+		"weight": 0
 	},
 	"Station-wide Human-level Intelligence": {
 		"min_players": 0,
 		"weight": 0
 	},
 	"Immovable Rod": {
-		"min_players": 15,
+		"min_players": 30,
 		"weight": 10
 	},
 	"Dark Matt-eor": {
 		"min_players": 0,
-		"weight": 199
+		"weight": 0
 	},
 	"Meteor Wave: Normal": {
-		"min_players": 15,
+		"min_players": 20,
 		"weight": 4,
-		"earliest_start": 15000
+		"earliest_start": 144000
 	},
 	"Meteor Wave: Threatening": {
-		"min_players": 20,
+		"min_players": 25,
 		"weight": 5,
-		"earliest_start": 21000
+		"earliest_start": 144000
 	},
 	"Meteor Wave: Catastrophic": {
-		"min_players": 25,
+		"min_players": 30,
 		"weight": 7,
-		"earliest_start": 27000
+		"earliest_start": 144000
 	},
 	"Meteor Wave: Meaty": {
 		"min_players": 15,
-		"weight": 2,
-		"earliest_start": 15000
+		"weight": 0,
+		"earliest_start": 144000
 	},
 	"Major Space Dust": {
 		"min_players": 15,
 		"weight": 14,
-		"earliest_start": 9000
+		"earliest_start": 18000
 	},
 	"Stray Meteor": {
 		"min_players": 15,
-		"weight": 15
+		"weight": 15,
+		"earliest_start": 36000
 	},
 	"Shuttle Loan": {
 		"min_players": 0,
 		"weight": 10,
-		"earliest_start": 4200
+		"earliest_start": 3000
 	},
 	"Space Vines": {
-		"min_players": 10,
-		"weight": 15
+		"min_players": 20,
+		"weight": 2,
+		"earliest_start": 144000
 	}
 }

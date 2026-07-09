@@ -118,7 +118,18 @@
 		if(0.1 to 0.3)
 			. += "zaibas_bullet_1"
 
-/obj/projectile/bullet/pulse
+/obj/item/ammo_casing/pulse/extended
+	name = "extended pulse energy cell"
+	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity. Each pulse also has a stronger military-grade payload, \
+		allowing fired projectiles to travel slightly faster than a standard plasma pulse."
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*0.4, /datum/material/plasma = SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = SHEET_MATERIAL_AMOUNT*0.9)
+	projectile_type = /obj/projectile/beam/laser/plasma_glob/pulse/phoenix
+	///Maximum amount of times this casing can be used.
+	max_uses = 30
+	///Current amount of times this casing can be used.
+	remaining_uses = 30
+
+/obj/projectile/beam/laser/plasma_glob/pulse
 	name = "pulse energy"
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
 	icon_state = "plasma_pulse"
@@ -131,7 +142,7 @@
 	///Which damage type do we deal as a secondary effect?
 	var/secondary_damage_type = BURN
 	///How much secondary damage do we deal?
-	var/secondary_damage = 15
+	var/secondary_damage = 10
 	///How much chance does it have to proc wounds?
 	var/secondary_wound_bonus = 5
 	///How much chance does it have to proc wounds on exposed targets?
@@ -140,6 +151,13 @@
 	var/secondary_armour_penetration = 0
 	///Which armor protects against it?
 	var/secondary_armor_flag = ENERGY
+
+/obj/projectile/beam/laser/plasma_glob/pulse/phoenix
+	/// EXOBYTECHNOVA CHANGE: Higher-speed version of the plasma pulse projectile
+	name = "phoenix pulse energy"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
+	icon_state = "plasma_pulse"
+	speed = 1.5 // formerly 2x (nerfed)
 
 /obj/projectile/bullet/pulse/on_hit(atom/target, blocked = 0, pierce_hit)
 	. = ..()

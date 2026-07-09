@@ -30,3 +30,10 @@
 	if((worn_neck?.flags_inv & HIDEHAIR || worn_mask?.flags_inv & HIDEHAIR))
 		return TRUE
 	return FALSE
+
+/datum/sprite_accessory/neck_accessory/sylveon_bow
+	name = "Sylveon Neck Bow"
+	icon_state = "sylveon_bow"
+	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+	color_src = USE_MATRIXED_COLORS
+	ckey_whitelist = list("whirlsam" = TRUE, "realniko" = TRUE)

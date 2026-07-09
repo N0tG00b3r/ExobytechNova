@@ -197,6 +197,11 @@
 			continue
 		// NOVA EDIT ADDITION END
 
+		// EXOBYTECHNOVA UPDATE: Respect "disable lewd items" configuration
+		if(CONFIG_GET(flag/disable_lewd_items) && pack.lewd)
+			continue
+		// EXOBYTECH UPD END
+
 		var/obj/item/first_item = length(pack.contains) > 0 ? pack.contains[1] : null
 		packs += list(list(
 			"name" = pack.name,

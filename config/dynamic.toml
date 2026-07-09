@@ -32,7 +32,7 @@ ruleset_type_settings.latejoin.execution_cooldown_high = 20
 ["Low Chaos"]
 name = "Low Chaos"
 min_pop = 0
-weight = 8
+weight = 12
 advisory_report = "Advisory Level: <b>Yellow Star</b></center><BR>Your sector's advisory level is Yellow Star. Surveillance shows a credible risk of enemy attack against our assets in the Spinward Sector. We advise a heightened level of security alongside maintaining vigilance against potential threats."
 ruleset_type_settings.roundstart.low = 1
 ruleset_type_settings.roundstart.high = 1
@@ -93,7 +93,7 @@ ruleset_type_settings.latejoin.execution_cooldown_high = 20
 
 ["Medium-High Chaos"]
 name = "Medium-High Chaos"
-min_pop = 0
+min_pop = 10
 weight = 36
 advisory_report = "Advisory Level: <b>Black Orbit</b></center><BR>Your sector's advisory level is Black Orbit. Your sector's local communications network is currently undergoing a blackout, and we are therefore unable to accurately judge enemy movements within the region. However, information passed to us by GDI suggests a high amount of enemy activity in the sector, indicative of an impending attack. Remain on high alert and vigilant against any other potential threats."
 ruleset_type_settings.roundstart.low = 2
@@ -531,7 +531,6 @@ weight = 10
 min_pop = 3
 blacklisted_roles = []
 min_antag_cap = 1
-max_antag_cap.denominator = 24
 repeatable_weight_decrease = 2
 repeatable = 1
 minimum_required_age = 0

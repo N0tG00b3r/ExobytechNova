@@ -1,5 +1,3 @@
-
-
 /obj/item/gun/ballistic/automatic/napad
 	name = "\improper 'Napad' Submachine Gun"
 	desc = "A bulky, 10mm submachine gun with sizeable magazines holding a close relation to the Zashchitnik pistol. Designated 'Napadayuschiy'."
@@ -56,4 +54,19 @@
 	AddComponent(/datum/component/automatic_fire, fire_delay)
 
 /obj/item/gun/ballistic/automatic/napad/no_mag
+	spawnwithmagazine = FALSE
+
+/// EXOBYTECHNOVA 
+/obj/item/gun/ballistic/automatic/napad/rapidfire
+	name = "\improper 'Napad-30' Submachine Gun"
+	desc = "A bulky, 10mm submachine gun with sizeable magazines holding a close relation to the Zashchitnik pistol. Designated 'Napadayuschiy'. \
+		This one is a rapid-fire version of the weapon intended for military applications; however, the modifications have made it horribly inaccurate \
+		and drastically reduced its wounding potential."
+
+	fire_delay = 0.05 SECONDS
+	projectile_wound_bonus = -30
+	projectile_damage_multiplier = 0.4
+	spread = 24 // for shredding the broad side of a barn
+
+/obj/item/gun/ballistic/automatic/napad/rapidfire/no_mag
 	spawnwithmagazine = FALSE

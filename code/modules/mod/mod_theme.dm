@@ -506,7 +506,7 @@
 	resistance_flags = FIRE_PROOF|LAVA_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY - 2
+	complexity_max = DEFAULT_MAX_COMPLEXITY
 	charge_drain = DEFAULT_CHARGE_DRAIN * 2
 	inbuilt_modules = list(/obj/item/mod/module/ash_accretion, /obj/item/mod/module/sphere_transform)
 	variants = list(
@@ -1317,7 +1317,7 @@
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 4
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "syndicate"
@@ -2078,7 +2078,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY - 10
 	slowdown_deployed = 0
-	hearing_protection = EAR_PROTECTION_NORMAL
+	hearing_protection = EAR_PROTECTION_NORMAL // TODO figure out wtf nova did to hearing prot modules
 	allowed_suit_storage = list(
 		/obj/item/restraints/handcuffs,
 	)

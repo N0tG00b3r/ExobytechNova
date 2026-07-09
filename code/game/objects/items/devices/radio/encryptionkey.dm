@@ -260,6 +260,9 @@
 	greyscale_config = /datum/greyscale_config/encryptionkey_centcom
 	greyscale_colors = "#24a157#dca01b"
 
+/// EXOBYTECHNOVA UPDATE: Phoenix Collective headset encryption keys
+/// [ MOVED TO PHOENIXTECH MODULE ]
+
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 	channels = list(

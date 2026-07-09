@@ -442,7 +442,7 @@
 		relatively easy to install into most other suits."
 	icon_state = "welding"
 	complexity = 1
-	incompatible_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/infiltrator)
+	incompatible_modules = list(/obj/item/mod/module/infiltrator)
 	required_slots = list(ITEM_SLOT_HEAD)
 
 /obj/item/mod/module/headprotector/on_part_activation()

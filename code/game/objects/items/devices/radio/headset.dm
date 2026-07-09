@@ -7,6 +7,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_ENGINEERING = RADIO_TOKEN_ENGINEERING,
 	RADIO_CHANNEL_SECURITY = RADIO_TOKEN_SECURITY,
 	RADIO_CHANNEL_CENTCOM = RADIO_TOKEN_CENTCOM,
+	RADIO_CHANNEL_PHOENIX = RADIO_TOKEN_PHOENIX, // EXONOVA EDIT ADDITION - PHOENIX COLLECTIVE
 	RADIO_CHANNEL_FACTION = RADIO_TOKEN_FACTION, //NOVA EDIT ADDITION - Faction
 	RADIO_CHANNEL_CYBERSUN = RADIO_TOKEN_CYBERSUN, //NOVA EDIT ADDITION - Mapping
 	RADIO_CHANNEL_INTERDYNE = RADIO_TOKEN_INTERDYNE, //NOVA EDIT ADDITION - Mapping
@@ -188,6 +189,9 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/syndicate/alt/leader
 	name = "team leader headset"
 	command = TRUE
+
+// EXOBYTECHNOVA UPD: phoenix collective headsets, originally "modded syndie tech" but now it's alt sec headset
+// [ MOVED TO PHOENIXTECH MODULE ]
 
 /obj/item/radio/headset/binary
 	keyslot = /obj/item/encryptionkey/binary

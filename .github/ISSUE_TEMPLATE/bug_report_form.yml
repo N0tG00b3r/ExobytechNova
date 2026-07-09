@@ -1,15 +1,28 @@
 name: Bug Report
-description: Create a report to help reproduce and fix the issue.
+description: Create a bug report to help developers reproduce and fix an issue.
 body:
   - type: markdown
     attributes:
       value: |
         # **Please read the following guidelines. Follow all instructions or else your issue is subject to closure.**
-        ## If you use the "Report Issue" button in the top-right corner of the game, it will automatically fill in some of the information below.
 
-        If you are reporting an issue found in another branch or codebase, you _must_ link the branch or codebase repo in your issue report or it will be closed.
-        For branches, If you have not pushed your code up, please either reproduce it on master or push your code up before making an issue report.
-        For other codebases, if you do not have a public code repository you will be refused help unless you can completely reproduce the issue on our master branch.
+        Read all sections within this template carefully and follow the instructions given within each step. Include as many details as possible.
+        If you are reporting an issue found in another branch or codebase, your issue will be closed.
+  - type: checkboxes
+    id: reporting-requirements
+    attributes:
+      label: "YOU MUST CONFIRM THE FOLLOWING STATEMENTS TO POST A BUG REPORT HERE"
+      description: |
+        Before posting a bug report to this repo, please confirm all three of the following statements or your issue **WILL** be closed.
+        We are **NOT** NovaSector's developers, and will **NOT** fix issues that are solely related to unmodified NovaSector.
+        We also do **NOT** have infinite time in our day, so all bugs reported must be consistently reproduceable in one or more different ways.
+      options:
+        - label: I have reproduced this bug on **only** ExobytechNova, and not the vanilla (unmodified) version of NovaSector. This means the bug doesn't happen on NovaSector's main branch, but does happen on this fork.
+          required: false
+        - label: I have reproduced this bug consistently, such that the developers of ExobytechNova will have no issue tracking and fixing the bug.
+          required: false
+        - label: I solemnly swear that if I am lying, I am a big idiot and may be blocked from contributing to ExobytechNova by its developers as a direct consequence of my misdeeds.
+          required: false
   - type: input
     id: reporting-version
     attributes:
@@ -31,25 +44,16 @@ body:
         "X on Y map has Z issue."
     validations:
       required: true
-  - type: input
-    id: round-id
-    attributes:
-      label: "Round ID:"
-      description: |
-        If you discovered this issue from playing tgstation hosted servers, the Round ID can be found in the Status panel or retrieved from https://statbus.space/
-        The Round ID lets us look up valuable information and logs for the round the bug happened. Leave this blank if there is no round ID.
-      placeholder: "XXXXXX"
-    validations:
-      required: false
   - type: textarea
-    id: test-merges
+    id: expected
     attributes:
-      label: "Test Merge Information:"
+      label: "Expected Behavior:"
       description: |
-        If you're certain the issue is to be caused by a test merge [OOC Tab -> Show Server Revision], report it in the pull request's comment section rather than on the tracker.
-        If you're unsure you can refer to the issue number by prefixing said number with #. The issue number can be found beside the title after submission of this form.
+        Provide here a clear and concise description of what you expected to happen.
+      placeholder: |
+        "When I do X, Y should occur instead of Z."
     validations:
-      required: false
+      required: true
   - type: textarea
     id: reproduction
     attributes:

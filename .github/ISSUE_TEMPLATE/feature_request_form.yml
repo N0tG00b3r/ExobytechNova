@@ -1,0 +1,57 @@
+name: Feature Request
+description: Suggest new content or changes to existing mechanics.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # **Please read the following guidelines. Follow all instructions or else your issue is subject to closure.**
+        
+        Read all sections within this template carefully and follow the instructions given within each step. Include as many details as possible.
+        If you are reporting an issue found in another branch or codebase, your issue will be closed.
+  - type: checkboxes
+    id: requesting-requirements
+    attributes:
+      label: "YOU MUST CONFIRM THE FOLLOWING STATEMENTS TO POST A FEATURE REQUEST HERE"
+      description: |
+        Before posting a bug report to this repo, please confirm all three of the following statements or your issue **WILL** be closed.
+        We are **NOT** NovaSector's developers, and will **NOT** fix issues that are solely related to unmodified NovaSector.
+        We also do **NOT** have infinite time in our day, so all bugs reported must be consistently reproduceable in one or more different ways.
+      options:
+      - label: I confirm that the feature(s) I am requesting be added/changed ARE NOT already part of unmodified NovaSector. Suggesting changes to ExobytechNova that are caused by version differences is not a valid feature request; ONLY suggest changes where the solution isn't "update NovaSector to latest"
+        required: false
+      - label: I confirm that the feature(s) I am requesting be added/changed HAVE NOT been suggested by another user already.
+        required: false
+      - label: I solemnly swear that if I am lying, I am a big idiot and may be blocked from contributing to ExobytechNova by its developers as a direct consequence of my misdeeds.
+        required: false
+  - type: textarea
+    id: request-behavior
+    attributes:
+      label: "Feature Request(s):"
+      description: |
+        Give us a clear and concise description of your suggestion for what to change about ExobytechNova with regards to your feature request.
+      placeholder: |
+        "When I do X, Z should occur instead of Y."
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: "Current Behavior (if any):"
+      description: |
+        Does your request have anything to do with an existing feature?
+        If so, put a clear and concise description of what the current behavior is here. Otherwise, leave blank
+      placeholder: |
+        "Currently, when I do X, Y happens."
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information:"
+      description: |
+        Add any other context or screenshots about the feature request here.
+      placeholder: |
+        "I would like this change because A, B, and C."
+        "https://imgur.com/gallery/cat-swarm-3mKLyvn"
+    validations:
+      required: false

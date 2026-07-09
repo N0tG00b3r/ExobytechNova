@@ -236,7 +236,7 @@
 	if(!COOLDOWN_FINISHED(src, recall_cooldown))
 		implant.balloon_alert(owner, "on cooldown!")
 		return
-	if(implant.module.recall(owner))
+	if(implant.module.recall(owner)) // oh hey someone else changed it for us -niko
 		implant.balloon_alert(owner, "suit incoming...")
 		COOLDOWN_START(src, recall_cooldown, 5 SECONDS)
 

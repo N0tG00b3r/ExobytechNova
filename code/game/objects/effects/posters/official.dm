@@ -31,6 +31,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/here_for_your_sa
 	name = "\improper Nanotrasen logo"
 	desc = "A poster depicting the Nanotrasen logo."
 	icon_state = "nanotrasen_logo"
+	never_random = TRUE
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/nanotrasen_logo, 32)
 

@@ -12,6 +12,7 @@
 	recommended_species = list(
 		SPECIES_HUMAN = 1,
 		SPECIES_SYNTH = 1,
+		SPECIES_PCSYNTH = 1,
 		SPECIES_FELINE = 1,
 		SPECIES_LIZARD = 1,
 		SPECIES_MAMMAL = 1,

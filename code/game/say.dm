@@ -23,6 +23,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_GUILD]" = "syndradio", //NOVA EDIT ADDITION - MAPPING
 	"[FREQ_TARKON]" = "engradio", //NOVA EDIT ADDITION - MAPPING
 	"[FREQ_SOLFED]" = "medradio", //NOVA EDIT ADDITION - SOLFED
+	"[FREQ_PHOENIX_COLLECTIVE]" = "phoenixradio", //EXONOVA EDIT ADDITION - PHOENIX COLLECTIVE
 	"[FREQ_CTF_RED]" = "redteamradio",
 	"[FREQ_CTF_BLUE]" = "blueteamradio",
 	"[FREQ_CTF_GREEN]" = "greenteamradio",
