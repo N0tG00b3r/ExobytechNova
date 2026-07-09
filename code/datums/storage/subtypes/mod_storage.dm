@@ -15,6 +15,12 @@
 	max_slots = 7
 	max_specific_storage = WEIGHT_CLASS_SMALL
 
+/datum/storage/mod_storage/phoenix
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 60
+	max_items = 14
+	big_nesting = TRUE
+
 /datum/storage/mod_storage/bluespace
 	max_total_storage = 60
 	max_slots = 21

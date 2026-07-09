@@ -74,11 +74,7 @@
 		storage module, it is still an effective alternative with decent storage capacity. Auto-locking clamps prevent the module's removal after installation, \
 		presumably an attempt to deter theft of Collective property."
 	icon_state = "storage_large"
-	storage_type = /datum/storage/mod_storage/phoenix // TODO actually make a storage type for this, NOT IMPLEMENTED, WILL CRASH SS13
-	//max_w_class = WEIGHT_CLASS_BULKY
-	//max_combined_w_class = 60
-	//max_items = 14
-	//big_nesting = TRUE
+	storage_type = /datum/storage/mod_storage/phoenix
 	removable = FALSE
 
 /obj/item/mod/module/storage/phoenix/Initialize(mapload)

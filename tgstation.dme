@@ -8550,7 +8550,6 @@
 #include "modular_nova\modules\energy_axe\code\energy_fireaxe.dm"
 #include "modular_nova\modules\energy_axe\code\energy_fireaxe_case.dm"
 #include "modular_nova\modules\energy_shield\code\energy_shield.dm"
-#include "modular_nova\modules\energy_shield\code\energy_shield_variants.dm
 #include "modular_nova\modules\eng_mapu_control\code\mapu_defines.dm"
 #include "modular_nova\modules\eng_mapu_control\code\mapu_main.dm"
 #include "modular_nova\modules\envirosuit_kits\code\cosmetic_envirosuits.dm"
@@ -9147,15 +9146,12 @@
 #include "modular_nova\modules\modular_weapons\code\cargo_crates\armory_guns.dm"
 #include "modular_nova\modules\modular_weapons\code\cargo_crates\surplus_crates.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\gun_cases.dm"
-<<<<<<< HEAD
+#include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\phoenix_cases.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\aethon_arms\gunsets.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\aethon_arms\magazines.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\aethon_arms\submachinegun.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\archon_combat_systems\conversion_kits.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\archon_combat_systems\shotgun.dm"
-=======
-#include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\phoenix_cases.dm"
->>>>>>> master
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\bolt_fabrications\ammo.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\bolt_fabrications\longarm.dm"
 #include "modular_nova\modules\modular_weapons\code\company_and_or_faction_based\bolt_fabrications\magazine.dm"

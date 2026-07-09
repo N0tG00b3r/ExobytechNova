@@ -42,7 +42,7 @@
 		/datum/reagent/consumable/yoghurt,
 		/datum/reagent/cryptobiolin,
 		/datum/reagent/eigenstate,
-		/// EXONOVA EDIT REMOVAL: /datum/reagent/glitter/random,
+		/datum/reagent/glitter/random, // re-enabled in 2026, because fuck azre :3 -niko
 		/datum/reagent/gravitum,
 		/datum/reagent/hair_dye,
 		/datum/reagent/hydrogen_peroxide,
