@@ -29,6 +29,8 @@
 	var/shield_icon = "shield-red"
 	/// Charges the shield should start with.
 	var/charges
+	/// Whether or not we allow this shield to block overwhelming attacks, such as from mechs.
+	var/block_overwhelming_attacks = FALSE
 
 /obj/item/mod/module/energy_shield/Initialize(mapload)
 	. = ..()
@@ -43,6 +45,7 @@
 		charge_recovery = charge_recovery, \
 		lose_multiple_charges = lose_multiple_charges, \
 		starting_charges = charges, \
+		can_block_overwhelming = block_overwhelming_attacks, \
 		shield_icon_file = shield_icon_file, \
 		shield_icon = shield_icon)
 	RegisterSignal(mod.wearer, COMSIG_LIVING_CHECK_BLOCK, PROC_REF(shield_reaction))
@@ -64,7 +67,7 @@
 	SIGNAL_HANDLER
 
 	if(mod.hit_reaction(owner, hitby, attack_text, 0, damage, attack_type))
-		drain_power(use_energy_cost)
+		drain_power(use_energy_cost + use_energy_cost * (attack_type == OVERWHELMING_ATTACK ? (damage/100) : 0))
 		return SUCCESSFUL_BLOCK
 	return NONE
 
@@ -80,6 +83,7 @@
 	max_charges = 5
 	recharge_start_delay = 20 SECONDS
 	charge_increment_delay = 3 SECONDS
+	block_overwhelming_attacks = TRUE // It's magic, bitch
 	shield_icon_file = 'icons/effects/magic.dmi'
 	shield_icon = "mageshield"
 	required_slots = list()
@@ -523,7 +527,7 @@
 
 /obj/item/mod/module/stealth/wraith/proc/start_stealth()
 	if(!COOLDOWN_FINISHED(src, recloak_timer)) // Prevents being able to bypass the cooldown by disabling and re-enabling the module
-		addtimer(CALLBACK(src, PROC_REF(start_stealth)), recloak_timer)
+		addtimer(CALLBACK(src, PROC_REF(start_stealth)), COOLDOWN_TIMELEFT(src, recloak_timer))
 		return
 	RegisterSignals(mod.wearer, list(COMSIG_LIVING_MOB_BUMP, COMSIG_ATOM_BUMPED, COMSIG_MOB_FIRED_GUN), PROC_REF(unstealth))
 	RegisterSignal(mod.wearer, COMSIG_LIVING_UNARMED_ATTACK, PROC_REF(on_unarmed_attack))
@@ -536,11 +540,16 @@
 /obj/item/mod/module/stealth/wraith/unstealth(datum/source)
 	if(!stealth_active)
 		return
-	. = ..()
-	if(mod.active)
-		COOLDOWN_START(src, recloak_timer, 20 SECONDS)
-		addtimer(CALLBACK(src, PROC_REF(start_stealth)), 20 SECONDS)
-		stealth_active = FALSE
+	to_chat(mod.wearer, span_warning("[src] gets discharged from contact!"))
+	do_sparks(2, TRUE, src)
+	drain_power(use_energy_cost)
+	// Don't deactivate() directly as the module may not be active in the first place when stealthing
+	on_deactivation()
+	if(!mod.active)
+		return
+	COOLDOWN_START(src, recloak_timer, 20 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(start_stealth)), 20 SECONDS)
+	stealth_active = FALSE
 
 /obj/item/mod/module/stealth/wraith/examine_more(mob/user)
 	. = ..()

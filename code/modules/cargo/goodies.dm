@@ -2,7 +2,7 @@
 /datum/supply_pack/goody
 	access = NONE
 	group = "Goodies"
-	goody = TRUE
+	order_flags = ORDER_GOODY
 	crate_type = null
 	discountable = SUPPLY_PACK_STD_DISCOUNTABLE
 
@@ -106,14 +106,14 @@
 	contains = list(/obj/item/gun/energy/laser)
 
 /datum/supply_pack/goody/carbine_single
-	name = "Type 5R Laser Carbine Single_Pack"
+	name = "Type 5/R Laser Carbine Single-Pack"
 	desc = "Contains one laser carbine. Fires a rapid burst of slightly weaker laser projectiles."
 	cost = PAYCHECK_COMMAND * 8
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/gun/energy/laser/carbine)
 
 /datum/supply_pack/goody/laser_pistol_single
-	name = "Type 5C Laser Pistol Single-Pack"
+	name = "Type 5/C Laser Pistol Single-Pack"
 	desc = "Contains one Type 5C laser pistol in an energy shoulder holster. Groovy."
 	cost = PAYCHECK_COMMAND * 2
 	access_view = ACCESS_WEAPONS
@@ -128,14 +128,16 @@
 
 /datum/supply_pack/goody/smg_single
 	name = "Disabler SMG Single_Pack"
-	desc = "Contains one disabler SMGs, capable of rapidly firing weak disabler beams."
+	desc = "Contains one disabler SMG, capable of rapidly firing weak disabler beams."
 	cost = PAYCHECK_COMMAND * 6
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/gun/energy/disabler/smg)
 
 /datum/supply_pack/goody/hell_single
 	name = "Hellgun Kit Single-Pack"
-	desc = "Contains one hellgun degradation kit, an old pattern of laser gun infamous for its ability to horribly disfigure targets with burns. Technically violates the Space Geneva Convention when used on humanoids."
+	desc = "Contains one hellgun degradation kit, to convert regular laser guns into an older pattern of laser gun, \
+		infamous for its ability to horribly disfigure targets with burns. \
+		Technically violates the Space Geneva Convention when used on humanoids."
 	cost = PAYCHECK_CREW * 2
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/weaponcrafting/gunkit/hellgun)
@@ -200,6 +202,12 @@
 	desc = "A fully stocked mechanical toolbox, for when you're too lazy to just print them out."
 	cost = PAYCHECK_CREW * 3
 	contains = list(/obj/item/storage/toolbox/mechanical)
+
+/datum/supply_pack/goody/autolatheboard
+	name = "Autolathe Circuit Board"
+	desc = "A single autolathe circuit board for your construction needs."
+	cost = PAYCHECK_CREW * 2
+	contains = list(/obj/item/circuitboard/machine/autolathe)
 
 /datum/supply_pack/goody/valentine
 	name = "Valentine Card"
@@ -432,3 +440,18 @@
 	desc = "If you in your carelessness lost the key to your golfcart you can purchase one. Unfortunately not covered by warranty."
 	cost = PAYCHECK_CREW * 5
 	contains = list(/obj/item/key/golfcart)
+
+/datum/supply_pack/goody/handheld_crew_monitor
+	name = "Handheld Crew Monitor"
+	desc = "A crate containing a handheld crew monitor."
+	cost = /obj/item/sensor_device::custom_premium_price * 1.25 // 1.25X base vending machine value
+	contains = list(
+		/obj/item/sensor_device,
+	)
+	crate_name = "handheld crew monitor crate"
+
+/datum/supply_pack/goody/camera
+	name = "Broadcast Camera"
+	desc = "A single broadcast camera which broadcasts to the station's entertainment monitors, for all your theatrical needs."
+	cost = PAYCHECK_COMMAND * 8
+	contains = list(/obj/item/broadcast_camera/cargo)

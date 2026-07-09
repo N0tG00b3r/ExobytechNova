@@ -61,26 +61,26 @@ ROUNDSTART_LOGOUT_REPORT_TIME_VARIANCE 1800
 ROUNDSTART_LOGOUT_REPORT_TIME_AVERAGE 6000
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-#REOPEN_ROUNDSTART_SUICIDE_ROLES
+REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
 ## If undefined, the delay defaults to 4 minutes.
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 240
+REOPEN_ROUNDSTART_SUICIDE_ROLES_DELAY 600
 
 ## Unhash to enable a printed command report for reopened roles listing what roles were reopened.
 #REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_REPORT
 
 
 ## ALERT LEVELS ###
-ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
-ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted.
-ALERT_BLUE_DOWNTO The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed.
-ALERT_RED_UPTO There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised. Additionally, access requirements on some doors have been lifted.
-ALERT_RED_DOWNTO The station's destruction has been averted. There is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised.
+ALERT_GREEN All threats to the station have passed. Security personnel may only conduct searches with a search warrant.
+ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security personnel may conduct field searches with probable cause or a search warrant.
+ALERT_BLUE_DOWNTO The immediate threat has passed. Random searches are no longer permitted, and Security must have probable cause for a field search or a search warrant.
+ALERT_RED_UPTO There is an immediate serious threat to the station. Random searches are allowed and advised. Crew militia is now active and lethal limits are temporarily revoked. Additionally, access requirements on some doors have been lifted.
+ALERT_RED_DOWNTO The station's destruction has been averted. There is still however an immediate serious threat to the station. Random searches are allowed and advised.
 ALERT_DELTA Destruction of the station is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
 
 ## The total weight of station goals possible for a round (allows multiple goals)
@@ -93,8 +93,11 @@ ROUNDSTART_BLUE_ALERT 1
 
 ## GAME MODES ###
 
-## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
+## Uncomment to not send a roundstart intercept report.
 #NO_INTERCEPT_REPORT
+
+## Uncomment to exclude dynamic info in the roundstart report.
+#NO_DYNAMIC_REPORT
 
 ## Percent weight reductions for three of the most recent modes
 
@@ -150,7 +153,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 DYNAMIC_CONFIG_ENABLED
 
 ## Uncomment to enable event editing config file.
-EVENTS_CONFIG_ENABLED
+#EVENTS_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
@@ -422,6 +425,9 @@ ROUNDSTART_RACES abductorweak
 ROUNDSTART_RACES golemweak
 ROUNDSTART_RACES dullahan
 ROUNDSTART_RACES kobold
+ROUNDSTART_RACES protean
+ROUNDSTART_RACES shadekin
+ROUNDSTART_RACES holosynth
 
 ## DO NOT UNCOMMENT, THIS RACE IS IN EXTREME BETA TESTING PHASE
 #ROUNDSTART_RACES pcbiosynth
@@ -435,7 +441,7 @@ ROUNDSTART_RACES kobold
 ## Disable roundstart species morgue cadavers?
 ## Cadavers in the morgue at the start of the round will be randomly picked from all enabled ROUNDSTART_RACES
 ## Recommended to leave this commented out so nonhuman species will have viable replacement bodies / organs when they die.
-# MORGUE_CADAVER_DISABLE_NONHUMANS
+#MORGUE_CADAVER_DISABLE_NONHUMANS
 
 ## Morgue Cadaver Species Probability
 ## The probability for nonhuman cadavers to spawn in the morgue.
@@ -526,13 +532,13 @@ ROUNDSTART_TRAITS
 #DISABLE_HUMAN_MOOD
 
 ## Enable night shifts
-ENABLE_NIGHT_SHIFTS
+#ENABLE_NIGHT_SHIFTS
 
 ## The shift start hour in 24-hour (0-23) notation
-# SHIFT_TIME_START_HOUR 7
+SHIFT_TIME_START_HOUR 7
 
 ## Sets shift time to server time at roundstart. Overrides SHIFT_TIME_START_HOUR
-SHIFT_TIME_REALTIME
+#SHIFT_TIME_REALTIME
 
 ## Enable randomized shift start times. Overrides SHIFT_TIME_REALTIME and SHIFT_TIME_START_HOUR
 #RANDOMIZE_SHIFT_TIME
@@ -606,7 +612,7 @@ MAX_POSITIVE_QUIRKS 6
 RANDOM_LOOT_WEIGHT_MODIFIER 1
 
 ## Custom shuttle spam prevention. Changine these numbers allows you to change the maxsize and amount of custom shuttles.
-MAX_SHUTTLE_COUNT 6
+MAX_SHUTTLE_COUNT 8
 MAX_SHUTTLE_SIZE 300
 
 ### Spy config
@@ -628,3 +634,6 @@ SPY_EASY_REWARD_TC_THRESHOLD 5
 ## Hard bounties grant uplink rewards that cost this much TC (or higher).
 ## Also functions as the upper end for medium bounties.
 SPY_HARD_REWARD_TC_THRESHOLD 15
+
+## Minimum time before a heretic can ascend, in minutes
+# MINIMUM_ASCENSION_TIME 3

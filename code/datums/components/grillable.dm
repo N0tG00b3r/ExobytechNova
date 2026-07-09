@@ -41,8 +41,8 @@
 	var/atom/result = new cook_result
 	if(!item_parent.compare_materials(result))
 		var/warning = "custom_materials of [result.type] when grilled compared to just spawned don't match"
-		var/what_it_should_be = item_parent.get_materials_english_list()
-		stack_trace("[warning]. custom_materials should be [what_it_should_be].")
+		var/what_it_should_be = item_parent.transcribe_materials_list()
+		stack_trace("[warning]. should be: custom_materials = [what_it_should_be].")
 	qdel(result)
 
 /datum/component/grillable/RegisterWithParent()
@@ -172,7 +172,7 @@
 	SEND_SIGNAL(parent, COMSIG_ITEM_GRILLED, grilled_result)
 	SEND_SIGNAL(grilled_result, COMSIG_ITEM_GRILLED_RESULT, parent)
 	if(who_placed_us)
-		ADD_TRAIT(grilled_result, TRAIT_FOOD_CHEF_MADE, who_placed_us)
+		ADD_TRAIT(grilled_result, TRAIT_HANDMADE, who_placed_us)
 
 	grill_source.visible_message("<span class='[positive_result ? "notice" : "warning"]'>[parent] turns into \a [grilled_result]!</span>")
 	grilled_result.pixel_x = original_object.pixel_x

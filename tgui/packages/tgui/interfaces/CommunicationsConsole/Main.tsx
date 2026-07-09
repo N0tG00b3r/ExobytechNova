@@ -159,8 +159,8 @@ export function PageMain(props) {
               color={engineeringOverride ? 'bad' : undefined}
               onClick={() => act('toggleEngOverride')}
             >
-              {engineeringOverride ? 'Disable' : 'Enable'}
-              Engineering Override Access
+              {engineeringOverride ? 'Disable' : 'Enable'} Engineering Override
+              Access
             </Button.Confirm>
           )}
           {/* NOVA EDIT ADDITION END */}
@@ -235,17 +235,17 @@ export function PageMain(props) {
             </Button>
           )}
           {!!canMakeAnnouncement && (
-            <Button icon="bullhorn" color="purple" onClick={() => act('callThePolice')}>
+            <Button icon="bullhorn" onClick={() => act('callThePolice')}>
               Call Exobytech 911: Marshals Response
             </Button>
           )}
           {!!canMakeAnnouncement && (
-            <Button icon="bullhorn" color="purple" onClick={() => act('callTheCatmos')}>
+            <Button icon="bullhorn" onClick={() => act('callTheCatmos')}>
               Call Exobytech 811: Advanced Atmospherics Response
             </Button>
           )}
           {!!canMakeAnnouncement && (
-            <Button icon="bullhorn" color="purple" onClick={() => act('callTheParameds')}>
+            <Button icon="bullhorn" onClick={() => act('callTheParameds')}>
               Call Exobytech 911: Medical Response
             </Button>
           )}

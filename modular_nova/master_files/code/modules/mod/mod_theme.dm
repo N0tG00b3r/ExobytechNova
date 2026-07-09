@@ -17,6 +17,7 @@
 /datum/mod_theme/syndicate/deepspace
 	name = "deepspace"
 	default_skin = "deepspace"
+	armor_type = /datum/armor/mod_theme_security
 	ui_theme = "syndicate"
 	variants = list(
 		"deepspace" = list(
@@ -164,6 +165,7 @@
 /datum/mod_theme/elite/admiral
 	name = "admiral"
 	default_skin = "admiral"
+	armor_type = /datum/armor/mod_theme_safeguard
 	variants = list(
 		"admiral" = list(
 			MOD_ICON_OVERRIDE = 'modular_nova/master_files/icons/obj/clothing/modsuit/mod_clothing.dmi',
@@ -1007,8 +1009,10 @@
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "ntos_terminal"
-	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/hearing_protection,
-		/obj/item/mod/module/springlock/contractor/no_complexity, /obj/item/mod/module/storage/phoenix)
+	hearing_protection = EAR_PROTECTION_NORMAL
+	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate,
+		/obj/item/mod/module/springlock/contractor/no_complexity,
+		/obj/item/mod/module/storage/phoenix)
 	allowed_suit_storage = list(
 		/obj/item/flashlight,
 		/obj/item/restraints/handcuffs,

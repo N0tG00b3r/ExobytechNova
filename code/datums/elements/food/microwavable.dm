@@ -31,8 +31,8 @@
 	var/atom/result = new result_typepath
 	if(!target.compare_materials(result))
 		var/warning = "custom_materials of [result.type] when microwaved compared to just spawned don't match"
-		var/what_it_should_be = target.get_materials_english_list()
-		stack_trace("[warning]. custom_materials should be [what_it_should_be].")
+		var/what_it_should_be = target.transcribe_materials_list()
+		stack_trace("[warning]. should be: custom_materials = [what_it_should_be].")
 	qdel(result)
 
 /datum/element/microwavable/Detach(datum/source)
@@ -66,7 +66,7 @@
 			LAZYADD(microwaved_food.intrinsic_food_materials, original_food.intrinsic_food_materials)
 
 		if(microwaver && microwaver.mind)
-			ADD_TRAIT(result, TRAIT_FOOD_CHEF_MADE, REF(microwaver.mind))
+			ADD_TRAIT(result, TRAIT_HANDMADE, REF(microwaver.mind))
 
 	//make space and tranfer reagents if it has any, also let any bad result handle removing or converting the transferred reagents on its own terms
 	if(result.reagents && source.reagents)

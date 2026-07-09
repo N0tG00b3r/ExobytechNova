@@ -10,3 +10,5 @@
 		</strong>
 	</span>
 </p>
+
+<i>WARNING: The server is being hosted through unofficial means, and may be missing a few external files that help with stability. Please contact your administrator and let them know.</i>

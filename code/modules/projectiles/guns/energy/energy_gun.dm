@@ -75,7 +75,7 @@
 
 /obj/item/gun/energy/e_gun/hos
 	name = "\improper X-01 MultiPhase Energy Gun"
-	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
+	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to self-charge quite as fast over time." // NOVA EDIT CHANGE - ORIGINAL: desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
 	cell_type = /obj/item/stock_parts/power_store/cell/hos_gun
 	icon_state = "hoslaser"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -157,6 +157,12 @@
 	ammo_x_offset = 1
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
 	selfcharge = 1
+	custom_materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 6,
+		/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 1.5,
+		/datum/material/glass = SHEET_MATERIAL_AMOUNT,
+		/datum/material/titanium = HALF_SHEET_MATERIAL_AMOUNT,
+	)
 	var/reactor_overloaded
 	var/fail_tick = 0
 	var/fail_chance = 0

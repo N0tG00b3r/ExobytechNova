@@ -24,6 +24,8 @@
 	max_stages = 5
 	spread_text = "Unknown"
 	viable_mobtypes = list(/mob/living/carbon/human)
+	cures = null
+	visibility_flags = HIDDEN_BOOK // we have unique handling for advance diseases in the book
 
 	// NEW VARS
 	var/list/properties = list()
@@ -143,9 +145,11 @@
 	infect(infectee, make_copy)
 	return TRUE
 
+/datum/disease/advance/get_recovery_failure_chance()
+	return clamp((properties["resistance"] * 1.5), 0, 50)
 
 // Randomly pick a symptom to activate.
-/datum/disease/advance/stage_act(seconds_per_tick, times_fired)
+/datum/disease/advance/stage_act(seconds_per_tick)
 	. = ..()
 	if(!.)
 		return
@@ -192,9 +196,23 @@
 	A.properties = properties.Copy()
 	A.id = id
 	A.mutable = mutable
-	A.oldres = oldres
+	A.cure_text = cure_text
 	//this is a new disease starting over at stage 1, so processing is not copied
 	return A
+
+/datum/disease/advance/has_cure()
+	if(!(disease_flags & (CURABLE | CHRONIC)))
+		return FALSE
+	var/remedied_symptoms = 0
+	var/non_remedied_symptoms = 0
+	for(var/datum/symptom/each_symptom as anything in symptoms)
+		if(each_symptom.remedied) // Neutered symptoms can't be remedied, so don't worry about that here
+			remedied_symptoms++
+		else if(!each_symptom.neutered)
+			non_remedied_symptoms++
+	if(remedied_symptoms+non_remedied_symptoms == 0) // In case all symptoms are neutered, we don't want to divide by 0
+		return 0
+	return remedied_symptoms/(remedied_symptoms+non_remedied_symptoms)
 
 // Mix the symptoms of two diseases (the src and the argument)
 /datum/disease/advance/proc/Mix(datum/disease/advance/D)
@@ -292,10 +310,10 @@
 				set_spread(DISEASE_SPREAD_BLOOD)
 
 		spreading_modifier = max(CEILING(0.4 * properties["transmittable"], 1), 1)
-		cure_chance = clamp(7.5 - (0.5 * properties["resistance"]), 1, 10) // can be between 1 and 10
-		stage_prob = max(0.3 * properties["stage_rate"], 1)
+		cure_chance = clamp(10 * (0.94 ** properties["resistance"]), 3.5, 12) // Capped at between -3 and 17 resistance
+		stage_prob = max(0.2 * properties["stage_rate"], 0) + 1.5
 		set_severity(round(properties["severity"]), 1)
-		generate_cure(properties)
+		cure_text = "If you can see this, something has gone wrong."
 	else
 		CRASH("Our properties were empty or null!")
 

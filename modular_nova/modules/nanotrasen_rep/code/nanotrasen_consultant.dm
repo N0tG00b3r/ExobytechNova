@@ -1,11 +1,10 @@
 /datum/job/nanotrasen_consultant
 	title = JOB_NT_REP
 	description = "Represent Nanotrasen on the station, argue with the HoS about why he can't just field execute people for petty theft, get drunk in your office."
-	department_head = list(JOB_CENTCOM)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Central Command"
+	supervisors = JOB_CENTCOM
 	minimal_player_age = 14
 	exp_requirements = 600
 	exp_required_type = EXP_TYPE_CREW
@@ -111,9 +110,21 @@
 
 /obj/item/modular_computer/pda/nanotrasen_consultant
 	name = "nanotrasen consultant's PDA"
-	inserted_disk = /obj/item/computer_disk/command/captain
-	inserted_item = /obj/item/pen/fountain/captain
+	inserted_disk = /obj/item/disk/computer/command/captain
+	inserted_item = /obj/item/pen/fountain/green
+	/// Fax type to connect their PDA to (for use with fax notification app)
+	var/fax_type = /obj/machinery/fax/heads/nanotrasen_consultant
 	greyscale_colors = "#017941#0060b8"
+
+/obj/item/modular_computer/pda/nanotrasen_consultant/Initialize(mapload)
+	. = ..()
+	var/datum/computer_file/program/faxbond/fax_app = new
+	store_file(fax_app)
+	if (ispath(fax_type, /obj/machinery/fax))
+		var/datum/computer_file/program/faxbond/fax_notifier = locate() in stored_files
+		var/list/faxes_list = SSmachines.get_machines_by_type(fax_type)
+		var/obj/machinery/fax/rep_fax = length(faxes_list) ? pick(faxes_list) : null //there really shouldnt be more than one
+		fax_notifier.connect_fax(rep_fax)
 
 /obj/item/storage/bag/garment/nanotrasen_consultant
 	name = "nanotrasen consultant's garment bag"
@@ -127,7 +138,8 @@
 	new /obj/item/clothing/suit/hooded/wintercoat/centcom/nt_consultant(src)
 	new /obj/item/clothing/under/rank/nanotrasen_consultant(src)
 	new /obj/item/clothing/under/rank/nanotrasen_consultant/skirt(src)
-	new /obj/item/clothing/under/rank/nanotrasen_consultant/naval(src)
+	new /obj/item/clothing/under/imperial/nanotrasen_consultant(src)
+	new /obj/item/clothing/under/imperialskirt/nanotrasen_consultant(src)
 	new /obj/item/clothing/under/rank/centcom/officer(src)
 	new /obj/item/clothing/under/rank/centcom/officer_skirt(src)
 	new /obj/item/clothing/head/nanotrasen_consultant(src)
@@ -150,15 +162,18 @@
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
 	new /obj/item/clothing/suit/armor/vest(src)
-	new /obj/item/computer_disk/command/captain(src)
+	new /obj/item/disk/computer/command/captain(src)
 	new /obj/item/radio/headset/heads/nanotrasen_consultant/alt(src)
 	new /obj/item/radio/headset/heads/nanotrasen_consultant(src)
 	new /obj/item/storage/photo_album/personal(src)
 	new /obj/item/bedsheet/centcom(src)
 	new /obj/item/storage/bag/garment/nanotrasen_consultant(src)
 
-//Choice Beacon, I hope in the future they're going to be given proper unique gun but this will do.
+/obj/machinery/fax/heads/nanotrasen_consultant
+	name = "Nanotrasen Consultant's Fax Machine"
+	fax_name = "Nanotrasen Consultant's Office"
 
+//Choice Beacon, I hope in the future they're going to be given proper unique gun but this will do.
 
 /obj/item/choice_beacon/ntc
 	name = "gunset beacon"
@@ -178,3 +193,11 @@
 	)
 
 	return selectable_gun_types
+
+/obj/item/pen/fountain/green
+	name = "nanotrasen fountain pen"
+	desc = "It's an expensive green fountain pen. The case may be plastic, but that gold is real!"
+	icon = 'modular_nova/master_files/icons/obj/bureaucracy.dmi'
+	icon_state = "pen-fountain-nt"
+	colour = "#18610D"
+	custom_materials = list(/datum/material/gold = SMALL_MATERIAL_AMOUNT*7.5)

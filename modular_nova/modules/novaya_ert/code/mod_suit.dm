@@ -171,7 +171,7 @@
 	var/new_stamloss = mod.wearer.get_stamina_loss()
 	var/new_toxloss = mod.wearer.get_tox_loss()
 
-	if(mod.wearer.blood_volume < BLOOD_VOLUME_OKAY && reagents.total_volume >= reagent_required_amount * 0.5 * seconds_per_tick)
+	if(mod.wearer.get_blood_volume() < BLOOD_VOLUME_OKAY && reagents.total_volume >= reagent_required_amount * 0.5 * seconds_per_tick)
 		if(!COOLDOWN_FINISHED(src, blood_timer))
 			return FALSE
 		mod.wearer.reagents.add_reagent(/datum/reagent/blood, 25, list("viruses"=null,"blood_DNA"=null,"blood_type"=mod.wearer.dna.blood_type,"resistances"=null,"trace_chem"=null))
@@ -302,6 +302,7 @@
 	tool_behaviors = list(TOOL_WELDER, TOOL_MULTITOOL)
 	time = 30 SECONDS
 	category = CAT_CLOTHING
+	crafting_flags = parent_type::crafting_flags | CRAFT_SKIP_MATERIALS_PARITY
 
 /obj/effect/spawner/random/voskhod_refit
 	name = "converted MODskhod spaner"
@@ -310,3 +311,4 @@
 	spawn_all_loot = TRUE
 	spawn_loot_count = 1
 	loot = list(/obj/item/mod/control/pre_equipped/voskhod)
+	custom_materials = list(/datum/material/alloy/plasteel = SHEET_MATERIAL_AMOUNT * 10, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 1.95, /datum/material/glass = SHEET_MATERIAL_AMOUNT * 1.45)

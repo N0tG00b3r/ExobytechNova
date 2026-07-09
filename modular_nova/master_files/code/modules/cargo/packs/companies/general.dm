@@ -29,7 +29,7 @@
 	name = "Brussite"
 	contains = list(/obj/item/stack/sheet/brussite/three)
 	desc = "A three-pack of our finest brussite alloy, with a robust yellow color for creating the strongest metalworks from."
-	
+
 // Kahraman
 
 /datum/supply_pack/companies/general/kahraman
@@ -45,6 +45,30 @@
 /datum/supply_pack/companies/general/hc_surplus/hc_flag
 	contains = list(/obj/item/sign/flag/hc)
 	cost = CARGO_CRATE_VALUE * 0.2
+
+// General currency pricing rule is: Original price, multiplied by 1.25 (anti-arbitrage fees), plus 100 (anti-exploit shenanigans).
+/datum/supply_pack/companies/general/hc_surplus/shaving
+	contains = list(/obj/item/stack/spacecash/shaving/full)
+	cost = 260
+
+/datum/supply_pack/companies/general/hc_surplus/bit
+	name = "Eight Bits"
+	contains = list(
+		/obj/item/coin/mark/bit = 8,
+	)
+	cost = 140
+
+/datum/supply_pack/companies/general/hc_surplus/mark
+	contains = list(/obj/item/coin/mark/mark)
+	cost = 260
+
+/datum/supply_pack/companies/general/hc_surplus/crown
+	contains = list(/obj/item/coin/mark/crown)
+	cost = 5220
+
+/datum/supply_pack/companies/general/hc_surplus/forge_mark
+	contains = list(/obj/item/coin/mark/forge_mark)
+	cost = 20580
 
 // Donk
 /datum/supply_pack/companies/general/donk
@@ -79,6 +103,13 @@
 /datum/supply_pack/companies/general/donk/food/teriyaki_pockets
 	contains = list(/obj/item/storage/box/donkpockets/donkpocketteriyaki)
 
+/datum/supply_pack/companies/general/donk/food/pizza_voucher
+	name = "Pizza Voucher"
+	desc = "WE ALWAYS DELIVER! WE ALWAYS DELIVER! WE ALWAYS DELIVER!"
+	contains = list(/obj/item/pizzavoucher)
+	cost = CARGO_CRATE_VALUE * 0.9 // This price gives 180 and when the very common trait to up prices 10% hits, gives a total of 199 credits. Just under a crate value!
+	auto_name = FALSE
+
 /datum/supply_pack/companies/general/donk/pet_food
 
 /datum/supply_pack/companies/general/donk/pet_food/void
@@ -86,6 +117,10 @@
 	contains = list(/obj/item/pet_food/pet_space_treat)
 
 /datum/supply_pack/companies/general/donk/merch
+
+/datum/supply_pack/companies/general/donk/merch/donk_fish
+	cost = CARGO_CRATE_VALUE * 3
+	contains = list(/obj/item/storage/fish_case/donkfish)
 
 /datum/supply_pack/companies/general/donk/merch/donk_carpet
 	contains = list(/obj/item/stack/tile/carpet/donk/thirty)

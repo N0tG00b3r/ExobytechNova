@@ -38,6 +38,7 @@
 		"synth_r_leg",
 		"synth_l_d_leg",
 		"synth_r_d_leg",
+		"synth_diy",
 	)
 
 /datum/techweb_node/android_organs
@@ -47,6 +48,7 @@
 	description = "Internal Mechanisms for Synthetics and IPC's."
 	prereq_ids = list(TECHWEB_NODE_ROBOTICS)
 	design_ids = list(
+		"synth_posi",
 		"synth_eyes",
 		"synth_tongue",
 		"synth_liver",
@@ -78,6 +80,16 @@
 	design_ids += list(
 		"gbp_machine",
 		"pen",
+		"d2",
+		"d4",
+		"d6",
+		"d8",
+		"d10",
+		"d00",
+		"d12",
+		"d20",
+		"d100",
+		"fudge",
 	)
 	return ..()
 
@@ -93,6 +105,15 @@
 		"anesthetic_machine",
 		"smartdartgun",
 		"cone_of_shame",
+		"defibrillator",
+		"medkit",
+	)
+	return ..()
+
+/datum/techweb_node/material_processing/New()
+	design_ids += list(
+		"spaceship_plates",
+		"spaceship_glass",
 	)
 	return ..()
 
@@ -217,6 +238,7 @@
 /datum/techweb_node/riot_supression/New()
 	design_ids += list(
 		"ammobench_gimmick",
+		"pin_standard",
 	)
 	return ..()
 
@@ -287,6 +309,7 @@
 	design_ids += list(
 		"mesons_prescription",
 		"bsc_nt",
+		"lrm_board",
 	)
 	return ..()
 
@@ -311,7 +334,8 @@
 		"borg_upgrade_clamp",
 		"borg_upgrade_brush",
 		"borg_upgrade_shrink",
-		"borg_upgrade_cargo_apparatus"
+		"borg_upgrade_cargo_apparatus",
+		"borg_upgrade_cargo_teleporter",
 	)
 	return ..()
 
@@ -319,16 +343,20 @@
 	design_ids += list(
 		"advanced_materials",
 		"borg_upgrade_welding",
+		"rld_cyborg",
+		"borg_upgrade_brped",
 	)
 	return ..()
 
 /datum/techweb_node/borg_medical/New()
 	design_ids += list(
 		"borg_upgrade_surgicaltools",
+		"borg_upgrade_autopsyscanner",
+		"borg_upgrade_chemistrygripper",
 	)
 	return ..()
 
-/////////////////////////Applied Bluespace /////////////////////////
+///////////////////////// Applied Bluespace /////////////////////////
 
 /datum/techweb_node/applied_bluespace/New()
 	design_ids += list(
@@ -336,9 +364,18 @@
 	)
 	return ..()
 
-// modsuit security stuff
+// modsuit stuff
 /datum/techweb_node/mod_security/New()
 	design_ids += list(
 		"mod_plating_security",
+		"mod_tether_grounded",
 	)
 	return ..()
+
+/datum/techweb_node/mod_equip/New()
+	design_ids += list(
+		"mod_retract_plates",
+		"mod_magnetic_deploy",
+	)
+	return ..()
+

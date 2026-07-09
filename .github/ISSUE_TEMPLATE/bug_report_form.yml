@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         # **Please read the following guidelines. Follow all instructions or else your issue is subject to closure.**
-        
+
         Read all sections within this template carefully and follow the instructions given within each step. Include as many details as possible.
         If you are reporting an issue found in another branch or codebase, your issue will be closed.
   - type: checkboxes
@@ -17,12 +17,12 @@ body:
         We are **NOT** NovaSector's developers, and will **NOT** fix issues that are solely related to unmodified NovaSector.
         We also do **NOT** have infinite time in our day, so all bugs reported must be consistently reproduceable in one or more different ways.
       options:
-      - label: I have reproduced this bug on **only** ExobytechNova, and not the vanilla (unmodified) version of NovaSector. This means the bug doesn't happen on NovaSector's main branch, but does happen on this fork.
-        required: false
-      - label: I have reproduced this bug consistently, such that the developers of ExobytechNova will have no issue tracking and fixing the bug.
-        required: false
-      - label: I solemnly swear that if I am lying, I am a big idiot and may be blocked from contributing to ExobytechNova by its developers as a direct consequence of my misdeeds.
-        required: false
+        - label: I have reproduced this bug on **only** ExobytechNova, and not the vanilla (unmodified) version of NovaSector. This means the bug doesn't happen on NovaSector's main branch, but does happen on this fork.
+          required: false
+        - label: I have reproduced this bug consistently, such that the developers of ExobytechNova will have no issue tracking and fixing the bug.
+          required: false
+        - label: I solemnly swear that if I am lying, I am a big idiot and may be blocked from contributing to ExobytechNova by its developers as a direct consequence of my misdeeds.
+          required: false
   - type: input
     id: reporting-version
     attributes:
@@ -60,9 +60,7 @@ body:
       label: "Reproduction Steps:"
       description: |
         Describe the steps to reproduce the issue in detail. Include any relevant information, such as the map, round type, and any other factors that may be relevant.
-        If it is a runtime-related error, please include the runtime here as that is pertient information.
-        
-        Issues are not for oddities introduced by admin varedits. Ensure the bug you are reporting can occur and be reproduced within in normal circumstances.
+        If it is a runtime-related error, please include the runtime here as that is pertinent information. Issues are not for oddities introduced by admin varedits, ensure these occur in normal circumstances.
       placeholder: |
         1. Go to the X location
         2. Do Y action

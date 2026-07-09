@@ -262,9 +262,8 @@
 		"weight": 10
 	},
 	"Dark Matt-eor": {
-		"min_players": 16,
-		"weight": 2,
-		"earliest_start": 180000
+		"min_players": 0,
+		"weight": 0
 	},
 	"Meteor Wave: Normal": {
 		"min_players": 20,

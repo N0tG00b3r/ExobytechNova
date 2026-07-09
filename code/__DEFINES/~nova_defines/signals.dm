@@ -74,9 +74,6 @@
 /// when someone attempts to evolve through the rune
 #define COMSIG_RUNE_EVOLUTION "rune_evolution"
 
-/// To chambered round on gun's `process_fire()`: (list/iff_factions)
-#define COMSIG_CHAMBERED_BULLET_FIRE "chambered_bullet_fire"
-
 /// /datum/component/clockwork_trap signals: ()
 #define COMSIG_CLOCKWORK_SIGNAL_RECEIVED "clock_received"
 
@@ -115,3 +112,8 @@
 
 /// Signal sent whenever a gun with a barrel booster toggles its barrel booster.
 #define COMSIG_GUN_BOOSTER_TOGGLED "gun_booster_toggled"
+
+/// The signal sent when an atom/movable should try to toggle their hiding.
+/// Gets called on the target, with (hiding, play_feedback = TRUE) as its args.
+/// Used for `/datum/element/can_hide`
+#define COMSIG_MOVABLE_TOGGLE_HIDING "movable_toggle_hiding"

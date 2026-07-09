@@ -5,4 +5,5 @@
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database.
 
 Kevin_Glitch = Host
+Nazaki W. = Game Master
 RealNiko = Host

@@ -73,13 +73,6 @@
 	. = ..()
 	dump_attachments()
 
-/obj/item/clothing/under/setup_reskinning()
-	if(!check_setup_reskinning())
-		return
-
-	// We already register context in Initialize.
-	RegisterSignal(src, COMSIG_CLICK_ALT, PROC_REF(on_click_alt_reskin))
-
 /obj/item/clothing/under/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
 
@@ -225,6 +218,17 @@
 	var/icon/legs = icon(SSgreyscale.GetColoredIconByType(/datum/greyscale_config/digitigrade, greyscale_colors), "jumpsuit_worn")
 	return replace_icon_legs(base_icon, legs)
 
+/obj/item/clothing/under/machine_wash()
+	. = ..()
+	if(stubborn_stains)
+		return
+
+	var/fresh_mood = AddComponent( \
+		/datum/component/onwear_mood, \
+		saved_event_type = /datum/mood_event/fresh_laundry, \
+	)
+	QDEL_IN(fresh_mood, 2 MINUTES)
+
 /obj/item/clothing/under/equipped(mob/living/user, slot)
 	..()
 	if(slot & ITEM_SLOT_ICLOTHING)
@@ -247,7 +251,7 @@
 
 	visible_message(span_warning("[src]'s medical sensors short out!"), blind_message = span_warning("The [src] makes an electronic sizzling sound!"), vision_distance = COMBAT_MESSAGE_RANGE)
 	set_has_sensor(BROKEN_SENSORS)
-	sensor_mode = SENSOR_LIVING // NOVA EDIT ADDITION
+	set_sensor_mode(SENSOR_LIVING) // NOVA EDIT ADDITION
 	sensor_malfunction()
 
 /**
@@ -303,6 +307,8 @@
 		return
 
 	var/mob/living/carbon/human/wearer = loc
+	if(wearer.get_item_by_slot(ITEM_SLOT_ICLOTHING) != src)
+		return
 
 	if(has_sensor >= HAS_SENSORS && sensor_mode >= SENSOR_LIVING)
 		GLOB.suit_sensors_list |= wearer
@@ -359,14 +365,11 @@
 		return
 	if(user && !user.temporarilyRemoveItemFromInventory(accessory))
 		return
-	if(!accessory.attach(src, user))
+	if(!accessory.try_attach(src, user))
 		return
 
-	LAZYADD(attached_accessories, accessory)
-	accessory.forceMove(src)
-
 	// Allow for accessories to react to the acccessory list now
-	accessory.successful_attach(src)
+	accessory.attach(src)
 
 	if(user && attach_message)
 		balloon_alert(user, "accessory attached")
@@ -402,10 +405,10 @@
 /obj/item/clothing/under/proc/update_accessory_overlay()
 	if(!length(attached_accessories))
 		accessory_overlay = null
-		return
-	accessory_overlay = mutable_appearance()
-	for(var/obj/item/clothing/accessory/accessory as anything in attached_accessories)
-		accessory_overlay.overlays += accessory.generate_accessory_overlay(src)
+	else
+		accessory_overlay = mutable_appearance()
+		for(var/obj/item/clothing/accessory/accessory as anything in attached_accessories)
+			accessory_overlay.overlays += accessory.generate_accessory_overlay(src)
 	update_appearance() // so we update the suit inventory overlay too
 
 /obj/item/clothing/under/Exited(atom/movable/gone, direction)
@@ -463,7 +466,6 @@
 
 /obj/item/clothing/under/verb/toggle()
 	set name = "Adjust Suit Sensors"
-	set category = "Object"
 	set src in usr
 	var/mob/user_mob = usr
 	if(!can_toggle_sensors(user_mob))
